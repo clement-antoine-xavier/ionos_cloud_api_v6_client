@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.datacenter_element_metadata import DatacenterElementMetadata
+from ionos_cloud_api_v6_client.models.datacenter_element_metadata import DatacenterElementMetadata
 
 class TestDatacenterElementMetadata(unittest.TestCase):
     """DatacenterElementMetadata unit test stubs"""

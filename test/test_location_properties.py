@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.location_properties import LocationProperties
+from ionos_cloud_api_v6_client.models.location_properties import LocationProperties
 
 class TestLocationProperties(unittest.TestCase):
     """LocationProperties unit test stubs"""
@@ -39,7 +39,7 @@ class TestLocationProperties(unittest.TestCase):
                 features = ["cloud-init-private-image","ssd","vnf-nat"],
                 image_aliases = ["windows:2012r2_iso","windows:2019_iso","ubuntu:18.04_iso"],
                 cpu_architecture = [
-                    openapi_client.models.cpu_architecture_properties.CpuArchitectureProperties(
+                    ionos_cloud_api_v6_client.models.cpu_architecture_properties.CpuArchitectureProperties(
                         cpu_family = 'INTEL_ICELAKE', 
                         max_cores = 62, 
                         max_ram = 245760, 

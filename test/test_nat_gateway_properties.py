@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.nat_gateway_properties import NatGatewayProperties
+from ionos_cloud_api_v6_client.models.nat_gateway_properties import NatGatewayProperties
 
 class TestNatGatewayProperties(unittest.TestCase):
     """NatGatewayProperties unit test stubs"""
@@ -38,7 +38,7 @@ class TestNatGatewayProperties(unittest.TestCase):
                 name = 'My NAT Gateway',
                 public_ips = ["81.173.1.2","82.231.2.5","92.221.2.4"],
                 lans = [
-                    openapi_client.models.nat_gateway_lan_properties.NatGatewayLanProperties(
+                    ionos_cloud_api_v6_client.models.nat_gateway_lan_properties.NatGatewayLanProperties(
                         id = 3, 
                         gateway_ips = ["10.12.1.2/24","10.11.2.5/24","10.11.2.4"], )
                     ]

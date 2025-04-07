@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.target_group_health_check import TargetGroupHealthCheck
+from ionos_cloud_api_v6_client.models.target_group_health_check import TargetGroupHealthCheck
 
 # TODO update the JSON string below
 json = "{}"

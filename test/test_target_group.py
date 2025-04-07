@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.target_group import TargetGroup
+from ionos_cloud_api_v6_client.models.target_group import TargetGroup
 
 class TestTargetGroup(unittest.TestCase):
     """TargetGroup unit test stubs"""
@@ -38,7 +38,7 @@ class TestTargetGroup(unittest.TestCase):
                 id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c',
                 type = 'datacenter',
                 href = '<RESOURCE-URI>',
-                metadata = openapi_client.models.datacenter_element_metadata.DatacenterElementMetadata(
+                metadata = ionos_cloud_api_v6_client.models.datacenter_element_metadata.DatacenterElementMetadata(
                     etag = '45480eb3fbfc31f1d916c1eaa4abdcc3', 
                     created_date = '2015-12-04T14:34:09.809Z', 
                     created_by = 'user@example.com', 
@@ -47,13 +47,13 @@ class TestTargetGroup(unittest.TestCase):
                     last_modified_by = 'user@example.com', 
                     last_modified_by_user_id = '63cef532-26fe-4a64-a4e0-de7c8a506c90', 
                     state = 'AVAILABLE', ),
-                properties = openapi_client.models.target_group_properties.TargetGroupProperties(
+                properties = ionos_cloud_api_v6_client.models.target_group_properties.TargetGroupProperties(
                     name = 'My target group', 
                     algorithm = 'ROUND_ROBIN', 
                     protocol = 'HTTP', 
                     protocol_version = 'HTTP1', 
                     targets = [
-                        openapi_client.models.target_group_target.TargetGroupTarget(
+                        ionos_cloud_api_v6_client.models.target_group_target.TargetGroupTarget(
                             ip = '22.231.2.2', 
                             port = 8080, 
                             weight = 123, 
@@ -61,11 +61,11 @@ class TestTargetGroup(unittest.TestCase):
                             health_check_enabled = True, 
                             maintenance_enabled = True, )
                         ], 
-                    health_check = openapi_client.models.target_group_health_check.TargetGroupHealthCheck(
+                    health_check = ionos_cloud_api_v6_client.models.target_group_health_check.TargetGroupHealthCheck(
                         check_timeout = 2000, 
                         check_interval = 2000, 
                         retries = 3, ), 
-                    http_health_check = openapi_client.models.target_group_http_health_check.TargetGroupHttpHealthCheck(
+                    http_health_check = ionos_cloud_api_v6_client.models.target_group_http_health_check.TargetGroupHttpHealthCheck(
                         path = '/monitoring', 
                         method = 'GET', 
                         match_type = 'STATUS_CODE', 
@@ -75,13 +75,13 @@ class TestTargetGroup(unittest.TestCase):
             )
         else:
             return TargetGroup(
-                properties = openapi_client.models.target_group_properties.TargetGroupProperties(
+                properties = ionos_cloud_api_v6_client.models.target_group_properties.TargetGroupProperties(
                     name = 'My target group', 
                     algorithm = 'ROUND_ROBIN', 
                     protocol = 'HTTP', 
                     protocol_version = 'HTTP1', 
                     targets = [
-                        openapi_client.models.target_group_target.TargetGroupTarget(
+                        ionos_cloud_api_v6_client.models.target_group_target.TargetGroupTarget(
                             ip = '22.231.2.2', 
                             port = 8080, 
                             weight = 123, 
@@ -89,11 +89,11 @@ class TestTargetGroup(unittest.TestCase):
                             health_check_enabled = True, 
                             maintenance_enabled = True, )
                         ], 
-                    health_check = openapi_client.models.target_group_health_check.TargetGroupHealthCheck(
+                    health_check = ionos_cloud_api_v6_client.models.target_group_health_check.TargetGroupHealthCheck(
                         check_timeout = 2000, 
                         check_interval = 2000, 
                         retries = 3, ), 
-                    http_health_check = openapi_client.models.target_group_http_health_check.TargetGroupHttpHealthCheck(
+                    http_health_check = ionos_cloud_api_v6_client.models.target_group_http_health_check.TargetGroupHttpHealthCheck(
                         path = '/monitoring', 
                         method = 'GET', 
                         match_type = 'STATUS_CODE', 

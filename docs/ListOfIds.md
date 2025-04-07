@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.list_of_ids import ListOfIds
+from ionos_cloud_api_v6_client.models.list_of_ids import ListOfIds
 
 # TODO update the JSON string below
 json = "{}"

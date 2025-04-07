@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.info import Info
+from ionos_cloud_api_v6_client.models.info import Info
 
 # TODO update the JSON string below
 json = "{}"

@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.target_groups import TargetGroups
+from ionos_cloud_api_v6_client.models.target_groups import TargetGroups
 
 class TestTargetGroups(unittest.TestCase):
     """TargetGroups unit test stubs"""
@@ -39,11 +39,11 @@ class TestTargetGroups(unittest.TestCase):
                 type = 'datacenter',
                 href = '<RESOURCE-URI>',
                 items = [
-                    openapi_client.models.target_group.TargetGroup(
+                    ionos_cloud_api_v6_client.models.target_group.TargetGroup(
                         id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                         type = 'target-group', 
                         href = '<RESOURCE-URI>', 
-                        metadata = openapi_client.models.datacenter_element_metadata.DatacenterElementMetadata(
+                        metadata = ionos_cloud_api_v6_client.models.datacenter_element_metadata.DatacenterElementMetadata(
                             etag = '45480eb3fbfc31f1d916c1eaa4abdcc3', 
                             created_date = '2015-12-04T14:34:09.809Z', 
                             created_by = 'user@example.com', 
@@ -52,13 +52,13 @@ class TestTargetGroups(unittest.TestCase):
                             last_modified_by = 'user@example.com', 
                             last_modified_by_user_id = '63cef532-26fe-4a64-a4e0-de7c8a506c90', 
                             state = 'AVAILABLE', ), 
-                        properties = openapi_client.models.target_group_properties.TargetGroupProperties(
+                        properties = ionos_cloud_api_v6_client.models.target_group_properties.TargetGroupProperties(
                             name = 'My target group', 
                             algorithm = 'ROUND_ROBIN', 
                             protocol = 'HTTP', 
                             protocol_version = 'HTTP1', 
                             targets = [
-                                openapi_client.models.target_group_target.TargetGroupTarget(
+                                ionos_cloud_api_v6_client.models.target_group_target.TargetGroupTarget(
                                     ip = '22.231.2.2', 
                                     port = 8080, 
                                     weight = 123, 
@@ -66,11 +66,11 @@ class TestTargetGroups(unittest.TestCase):
                                     health_check_enabled = True, 
                                     maintenance_enabled = True, )
                                 ], 
-                            health_check = openapi_client.models.target_group_health_check.TargetGroupHealthCheck(
+                            health_check = ionos_cloud_api_v6_client.models.target_group_health_check.TargetGroupHealthCheck(
                                 check_timeout = 2000, 
                                 check_interval = 2000, 
                                 retries = 3, ), 
-                            http_health_check = openapi_client.models.target_group_http_health_check.TargetGroupHttpHealthCheck(
+                            http_health_check = ionos_cloud_api_v6_client.models.target_group_http_health_check.TargetGroupHttpHealthCheck(
                                 path = '/monitoring', 
                                 method = 'GET', 
                                 match_type = 'STATUS_CODE', 
@@ -80,7 +80,7 @@ class TestTargetGroups(unittest.TestCase):
                     ],
                 offset = 0,
                 limit = 1000,
-                links = openapi_client.models.pagination_links.PaginationLinks(
+                links = ionos_cloud_api_v6_client.models.pagination_links.PaginationLinks(
                     prev = '<PREVIOUS-PAGE-URI>', 
                     self = '<THIS-PAGE-URI>', 
                     next = '<NEXT-PAGE-URI>', )

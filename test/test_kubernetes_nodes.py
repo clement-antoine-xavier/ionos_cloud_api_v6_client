@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.kubernetes_nodes import KubernetesNodes
+from ionos_cloud_api_v6_client.models.kubernetes_nodes import KubernetesNodes
 
 class TestKubernetesNodes(unittest.TestCase):
     """KubernetesNodes unit test stubs"""
@@ -39,17 +39,17 @@ class TestKubernetesNodes(unittest.TestCase):
                 type = 'collection',
                 href = 'https://api.ionos.com/cloudapi/v6/k8s/30f8a4f6-6515-4c34-b49d-dea807453b90/nodepools/bfdf67bd-5665-4245-8096-7c7991f02f3f/nodes',
                 items = [
-                    openapi_client.models.kubernetes_node.KubernetesNode(
+                    ionos_cloud_api_v6_client.models.kubernetes_node.KubernetesNode(
                         id = '1e072e52-2ed3-492f-b6b6-c6b116907527', 
                         type = 'node', 
                         href = 'https://api.ionos.com/cloudapi/v6/k8s/30f8a4f6-6515-4c34-b49d-dea807453b90/nodepools/bfdf67bd-5665-4245-8096-7c7991f02f3f/nodes/81892fdb-d97e-4919-baf9-2b3a923f5401', 
-                        metadata = openapi_client.models.kubernetes_node_metadata.KubernetesNodeMetadata(
+                        metadata = ionos_cloud_api_v6_client.models.kubernetes_node_metadata.KubernetesNodeMetadata(
                             etag = '45480eb3fbfc31f1d916c1eaa4abdcc3', 
                             created_date = '2015-12-04T14:34:09.809Z', 
                             last_modified_date = '2015-12-04T14:34:09.809Z', 
                             state = 'READY', 
                             last_software_updated_date = '2015-12-04T14:34:09.809Z', ), 
-                        properties = openapi_client.models.kubernetes_node_properties.KubernetesNodeProperties(
+                        properties = ionos_cloud_api_v6_client.models.kubernetes_node_properties.KubernetesNodeProperties(
                             name = 'K8s-node', 
                             public_ip = '192.168.23.2', 
                             private_ip = '192.168.23.2', 

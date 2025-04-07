@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.group_entities import GroupEntities
+from ionos_cloud_api_v6_client.models.group_entities import GroupEntities
 
 # TODO update the JSON string below
 json = "{}"

@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.error import Error
+from ionos_cloud_api_v6_client.models.error import Error
 
 class TestError(unittest.TestCase):
     """Error unit test stubs"""
@@ -37,7 +37,7 @@ class TestError(unittest.TestCase):
             return Error(
                 http_status = 400,
                 messages = [
-                    openapi_client.models.error_message.ErrorMessage(
+                    ionos_cloud_api_v6_client.models.error_message.ErrorMessage(
                         error_code = '123', 
                         message = 'Error message example.', )
                     ]

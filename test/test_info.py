@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.info import Info
+from ionos_cloud_api_v6_client.models.info import Info
 
 class TestInfo(unittest.TestCase):
     """Info unit test stubs"""

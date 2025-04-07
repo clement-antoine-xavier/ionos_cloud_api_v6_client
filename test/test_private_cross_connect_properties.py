@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.private_cross_connect_properties import PrivateCrossConnectProperties
+from ionos_cloud_api_v6_client.models.private_cross_connect_properties import PrivateCrossConnectProperties
 
 class TestPrivateCrossConnectProperties(unittest.TestCase):
     """PrivateCrossConnectProperties unit test stubs"""

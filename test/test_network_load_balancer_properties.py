@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.network_load_balancer_properties import NetworkLoadBalancerProperties
+from ionos_cloud_api_v6_client.models.network_load_balancer_properties import NetworkLoadBalancerProperties
 
 class TestNetworkLoadBalancerProperties(unittest.TestCase):
     """NetworkLoadBalancerProperties unit test stubs"""

@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.request_target import RequestTarget
+from ionos_cloud_api_v6_client.models.request_target import RequestTarget
 
 # TODO update the JSON string below
 json = "{}"

@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.ip_consumer import IpConsumer
+from ionos_cloud_api_v6_client.models.ip_consumer import IpConsumer
 
 class TestIpConsumer(unittest.TestCase):
     """IpConsumer unit test stubs"""

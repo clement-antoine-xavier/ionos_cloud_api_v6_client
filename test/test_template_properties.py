@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.template_properties import TemplateProperties
+from ionos_cloud_api_v6_client.models.template_properties import TemplateProperties
 
 class TestTemplateProperties(unittest.TestCase):
     """TemplateProperties unit test stubs"""

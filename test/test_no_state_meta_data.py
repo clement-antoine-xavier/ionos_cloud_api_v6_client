@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.no_state_meta_data import NoStateMetaData
+from ionos_cloud_api_v6_client.models.no_state_meta_data import NoStateMetaData
 
 class TestNoStateMetaData(unittest.TestCase):
     """NoStateMetaData unit test stubs"""

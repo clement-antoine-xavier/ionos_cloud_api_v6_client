@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.backup_unit_sso import BackupUnitSSO
+from ionos_cloud_api_v6_client.models.backup_unit_sso import BackupUnitSSO
 
 class TestBackupUnitSSO(unittest.TestCase):
     """BackupUnitSSO unit test stubs"""

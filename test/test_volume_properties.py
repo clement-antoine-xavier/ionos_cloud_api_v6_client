@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.volume_properties import VolumeProperties
+from ionos_cloud_api_v6_client.models.volume_properties import VolumeProperties
 
 class TestVolumeProperties(unittest.TestCase):
     """VolumeProperties unit test stubs"""

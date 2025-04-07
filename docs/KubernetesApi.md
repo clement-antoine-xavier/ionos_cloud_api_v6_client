@@ -1,4 +1,4 @@
-# openapi_client.KubernetesApi
+# ionos_cloud_api_v6_client.KubernetesApi
 
 All URIs are relative to *https://api.ionos.com/cloudapi/v6*
 
@@ -36,13 +36,13 @@ Deletes the K8s cluster specified  by its ID.
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -52,7 +52,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -64,9 +64,9 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.KubernetesApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.KubernetesApi(api_client)
     k8s_cluster_id = 'k8s_cluster_id_example' # str | The unique ID of the Kubernetes cluster.
     pretty = True # bool | Controls whether the response is pretty-printed (with indentations and new lines). (optional) (default to True)
     depth = 0 # int | Controls the detail depth of the response objects.  GET /datacenters/[ID]  - depth=0: Only direct properties are included; children (servers and other elements) are not included.  - depth=1: Direct properties and children references are included.  - depth=2: Direct properties and children properties are included.  - depth=3: Direct properties and children properties and children's children are included.  - depth=... and so on (optional) (default to 0)
@@ -126,14 +126,14 @@ Retrieves the K8s cluster specified by its ID.
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.models.kubernetes_cluster import KubernetesCluster
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.models.kubernetes_cluster import KubernetesCluster
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -143,7 +143,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -155,9 +155,9 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.KubernetesApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.KubernetesApi(api_client)
     k8s_cluster_id = 'k8s_cluster_id_example' # str | The unique ID of the K8s cluster to be retrieved.
     pretty = True # bool | Controls whether the response is pretty-printed (with indentations and new lines). (optional) (default to True)
     depth = 0 # int | Controls the detail depth of the response objects.  GET /datacenters/[ID]  - depth=0: Only direct properties are included; children (servers and other elements) are not included.  - depth=1: Direct properties and children references are included.  - depth=2: Direct properties and children properties are included.  - depth=3: Direct properties and children properties and children's children are included.  - depth=... and so on (optional) (default to 0)
@@ -219,14 +219,14 @@ Retrieves a list of all K8s clusters provisioned under your account.
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.models.kubernetes_clusters import KubernetesClusters
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.models.kubernetes_clusters import KubernetesClusters
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -236,7 +236,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -248,9 +248,9 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.KubernetesApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.KubernetesApi(api_client)
     pretty = True # bool | Controls whether the response is pretty-printed (with indentations and new lines). (optional) (default to True)
     depth = 0 # int | Controls the detail depth of the response objects.  GET /datacenters/[ID]  - depth=0: Only direct properties are included; children (servers and other elements) are not included.  - depth=1: Direct properties and children references are included.  - depth=2: Direct properties and children properties are included.  - depth=3: Direct properties and children properties and children's children are included.  - depth=... and so on (optional) (default to 0)
     x_contract_number = 56 # int | Users with multiple contracts must provide the contract number, for which all API requests are to be executed. (optional)
@@ -310,13 +310,13 @@ Retrieves the configuration file for the specified K8s cluster. You can define t
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -326,7 +326,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -338,9 +338,9 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.KubernetesApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.KubernetesApi(api_client)
     k8s_cluster_id = 'k8s_cluster_id_example' # str | The unique ID of the Kubernetes cluster.
     pretty = True # bool | Controls whether the response is pretty-printed (with indentations and new lines). (optional) (default to True)
     depth = 0 # int | Controls the detail depth of the response objects.  GET /datacenters/[ID]  - depth=0: Only direct properties are included; children (servers and other elements) are not included.  - depth=1: Direct properties and children references are included.  - depth=2: Direct properties and children properties are included.  - depth=3: Direct properties and children properties and children's children are included.  - depth=... and so on (optional) (default to 0)
@@ -402,13 +402,13 @@ Deletes the K8s node pool specified by its ID.
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -418,7 +418,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -430,9 +430,9 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.KubernetesApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.KubernetesApi(api_client)
     k8s_cluster_id = 'k8s_cluster_id_example' # str | The unique ID of the Kubernetes cluster.
     nodepool_id = 'nodepool_id_example' # str | The unique ID of the Kubernetes node pool.
     pretty = True # bool | Controls whether the response is pretty-printed (with indentations and new lines). (optional) (default to True)
@@ -494,14 +494,14 @@ Retrieves the K8s node pool specified by its ID.
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.models.kubernetes_node_pool import KubernetesNodePool
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.models.kubernetes_node_pool import KubernetesNodePool
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -511,7 +511,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -523,9 +523,9 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.KubernetesApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.KubernetesApi(api_client)
     k8s_cluster_id = 'k8s_cluster_id_example' # str | The unique ID of the Kubernetes cluster.
     nodepool_id = 'nodepool_id_example' # str | The unique ID of the Kubernetes node pool.
     pretty = True # bool | Controls whether the response is pretty-printed (with indentations and new lines). (optional) (default to True)
@@ -589,14 +589,14 @@ Retrieves a list of K8s node pools of a cluster specified by its ID.
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.models.kubernetes_node_pools import KubernetesNodePools
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.models.kubernetes_node_pools import KubernetesNodePools
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -606,7 +606,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -618,9 +618,9 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.KubernetesApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.KubernetesApi(api_client)
     k8s_cluster_id = 'k8s_cluster_id_example' # str | The unique ID of the Kubernetes cluster.
     pretty = True # bool | Controls whether the response is pretty-printed (with indentations and new lines). (optional) (default to True)
     depth = 0 # int | Controls the detail depth of the response objects.  GET /datacenters/[ID]  - depth=0: Only direct properties are included; children (servers and other elements) are not included.  - depth=1: Direct properties and children references are included.  - depth=2: Direct properties and children properties are included.  - depth=3: Direct properties and children properties and children's children are included.  - depth=... and so on (optional) (default to 0)
@@ -682,13 +682,13 @@ Deletes the K8s node specified by its ID.
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -698,7 +698,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -710,9 +710,9 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.KubernetesApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.KubernetesApi(api_client)
     k8s_cluster_id = 'k8s_cluster_id_example' # str | The unique ID of the Kubernetes cluster.
     nodepool_id = 'nodepool_id_example' # str | The unique ID of the Kubernetes node pool.
     node_id = 'node_id_example' # str | The unique ID of the Kubernetes node.
@@ -776,14 +776,14 @@ Retrieves the K8s node specified by its ID.
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.models.kubernetes_node import KubernetesNode
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.models.kubernetes_node import KubernetesNode
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -793,7 +793,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -805,9 +805,9 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.KubernetesApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.KubernetesApi(api_client)
     k8s_cluster_id = 'k8s_cluster_id_example' # str | The unique ID of the Kubernetes cluster.
     nodepool_id = 'nodepool_id_example' # str | The unique ID of the Kubernetes node pool.
     node_id = 'node_id_example' # str | The unique ID of the Kubernetes node.
@@ -873,14 +873,14 @@ Retrieves the list of all K8s nodes of the specified node pool.
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.models.kubernetes_nodes import KubernetesNodes
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.models.kubernetes_nodes import KubernetesNodes
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -890,7 +890,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -902,9 +902,9 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.KubernetesApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.KubernetesApi(api_client)
     k8s_cluster_id = 'k8s_cluster_id_example' # str | The unique ID of the Kubernetes cluster.
     nodepool_id = 'nodepool_id_example' # str | The unique ID of the Kubernetes node pool.
     pretty = True # bool | Controls whether the response is pretty-printed (with indentations and new lines). (optional) (default to True)
@@ -970,13 +970,13 @@ If a node becomes unusable, Managed Kubernetes allows you to recreate it with a 
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -986,7 +986,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -998,9 +998,9 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.KubernetesApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.KubernetesApi(api_client)
     k8s_cluster_id = 'k8s_cluster_id_example' # str | The unique ID of the Kubernetes cluster.
     nodepool_id = 'nodepool_id_example' # str | The unique ID of the Kubernetes node pool.
     node_id = 'node_id_example' # str | The unique ID of the Kubernetes node.
@@ -1064,15 +1064,15 @@ Creates a node pool inside the specified K8s cluster.
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.models.kubernetes_node_pool import KubernetesNodePool
-from openapi_client.models.kubernetes_node_pool_for_post import KubernetesNodePoolForPost
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.models.kubernetes_node_pool import KubernetesNodePool
+from ionos_cloud_api_v6_client.models.kubernetes_node_pool_for_post import KubernetesNodePoolForPost
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -1082,7 +1082,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -1094,11 +1094,11 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.KubernetesApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.KubernetesApi(api_client)
     k8s_cluster_id = 'k8s_cluster_id_example' # str | The unique ID of the Kubernetes cluster.
-    kubernetes_node_pool = openapi_client.KubernetesNodePoolForPost() # KubernetesNodePoolForPost | The Kubernetes node pool to create.
+    kubernetes_node_pool = ionos_cloud_api_v6_client.KubernetesNodePoolForPost() # KubernetesNodePoolForPost | The Kubernetes node pool to create.
     pretty = True # bool | Controls whether the response is pretty-printed (with indentations and new lines). (optional) (default to True)
     depth = 0 # int | Controls the detail depth of the response objects.  GET /datacenters/[ID]  - depth=0: Only direct properties are included; children (servers and other elements) are not included.  - depth=1: Direct properties and children references are included.  - depth=2: Direct properties and children properties are included.  - depth=3: Direct properties and children properties and children's children are included.  - depth=... and so on (optional) (default to 0)
     x_contract_number = 56 # int | Users with multiple contracts must provide the contract number, for which all API requests are to be executed. (optional)
@@ -1160,15 +1160,15 @@ Modifies the K8s node pool specified by its ID.
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.models.kubernetes_node_pool import KubernetesNodePool
-from openapi_client.models.kubernetes_node_pool_for_put import KubernetesNodePoolForPut
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.models.kubernetes_node_pool import KubernetesNodePool
+from ionos_cloud_api_v6_client.models.kubernetes_node_pool_for_put import KubernetesNodePoolForPut
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -1178,7 +1178,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -1190,12 +1190,12 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.KubernetesApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.KubernetesApi(api_client)
     k8s_cluster_id = 'k8s_cluster_id_example' # str | The unique ID of the Kubernetes cluster.
     nodepool_id = 'nodepool_id_example' # str | The unique ID of the Kubernetes node pool.
-    kubernetes_node_pool = openapi_client.KubernetesNodePoolForPut() # KubernetesNodePoolForPut | Details of the Kubernetes Node Pool
+    kubernetes_node_pool = ionos_cloud_api_v6_client.KubernetesNodePoolForPut() # KubernetesNodePoolForPut | Details of the Kubernetes Node Pool
     pretty = True # bool | Controls whether the response is pretty-printed (with indentations and new lines). (optional) (default to True)
     depth = 0 # int | Controls the detail depth of the response objects.  GET /datacenters/[ID]  - depth=0: Only direct properties are included; children (servers and other elements) are not included.  - depth=1: Direct properties and children references are included.  - depth=2: Direct properties and children properties are included.  - depth=3: Direct properties and children properties and children's children are included.  - depth=... and so on (optional) (default to 0)
     x_contract_number = 56 # int | Users with multiple contracts must provide the contract number, for which all API requests are to be executed. (optional)
@@ -1258,15 +1258,15 @@ Creates a K8s cluster provisioned under your account.
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.models.kubernetes_cluster import KubernetesCluster
-from openapi_client.models.kubernetes_cluster_for_post import KubernetesClusterForPost
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.models.kubernetes_cluster import KubernetesCluster
+from ionos_cloud_api_v6_client.models.kubernetes_cluster_for_post import KubernetesClusterForPost
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -1276,7 +1276,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -1288,10 +1288,10 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.KubernetesApi(api_client)
-    kubernetes_cluster = openapi_client.KubernetesClusterForPost() # KubernetesClusterForPost | The Kubernetes cluster to create.
+    api_instance = ionos_cloud_api_v6_client.KubernetesApi(api_client)
+    kubernetes_cluster = ionos_cloud_api_v6_client.KubernetesClusterForPost() # KubernetesClusterForPost | The Kubernetes cluster to create.
     pretty = True # bool | Controls whether the response is pretty-printed (with indentations and new lines). (optional) (default to True)
     depth = 0 # int | Controls the detail depth of the response objects.  GET /datacenters/[ID]  - depth=0: Only direct properties are included; children (servers and other elements) are not included.  - depth=1: Direct properties and children references are included.  - depth=2: Direct properties and children properties are included.  - depth=3: Direct properties and children properties and children's children are included.  - depth=... and so on (optional) (default to 0)
     x_contract_number = 56 # int | Users with multiple contracts must provide the contract number, for which all API requests are to be executed. (optional)
@@ -1352,15 +1352,15 @@ Modifies the K8s cluster specified by its ID.
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.models.kubernetes_cluster import KubernetesCluster
-from openapi_client.models.kubernetes_cluster_for_put import KubernetesClusterForPut
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.models.kubernetes_cluster import KubernetesCluster
+from ionos_cloud_api_v6_client.models.kubernetes_cluster_for_put import KubernetesClusterForPut
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -1370,7 +1370,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -1382,11 +1382,11 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.KubernetesApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.KubernetesApi(api_client)
     k8s_cluster_id = 'k8s_cluster_id_example' # str | The unique ID of the Kubernetes cluster.
-    kubernetes_cluster = openapi_client.KubernetesClusterForPut() # KubernetesClusterForPut | The modified Kubernetes cluster.
+    kubernetes_cluster = ionos_cloud_api_v6_client.KubernetesClusterForPut() # KubernetesClusterForPut | The modified Kubernetes cluster.
     pretty = True # bool | Controls whether the response is pretty-printed (with indentations and new lines). (optional) (default to True)
     depth = 0 # int | Controls the detail depth of the response objects.  GET /datacenters/[ID]  - depth=0: Only direct properties are included; children (servers and other elements) are not included.  - depth=1: Direct properties and children references are included.  - depth=2: Direct properties and children properties are included.  - depth=3: Direct properties and children properties and children's children are included.  - depth=... and so on (optional) (default to 0)
     x_contract_number = 56 # int | Users with multiple contracts must provide the contract number, for which all API requests are to be executed. (optional)
@@ -1448,13 +1448,13 @@ Retrieves the current default K8s version to be used by the clusters and node po
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -1464,7 +1464,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -1476,9 +1476,9 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.KubernetesApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.KubernetesApi(api_client)
 
     try:
         # Get Default Kubernetes Version
@@ -1530,13 +1530,13 @@ Lists available K8s versions.
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -1546,7 +1546,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -1558,9 +1558,9 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.KubernetesApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.KubernetesApi(api_client)
 
     try:
         # Get Kubernetes Versions

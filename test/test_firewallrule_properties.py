@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.firewallrule_properties import FirewallruleProperties
+from ionos_cloud_api_v6_client.models.firewallrule_properties import FirewallruleProperties
 
 class TestFirewallruleProperties(unittest.TestCase):
     """FirewallruleProperties unit test stubs"""

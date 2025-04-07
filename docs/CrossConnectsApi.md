@@ -1,4 +1,4 @@
-# openapi_client.CrossConnectsApi
+# ionos_cloud_api_v6_client.CrossConnectsApi
 
 All URIs are relative to *https://api.ionos.com/cloudapi/v6*
 
@@ -24,13 +24,13 @@ Remove the specified Cross Connect. Cross connect can be deleted only if it is n
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -40,7 +40,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -52,9 +52,9 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CrossConnectsApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.CrossConnectsApi(api_client)
     pcc_id = 'pcc_id_example' # str | The unique ID of the Cross Connect.
     pretty = True # bool | Controls whether the response is pretty-printed (with indentations and new lines). (optional) (default to True)
     depth = 0 # int | Controls the detail depth of the response objects.  GET /datacenters/[ID]  - depth=0: Only direct properties are included; children (servers and other elements) are not included.  - depth=1: Direct properties and children references are included.  - depth=2: Direct properties and children properties are included.  - depth=3: Direct properties and children properties and children's children are included.  - depth=... and so on (optional) (default to 0)
@@ -114,14 +114,14 @@ Retrieve a Cross Connect by the resource ID. Cross Connect ID is in the response
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.models.private_cross_connect import PrivateCrossConnect
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.models.private_cross_connect import PrivateCrossConnect
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -131,7 +131,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -143,9 +143,9 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CrossConnectsApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.CrossConnectsApi(api_client)
     pcc_id = 'pcc_id_example' # str | The unique ID of the Cross Connect.
     pretty = True # bool | Controls whether the response is pretty-printed (with indentations and new lines). (optional) (default to True)
     depth = 0 # int | Controls the detail depth of the response objects.  GET /datacenters/[ID]  - depth=0: Only direct properties are included; children (servers and other elements) are not included.  - depth=1: Direct properties and children references are included.  - depth=2: Direct properties and children properties are included.  - depth=3: Direct properties and children properties and children's children are included.  - depth=... and so on (optional) (default to 0)
@@ -207,14 +207,14 @@ List all Cross Connects. For contract owner and administrators it returns all cr
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.models.private_cross_connects import PrivateCrossConnects
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.models.private_cross_connects import PrivateCrossConnects
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -224,7 +224,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -236,9 +236,9 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CrossConnectsApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.CrossConnectsApi(api_client)
     pretty = True # bool | Controls whether the response is pretty-printed (with indentations and new lines). (optional) (default to True)
     depth = 0 # int | Controls the detail depth of the response objects.  GET /datacenters/[ID]  - depth=0: Only direct properties are included; children (servers and other elements) are not included.  - depth=1: Direct properties and children references are included.  - depth=2: Direct properties and children properties are included.  - depth=3: Direct properties and children properties and children's children are included.  - depth=... and so on (optional) (default to 0)
     x_contract_number = 56 # int | Users with multiple contracts must provide the contract number, for which all API requests are to be executed. (optional)
@@ -298,15 +298,15 @@ Update the properties of the specified Cross Connect.For non administrator users
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.models.private_cross_connect import PrivateCrossConnect
-from openapi_client.models.private_cross_connect_properties import PrivateCrossConnectProperties
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.models.private_cross_connect import PrivateCrossConnect
+from ionos_cloud_api_v6_client.models.private_cross_connect_properties import PrivateCrossConnectProperties
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -316,7 +316,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -328,11 +328,11 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CrossConnectsApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.CrossConnectsApi(api_client)
     pcc_id = 'pcc_id_example' # str | The unique ID of the Cross Connect.
-    pcc = openapi_client.PrivateCrossConnectProperties() # PrivateCrossConnectProperties | The properties of the Cross Connect to be updated.
+    pcc = ionos_cloud_api_v6_client.PrivateCrossConnectProperties() # PrivateCrossConnectProperties | The properties of the Cross Connect to be updated.
     pretty = True # bool | Controls whether the response is pretty-printed (with indentations and new lines). (optional) (default to True)
     depth = 0 # int | Controls the detail depth of the response objects.  GET /datacenters/[ID]  - depth=0: Only direct properties are included; children (servers and other elements) are not included.  - depth=1: Direct properties and children references are included.  - depth=2: Direct properties and children properties are included.  - depth=3: Direct properties and children properties and children's children are included.  - depth=... and so on (optional) (default to 0)
     x_contract_number = 56 # int | Users with multiple contracts must provide the contract number, for which all API requests are to be executed. (optional)
@@ -394,14 +394,14 @@ Creates a Cross-Connect. Only contract owners, administrators and users with cre
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.models.private_cross_connect import PrivateCrossConnect
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.models.private_cross_connect import PrivateCrossConnect
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -411,7 +411,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -423,10 +423,10 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CrossConnectsApi(api_client)
-    pcc = openapi_client.PrivateCrossConnect() # PrivateCrossConnect | The Cross Connect to create.
+    api_instance = ionos_cloud_api_v6_client.CrossConnectsApi(api_client)
+    pcc = ionos_cloud_api_v6_client.PrivateCrossConnect() # PrivateCrossConnect | The Cross Connect to create.
     pretty = True # bool | Controls whether the response is pretty-printed (with indentations and new lines). (optional) (default to True)
     depth = 0 # int | Controls the detail depth of the response objects.  GET /datacenters/[ID]  - depth=0: Only direct properties are included; children (servers and other elements) are not included.  - depth=1: Direct properties and children references are included.  - depth=2: Direct properties and children properties are included.  - depth=3: Direct properties and children properties and children's children are included.  - depth=... and so on (optional) (default to 0)
     x_contract_number = 56 # int | Users with multiple contracts must provide the contract number, for which all API requests are to be executed. (optional)

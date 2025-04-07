@@ -1,4 +1,4 @@
-# openapi_client.FirewallRulesApi
+# ionos_cloud_api_v6_client.FirewallRulesApi
 
 All URIs are relative to *https://api.ionos.com/cloudapi/v6*
 
@@ -25,13 +25,13 @@ Delete the specified firewall rule.
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -41,7 +41,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -53,9 +53,9 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.FirewallRulesApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.FirewallRulesApi(api_client)
     datacenter_id = 'datacenter_id_example' # str | The unique ID of the data center.
     server_id = 'server_id_example' # str | The unique ID of the server.
     nic_id = 'nic_id_example' # str | The unique ID of the NIC.
@@ -121,14 +121,14 @@ Retrieve the properties of the specified firewall rule.
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.models.firewall_rule import FirewallRule
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.models.firewall_rule import FirewallRule
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -138,7 +138,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -150,9 +150,9 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.FirewallRulesApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.FirewallRulesApi(api_client)
     datacenter_id = 'datacenter_id_example' # str | The unique ID of the data center.
     server_id = 'server_id_example' # str | The unique ID of the server.
     nic_id = 'nic_id_example' # str | The unique ID of the NIC.
@@ -220,14 +220,14 @@ List all firewall rules for the specified NIC.
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.models.firewall_rules import FirewallRules
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.models.firewall_rules import FirewallRules
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -237,7 +237,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -249,9 +249,9 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.FirewallRulesApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.FirewallRulesApi(api_client)
     datacenter_id = 'datacenter_id_example' # str | The unique ID of the data center.
     server_id = 'server_id_example' # str | The unique ID of the server.
     nic_id = 'nic_id_example' # str | The unique ID of the NIC.
@@ -321,15 +321,15 @@ Update the properties of the specified firewall rule.
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.models.firewall_rule import FirewallRule
-from openapi_client.models.firewallrule_properties import FirewallruleProperties
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.models.firewall_rule import FirewallRule
+from ionos_cloud_api_v6_client.models.firewallrule_properties import FirewallruleProperties
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -339,7 +339,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -351,14 +351,14 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.FirewallRulesApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.FirewallRulesApi(api_client)
     datacenter_id = 'datacenter_id_example' # str | The unique ID of the data center.
     server_id = 'server_id_example' # str | The unique ID of the server.
     nic_id = 'nic_id_example' # str | The unique ID of the NIC.
     firewallrule_id = 'firewallrule_id_example' # str | The unique ID of the firewall rule.
-    firewallrule = openapi_client.FirewallruleProperties() # FirewallruleProperties | The properties of the firewall rule to be updated.
+    firewallrule = ionos_cloud_api_v6_client.FirewallruleProperties() # FirewallruleProperties | The properties of the firewall rule to be updated.
     pretty = True # bool | Controls whether the response is pretty-printed (with indentations and new lines). (optional) (default to True)
     depth = 0 # int | Controls the detail depth of the response objects.  GET /datacenters/[ID]  - depth=0: Only direct properties are included; children (servers and other elements) are not included.  - depth=1: Direct properties and children references are included.  - depth=2: Direct properties and children properties are included.  - depth=3: Direct properties and children properties and children's children are included.  - depth=... and so on (optional) (default to 0)
     x_contract_number = 56 # int | Users with multiple contracts must provide the contract number, for which all API requests are to be executed. (optional)
@@ -423,14 +423,14 @@ Creates a firewall rule for the specified NIC.
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.models.firewall_rule import FirewallRule
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.models.firewall_rule import FirewallRule
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -440,7 +440,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -452,13 +452,13 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.FirewallRulesApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.FirewallRulesApi(api_client)
     datacenter_id = 'datacenter_id_example' # str | The unique ID of the data center.
     server_id = 'server_id_example' # str | The unique ID of the server.
     nic_id = 'nic_id_example' # str | The unique ID of the NIC.
-    firewallrule = openapi_client.FirewallRule() # FirewallRule | The firewall rule to create.
+    firewallrule = ionos_cloud_api_v6_client.FirewallRule() # FirewallRule | The firewall rule to create.
     pretty = True # bool | Controls whether the response is pretty-printed (with indentations and new lines). (optional) (default to True)
     depth = 0 # int | Controls the detail depth of the response objects.  GET /datacenters/[ID]  - depth=0: Only direct properties are included; children (servers and other elements) are not included.  - depth=1: Direct properties and children references are included.  - depth=2: Direct properties and children properties are included.  - depth=3: Direct properties and children properties and children's children are included.  - depth=... and so on (optional) (default to 0)
     x_contract_number = 56 # int | Users with multiple contracts must provide the contract number, for which all API requests are to be executed. (optional)
@@ -522,14 +522,14 @@ Modifies the properties of the specified firewall rule.
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.models.firewall_rule import FirewallRule
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.models.firewall_rule import FirewallRule
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -539,7 +539,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -551,14 +551,14 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.FirewallRulesApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.FirewallRulesApi(api_client)
     datacenter_id = 'datacenter_id_example' # str | The unique ID of the data center.
     server_id = 'server_id_example' # str | The unique ID of the server.
     nic_id = 'nic_id_example' # str | The unique ID of the NIC.
     firewallrule_id = 'firewallrule_id_example' # str | The unique ID of the firewall rule.
-    firewallrule = openapi_client.FirewallRule() # FirewallRule | The modified firewall rule.
+    firewallrule = ionos_cloud_api_v6_client.FirewallRule() # FirewallRule | The modified firewall rule.
     pretty = True # bool | Controls whether the response is pretty-printed (with indentations and new lines). (optional) (default to True)
     depth = 0 # int | Controls the detail depth of the response objects.  GET /datacenters/[ID]  - depth=0: Only direct properties are included; children (servers and other elements) are not included.  - depth=1: Direct properties and children references are included.  - depth=2: Direct properties and children properties are included.  - depth=3: Direct properties and children properties and children's children are included.  - depth=... and so on (optional) (default to 0)
     x_contract_number = 56 # int | Users with multiple contracts must provide the contract number, for which all API requests are to be executed. (optional)

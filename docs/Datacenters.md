@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.datacenters import Datacenters
+from ionos_cloud_api_v6_client.models.datacenters import Datacenters
 
 # TODO update the JSON string below
 json = "{}"

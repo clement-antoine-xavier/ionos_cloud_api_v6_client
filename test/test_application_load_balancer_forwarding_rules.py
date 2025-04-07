@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.application_load_balancer_forwarding_rules import ApplicationLoadBalancerForwardingRules
+from ionos_cloud_api_v6_client.models.application_load_balancer_forwarding_rules import ApplicationLoadBalancerForwardingRules
 
 class TestApplicationLoadBalancerForwardingRules(unittest.TestCase):
     """ApplicationLoadBalancerForwardingRules unit test stubs"""
@@ -39,11 +39,11 @@ class TestApplicationLoadBalancerForwardingRules(unittest.TestCase):
                 type = 'datacenter',
                 href = '<RESOURCE-URI>',
                 items = [
-                    openapi_client.models.application_load_balancer_forwarding_rule.ApplicationLoadBalancerForwardingRule(
+                    ionos_cloud_api_v6_client.models.application_load_balancer_forwarding_rule.ApplicationLoadBalancerForwardingRule(
                         id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                         type = 'forwarding-rule', 
                         href = '<RESOURCE-URI>', 
-                        metadata = openapi_client.models.datacenter_element_metadata.DatacenterElementMetadata(
+                        metadata = ionos_cloud_api_v6_client.models.datacenter_element_metadata.DatacenterElementMetadata(
                             etag = '45480eb3fbfc31f1d916c1eaa4abdcc3', 
                             created_date = '2015-12-04T14:34:09.809Z', 
                             created_by = 'user@example.com', 
@@ -52,7 +52,7 @@ class TestApplicationLoadBalancerForwardingRules(unittest.TestCase):
                             last_modified_by = 'user@example.com', 
                             last_modified_by_user_id = '63cef532-26fe-4a64-a4e0-de7c8a506c90', 
                             state = 'AVAILABLE', ), 
-                        properties = openapi_client.models.application_load_balancer_forwarding_rule_properties.ApplicationLoadBalancerForwardingRuleProperties(
+                        properties = ionos_cloud_api_v6_client.models.application_load_balancer_forwarding_rule_properties.ApplicationLoadBalancerForwardingRuleProperties(
                             name = 'My Application Load Balancer forwarding rule', 
                             protocol = 'HTTP', 
                             listener_ip = '81.173.1.2', 
@@ -60,7 +60,7 @@ class TestApplicationLoadBalancerForwardingRules(unittest.TestCase):
                             client_timeout = 50, 
                             server_certificates = ["3839d24f-57bd-408e-96ee-8da3d2db5a03","a6b4f7d5-b23a-4f53-b83e-8a6528ab4612"], 
                             http_rules = [
-                                openapi_client.models.application_load_balancer_http_rule.ApplicationLoadBalancerHttpRule(
+                                ionos_cloud_api_v6_client.models.application_load_balancer_http_rule.ApplicationLoadBalancerHttpRule(
                                     name = 'My Application Load Balancer HTTP rule', 
                                     type = 'FORWARD', 
                                     target_group = '96e514d0-73e4-4abd-8fbc-c0f53b79bfae', 
@@ -70,7 +70,7 @@ class TestApplicationLoadBalancerForwardingRules(unittest.TestCase):
                                     response_message = 'Application Down', 
                                     content_type = 'text/html', 
                                     conditions = [
-                                        openapi_client.models.application_load_balancer_http_rule_condition.ApplicationLoadBalancerHttpRuleCondition(
+                                        ionos_cloud_api_v6_client.models.application_load_balancer_http_rule_condition.ApplicationLoadBalancerHttpRuleCondition(
                                             type = 'HEADER', 
                                             condition = 'STARTS_WITH', 
                                             negate = False, 
@@ -81,7 +81,7 @@ class TestApplicationLoadBalancerForwardingRules(unittest.TestCase):
                     ],
                 offset = 0,
                 limit = 1000,
-                links = openapi_client.models.pagination_links.PaginationLinks(
+                links = ionos_cloud_api_v6_client.models.pagination_links.PaginationLinks(
                     prev = '<PREVIOUS-PAGE-URI>', 
                     self = '<THIS-PAGE-URI>', 
                     next = '<NEXT-PAGE-URI>', )

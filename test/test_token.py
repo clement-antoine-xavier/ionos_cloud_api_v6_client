@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.token import Token
+from ionos_cloud_api_v6_client.models.token import Token
 
 class TestToken(unittest.TestCase):
     """Token unit test stubs"""

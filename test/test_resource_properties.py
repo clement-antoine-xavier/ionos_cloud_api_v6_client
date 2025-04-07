@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.resource_properties import ResourceProperties
+from ionos_cloud_api_v6_client.models.resource_properties import ResourceProperties
 
 class TestResourceProperties(unittest.TestCase):
     """ResourceProperties unit test stubs"""

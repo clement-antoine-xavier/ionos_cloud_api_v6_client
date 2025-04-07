@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.loadbalancers import Loadbalancers
+from ionos_cloud_api_v6_client.models.loadbalancers import Loadbalancers
 
 # TODO update the JSON string below
 json = "{}"

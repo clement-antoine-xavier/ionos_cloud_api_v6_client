@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.private_cross_connects import PrivateCrossConnects
+from ionos_cloud_api_v6_client.models.private_cross_connects import PrivateCrossConnects
 
 # TODO update the JSON string below
 json = "{}"

@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.contract_properties import ContractProperties
+from ionos_cloud_api_v6_client.models.contract_properties import ContractProperties
 
 # TODO update the JSON string below
 json = "{}"

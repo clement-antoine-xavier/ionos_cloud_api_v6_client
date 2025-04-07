@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.request_properties import RequestProperties
+from ionos_cloud_api_v6_client.models.request_properties import RequestProperties
 
 class TestRequestProperties(unittest.TestCase):
     """RequestProperties unit test stubs"""

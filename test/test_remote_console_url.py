@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.remote_console_url import RemoteConsoleUrl
+from ionos_cloud_api_v6_client.models.remote_console_url import RemoteConsoleUrl
 
 class TestRemoteConsoleUrl(unittest.TestCase):
     """RemoteConsoleUrl unit test stubs"""

@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.nat_gateway_put import NatGatewayPut
+from ionos_cloud_api_v6_client.models.nat_gateway_put import NatGatewayPut
 
 class TestNatGatewayPut(unittest.TestCase):
     """NatGatewayPut unit test stubs"""
@@ -38,22 +38,22 @@ class TestNatGatewayPut(unittest.TestCase):
                 id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c',
                 type = 'datacenter',
                 href = '<RESOURCE-URI>',
-                properties = openapi_client.models.nat_gateway_properties.NatGatewayProperties(
+                properties = ionos_cloud_api_v6_client.models.nat_gateway_properties.NatGatewayProperties(
                     name = 'My NAT Gateway', 
                     public_ips = ["81.173.1.2","82.231.2.5","92.221.2.4"], 
                     lans = [
-                        openapi_client.models.nat_gateway_lan_properties.NatGatewayLanProperties(
+                        ionos_cloud_api_v6_client.models.nat_gateway_lan_properties.NatGatewayLanProperties(
                             id = 3, 
                             gateway_ips = ["10.12.1.2/24","10.11.2.5/24","10.11.2.4"], )
                         ], )
             )
         else:
             return NatGatewayPut(
-                properties = openapi_client.models.nat_gateway_properties.NatGatewayProperties(
+                properties = ionos_cloud_api_v6_client.models.nat_gateway_properties.NatGatewayProperties(
                     name = 'My NAT Gateway', 
                     public_ips = ["81.173.1.2","82.231.2.5","92.221.2.4"], 
                     lans = [
-                        openapi_client.models.nat_gateway_lan_properties.NatGatewayLanProperties(
+                        ionos_cloud_api_v6_client.models.nat_gateway_lan_properties.NatGatewayLanProperties(
                             id = 3, 
                             gateway_ips = ["10.12.1.2/24","10.11.2.5/24","10.11.2.4"], )
                         ], ),

@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.restore_snapshot import RestoreSnapshot
+from ionos_cloud_api_v6_client.models.restore_snapshot import RestoreSnapshot
 
 class TestRestoreSnapshot(unittest.TestCase):
     """RestoreSnapshot unit test stubs"""
@@ -35,7 +35,7 @@ class TestRestoreSnapshot(unittest.TestCase):
         model = RestoreSnapshot()
         if include_optional:
             return RestoreSnapshot(
-                properties = openapi_client.models.restore_snapshot_properties.RestoreSnapshotProperties(
+                properties = ionos_cloud_api_v6_client.models.restore_snapshot_properties.RestoreSnapshotProperties(
                     snapshot_id = '', )
             )
         else:

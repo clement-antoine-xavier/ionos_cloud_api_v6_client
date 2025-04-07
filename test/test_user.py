@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.user import User
+from ionos_cloud_api_v6_client.models.user import User
 
 class TestUser(unittest.TestCase):
     """User unit test stubs"""
@@ -38,7 +38,7 @@ class TestUser(unittest.TestCase):
                 id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c',
                 type = 'datacenter',
                 href = '<RESOURCE-URI>',
-                metadata = openapi_client.models.user_metadata.UserMetadata(
+                metadata = ionos_cloud_api_v6_client.models.user_metadata.UserMetadata(
                     etag = '45480eb3fbfc31f1d916c1eaa4abdcc3', 
                     created_date = '2015-12-04T14:34:09.809Z', 
                     created_by = 'user@example.com', 
@@ -47,7 +47,7 @@ class TestUser(unittest.TestCase):
                     last_modified_by = 'user@example.com', 
                     last_modified_by_user_id = '63cef532-26fe-4a64-a4e0-de7c8a506c90', 
                     last_login = '2015-12-04T14:34:09.809Z', ),
-                properties = openapi_client.models.user_properties.UserProperties(
+                properties = ionos_cloud_api_v6_client.models.user_properties.UserProperties(
                     firstname = '', 
                     lastname = '', 
                     email = '', 
@@ -56,17 +56,17 @@ class TestUser(unittest.TestCase):
                     sec_auth_active = True, 
                     s3_canonical_user_id = '', 
                     active = True, ),
-                entities = openapi_client.models.users_entities.UsersEntities(
-                    owns = openapi_client.models.resources_users.ResourcesUsers(
+                entities = ionos_cloud_api_v6_client.models.users_entities.UsersEntities(
+                    owns = ionos_cloud_api_v6_client.models.resources_users.ResourcesUsers(
                         id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                         type = 'collection', 
                         href = 'https://<API_HOST>/cloudapi/v6/um/users/9b1b4c62-1466-11e7-87d3-d7bb7dac0087/owns', 
                         items = [
-                            openapi_client.models.resource.Resource(
+                            ionos_cloud_api_v6_client.models.resource.Resource(
                                 id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                                 type = 'group', 
                                 href = 'https://<API_HOST>/cloudapi/v6/um/resources/datacenter/15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
-                                metadata = openapi_client.models.datacenter_element_metadata.DatacenterElementMetadata(
+                                metadata = ionos_cloud_api_v6_client.models.datacenter_element_metadata.DatacenterElementMetadata(
                                     etag = '45480eb3fbfc31f1d916c1eaa4abdcc3', 
                                     created_date = '2015-12-04T14:34:09.809Z', 
                                     created_by = 'user@example.com', 
@@ -75,18 +75,18 @@ class TestUser(unittest.TestCase):
                                     last_modified_by = 'user@example.com', 
                                     last_modified_by_user_id = '63cef532-26fe-4a64-a4e0-de7c8a506c90', 
                                     state = 'AVAILABLE', ), 
-                                properties = openapi_client.models.resource_properties.ResourceProperties(
+                                properties = ionos_cloud_api_v6_client.models.resource_properties.ResourceProperties(
                                     name = '', 
                                     sec_auth_protection = True, ), )
                             ], ), 
-                    groups = openapi_client.models.group_users.GroupUsers(
+                    groups = ionos_cloud_api_v6_client.models.group_users.GroupUsers(
                         id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                         type = 'group', 
                         href = 'https://<API_HOST>/cloudapi/v6/um/users/9b1b4c62-1466-11e7-87d3-d7bb7dac0087/groups', ), )
             )
         else:
             return User(
-                properties = openapi_client.models.user_properties.UserProperties(
+                properties = ionos_cloud_api_v6_client.models.user_properties.UserProperties(
                     firstname = '', 
                     lastname = '', 
                     email = '', 

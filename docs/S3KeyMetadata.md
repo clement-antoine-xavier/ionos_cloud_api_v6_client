@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.s3_key_metadata import S3KeyMetadata
+from ionos_cloud_api_v6_client.models.s3_key_metadata import S3KeyMetadata
 
 # TODO update the JSON string below
 json = "{}"

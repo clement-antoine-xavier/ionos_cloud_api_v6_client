@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.templates import Templates
+from ionos_cloud_api_v6_client.models.templates import Templates
 
 # TODO update the JSON string below
 json = "{}"

@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.loadbalancer_entities import LoadbalancerEntities
+from ionos_cloud_api_v6_client.models.loadbalancer_entities import LoadbalancerEntities
 
 # TODO update the JSON string below
 json = "{}"

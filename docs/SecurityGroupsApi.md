@@ -1,4 +1,4 @@
-# openapi_client.SecurityGroupsApi
+# ionos_cloud_api_v6_client.SecurityGroupsApi
 
 All URIs are relative to *https://api.ionos.com/cloudapi/v6*
 
@@ -33,13 +33,13 @@ Deletes the specified Security Group.
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -49,7 +49,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -61,9 +61,9 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SecurityGroupsApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.SecurityGroupsApi(api_client)
     datacenter_id = 'datacenter_id_example' # str | The unique ID of the data center.
     security_group_id = 'security_group_id_example' # str | The unique ID of the Security Group.
     pretty = True # bool | Controls whether the response is pretty-printed (with indentations and new lines). (optional) (default to True)
@@ -121,14 +121,14 @@ Retrieves the attributes of a given Security Group.
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.models.security_group import SecurityGroup
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.models.security_group import SecurityGroup
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -138,7 +138,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -150,9 +150,9 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SecurityGroupsApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.SecurityGroupsApi(api_client)
     datacenter_id = 'datacenter_id_example' # str | The unique ID of the data center
     security_group_id = 'security_group_id_example' # str | The unique ID of the security group.
     pretty = True # bool | Controls whether the response is pretty-printed (with indentations and new lines). (optional) (default to True)
@@ -214,13 +214,13 @@ Removes the specific Firewall Rule from the Security Group and delete the Firewa
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -230,7 +230,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -242,9 +242,9 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SecurityGroupsApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.SecurityGroupsApi(api_client)
     datacenter_id = 'datacenter_id_example' # str | The unique ID of the data center
     security_group_id = 'security_group_id_example' # str | The unique ID of the security group.
     rule_id = 'rule_id_example' # str | The unique ID of the firewall rule.
@@ -302,14 +302,14 @@ Create one firewall rule and attach it to the existing security group
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.models.firewall_rule import FirewallRule
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.models.firewall_rule import FirewallRule
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -319,7 +319,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -331,12 +331,12 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SecurityGroupsApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.SecurityGroupsApi(api_client)
     datacenter_id = 'datacenter_id_example' # str | The unique ID of the data center
     security_group_id = 'security_group_id_example' # str | The unique ID of the security group.
-    firewall_rule = openapi_client.FirewallRule() # FirewallRule | The firewall to be attached (or created and attached).
+    firewall_rule = ionos_cloud_api_v6_client.FirewallRule() # FirewallRule | The firewall to be attached (or created and attached).
 
     try:
         # Create Firewall rule to a Security Group
@@ -393,14 +393,14 @@ Retrieve a list of available security groups.
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.models.security_groups import SecurityGroups
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.models.security_groups import SecurityGroups
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -410,7 +410,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -422,9 +422,9 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SecurityGroupsApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.SecurityGroupsApi(api_client)
     datacenter_id = 'datacenter_id_example' # str | The unique ID of the data center.
     pretty = True # bool | Controls whether the response is pretty-printed (with indentations and new lines). (optional) (default to True)
     depth = 0 # int | Controls the detail depth of the response objects. GET /datacenters/[ID]   - depth=0: Only direct properties are included;              children (servers and other elements) are not included.   - depth=1: Direct properties and children references are included.   - depth=2: Direct properties and children properties are included.   - depth=3: Direct properties and children properties and children's children are included.   - depth=... and so on (optional) (default to 0)
@@ -488,15 +488,15 @@ Modify the properties of the specified Security Group within the data center.
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.models.security_group import SecurityGroup
-from openapi_client.models.security_group_properties import SecurityGroupProperties
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.models.security_group import SecurityGroup
+from ionos_cloud_api_v6_client.models.security_group_properties import SecurityGroupProperties
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -506,7 +506,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -518,12 +518,12 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SecurityGroupsApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.SecurityGroupsApi(api_client)
     datacenter_id = 'datacenter_id_example' # str | The unique ID of the data center.
     security_group_id = 'security_group_id_example' # str | The unique ID of the Security Group.
-    security_group = openapi_client.SecurityGroupProperties() # SecurityGroupProperties | The modified Security Group
+    security_group = ionos_cloud_api_v6_client.SecurityGroupProperties() # SecurityGroupProperties | The modified Security Group
     pretty = True # bool | Controls whether the response is pretty-printed (with indentations and new lines). (optional) (default to True)
     depth = 0 # int | Controls the detail depth of the response objects. GET /datacenters/[ID]   - depth=0: Only direct properties are included;              children (servers and other elements) are not included.   - depth=1: Direct properties and children references are included.   - depth=2: Direct properties and children properties are included.   - depth=3: Direct properties and children properties and children's children are included.   - depth=... and so on (optional) (default to 0)
 
@@ -584,15 +584,15 @@ Creates a security group within the data center. This will allow you to define w
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.models.security_group import SecurityGroup
-from openapi_client.models.security_group_request import SecurityGroupRequest
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.models.security_group import SecurityGroup
+from ionos_cloud_api_v6_client.models.security_group_request import SecurityGroupRequest
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -602,7 +602,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -614,11 +614,11 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SecurityGroupsApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.SecurityGroupsApi(api_client)
     datacenter_id = 'datacenter_id_example' # str | The unique ID of the data center.
-    security_group = openapi_client.SecurityGroupRequest() # SecurityGroupRequest | The security group to be created
+    security_group = ionos_cloud_api_v6_client.SecurityGroupRequest() # SecurityGroupRequest | The security group to be created
     pretty = True # bool | Controls whether the response is pretty-printed (with indentations and new lines). (optional) (default to True)
     depth = 0 # int | Controls the detail depth of the response objects. GET /datacenters/[ID]   - depth=0: Only direct properties are included;              children (servers and other elements) are not included.   - depth=1: Direct properties and children references are included.   - depth=2: Direct properties and children properties are included.   - depth=3: Direct properties and children properties and children's children are included.   - depth=... and so on (optional) (default to 0)
 
@@ -678,15 +678,15 @@ Modify the properties of the specified Security Group within the data center.
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.models.security_group import SecurityGroup
-from openapi_client.models.security_group_request import SecurityGroupRequest
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.models.security_group import SecurityGroup
+from ionos_cloud_api_v6_client.models.security_group_request import SecurityGroupRequest
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -696,7 +696,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -708,12 +708,12 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SecurityGroupsApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.SecurityGroupsApi(api_client)
     datacenter_id = 'datacenter_id_example' # str | The unique ID of the data center.
     security_group_id = 'security_group_id_example' # str | The unique ID of the Security Group.
-    security_group = openapi_client.SecurityGroupRequest() # SecurityGroupRequest | The modified Security Group
+    security_group = ionos_cloud_api_v6_client.SecurityGroupRequest() # SecurityGroupRequest | The modified Security Group
     pretty = True # bool | Controls whether the response is pretty-printed (with indentations and new lines). (optional) (default to True)
     depth = 0 # int | Controls the detail depth of the response objects. GET /datacenters/[ID]   - depth=0: Only direct properties are included;              children (servers and other elements) are not included.   - depth=1: Direct properties and children references are included.   - depth=2: Direct properties and children properties are included.   - depth=3: Direct properties and children properties and children's children are included.   - depth=... and so on (optional) (default to 0)
 
@@ -774,14 +774,14 @@ Retrieve the properties of the specified Security Group rule.
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.models.firewall_rule import FirewallRule
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.models.firewall_rule import FirewallRule
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -791,7 +791,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -803,9 +803,9 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SecurityGroupsApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.SecurityGroupsApi(api_client)
     datacenter_id = 'datacenter_id_example' # str | The unique ID of the data center.
     security_group_id = 'security_group_id_example' # str | The unique ID of the Security Group.
     rule_id = 'rule_id_example' # str | The unique ID of the Security Group rule.
@@ -869,14 +869,14 @@ List all rules for the specified Security Group.
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.models.firewall_rules import FirewallRules
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.models.firewall_rules import FirewallRules
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -886,7 +886,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -898,9 +898,9 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SecurityGroupsApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.SecurityGroupsApi(api_client)
     datacenter_id = 'datacenter_id_example' # str | The unique ID of the data center.
     security_group_id = 'security_group_id_example' # str | The unique ID of the security group.
     pretty = True # bool | Controls whether the response is pretty-printed (with indentations and new lines). (optional) (default to True)
@@ -966,15 +966,15 @@ Update the properties of the specified Security Group rule.
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.models.firewall_rule import FirewallRule
-from openapi_client.models.firewallrule_properties import FirewallruleProperties
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.models.firewall_rule import FirewallRule
+from ionos_cloud_api_v6_client.models.firewallrule_properties import FirewallruleProperties
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -984,7 +984,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -996,13 +996,13 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SecurityGroupsApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.SecurityGroupsApi(api_client)
     datacenter_id = 'datacenter_id_example' # str | The unique ID of the data center.
     security_group_id = 'security_group_id_example' # str | The unique ID of the security group.
     rule_id = 'rule_id_example' # str | The unique ID of the Security Group Rule.
-    rule = openapi_client.FirewallruleProperties() # FirewallruleProperties | The properties of the Security Group Rule to be updated.
+    rule = ionos_cloud_api_v6_client.FirewallruleProperties() # FirewallruleProperties | The properties of the Security Group Rule to be updated.
     pretty = True # bool | Controls whether the response is pretty-printed (with indentations and new lines). (optional) (default to True)
     depth = 0 # int | Controls the detail depth of the response objects. GET /datacenters/[ID]   - depth=0: Only direct properties are included;              children (servers and other elements) are not included.   - depth=1: Direct properties and children references are included.   - depth=2: Direct properties and children properties are included.   - depth=3: Direct properties and children properties and children's children are included.   - depth=... and so on (optional) (default to 0)
 
@@ -1064,14 +1064,14 @@ Modifies the properties of the specified Security Group Rule.
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.models.firewall_rule import FirewallRule
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.models.firewall_rule import FirewallRule
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -1081,7 +1081,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -1093,13 +1093,13 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SecurityGroupsApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.SecurityGroupsApi(api_client)
     datacenter_id = 'datacenter_id_example' # str | The unique ID of the data center.
     security_group_id = 'security_group_id_example' # str | The unique ID of the security group.
     rule_id = 'rule_id_example' # str | The unique ID of the Security Group Rule.
-    rule = openapi_client.FirewallRule() # FirewallRule | The modified Security Group Rule.
+    rule = ionos_cloud_api_v6_client.FirewallRule() # FirewallRule | The modified Security Group Rule.
     pretty = True # bool | Controls whether the response is pretty-printed (with indentations and new lines). (optional) (default to True)
     depth = 0 # int | Controls the detail depth of the response objects. GET /datacenters/[ID]   - depth=0: Only direct properties are included;              children (servers and other elements) are not included.   - depth=1: Direct properties and children references are included.   - depth=2: Direct properties and children properties are included.   - depth=3: Direct properties and children properties and children's children are included.   - depth=... and so on (optional) (default to 0)
 
@@ -1161,15 +1161,15 @@ Updating the list of Security Groups attached to an existing NIC specified by it
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.models.list_of_ids import ListOfIds
-from openapi_client.models.security_groups import SecurityGroups
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.models.list_of_ids import ListOfIds
+from ionos_cloud_api_v6_client.models.security_groups import SecurityGroups
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -1179,7 +1179,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -1191,13 +1191,13 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SecurityGroupsApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.SecurityGroupsApi(api_client)
     datacenter_id = 'datacenter_id_example' # str | The unique ID of the data center.
     server_id = 'server_id_example' # str | The unique ID of the server.
     nic_id = 'nic_id_example' # str | The unique ID of the server.
-    securitygroups = openapi_client.ListOfIds() # ListOfIds | The list of NIC attached Security Groups IDs.
+    securitygroups = ionos_cloud_api_v6_client.ListOfIds() # ListOfIds | The list of NIC attached Security Groups IDs.
     pretty = True # bool | Controls whether the response is pretty-printed (with indentations and new lines). (optional) (default to True)
     depth = 0 # int | Controls the detail depth of the response objects. GET /datacenters/[ID]   - depth=0: Only direct properties are included;              children (servers and other elements) are not included.   - depth=1: Direct properties and children references are included.   - depth=2: Direct properties and children properties are included.   - depth=3: Direct properties and children properties and children's children are included.   - depth=... and so on (optional) (default to 0)
 
@@ -1259,15 +1259,15 @@ Updating the list of Security Groups attached to an existing server specified by
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.models.list_of_ids import ListOfIds
-from openapi_client.models.security_groups import SecurityGroups
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.models.list_of_ids import ListOfIds
+from ionos_cloud_api_v6_client.models.security_groups import SecurityGroups
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -1277,7 +1277,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -1289,12 +1289,12 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SecurityGroupsApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.SecurityGroupsApi(api_client)
     datacenter_id = 'datacenter_id_example' # str | The unique ID of the data center.
     server_id = 'server_id_example' # str | The unique ID of the server.
-    securitygroups = openapi_client.ListOfIds() # ListOfIds | The list of server attached Security Groups IDs.
+    securitygroups = ionos_cloud_api_v6_client.ListOfIds() # ListOfIds | The list of server attached Security Groups IDs.
     pretty = True # bool | Controls whether the response is pretty-printed (with indentations and new lines). (optional) (default to True)
     depth = 0 # int | Controls the detail depth of the response objects. GET /datacenters/[ID]   - depth=0: Only direct properties are included;              children (servers and other elements) are not included.   - depth=1: Direct properties and children references are included.   - depth=2: Direct properties and children properties are included.   - depth=3: Direct properties and children properties and children's children are included.   - depth=... and so on (optional) (default to 0)
 

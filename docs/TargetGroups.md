@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.target_groups import TargetGroups
+from ionos_cloud_api_v6_client.models.target_groups import TargetGroups
 
 # TODO update the JSON string below
 json = "{}"

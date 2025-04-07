@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.network_load_balancer_forwarding_rule_health_check import NetworkLoadBalancerForwardingRuleHealthCheck
+from ionos_cloud_api_v6_client.models.network_load_balancer_forwarding_rule_health_check import NetworkLoadBalancerForwardingRuleHealthCheck
 
 class TestNetworkLoadBalancerForwardingRuleHealthCheck(unittest.TestCase):
     """NetworkLoadBalancerForwardingRuleHealthCheck unit test stubs"""

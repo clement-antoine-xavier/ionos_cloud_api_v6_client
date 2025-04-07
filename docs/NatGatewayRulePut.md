@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.nat_gateway_rule_put import NatGatewayRulePut
+from ionos_cloud_api_v6_client.models.nat_gateway_rule_put import NatGatewayRulePut
 
 # TODO update the JSON string below
 json = "{}"

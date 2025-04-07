@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.application_load_balancer_http_rule_condition import ApplicationLoadBalancerHttpRuleCondition
+from ionos_cloud_api_v6_client.models.application_load_balancer_http_rule_condition import ApplicationLoadBalancerHttpRuleCondition
 
 class TestApplicationLoadBalancerHttpRuleCondition(unittest.TestCase):
     """ApplicationLoadBalancerHttpRuleCondition unit test stubs"""

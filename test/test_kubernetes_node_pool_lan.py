@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.kubernetes_node_pool_lan import KubernetesNodePoolLan
+from ionos_cloud_api_v6_client.models.kubernetes_node_pool_lan import KubernetesNodePoolLan
 
 class TestKubernetesNodePoolLan(unittest.TestCase):
     """KubernetesNodePoolLan unit test stubs"""
@@ -39,7 +39,7 @@ class TestKubernetesNodePoolLan(unittest.TestCase):
                 id = 3,
                 dhcp = True,
                 routes = [
-                    openapi_client.models.kubernetes_node_pool_lan_routes.KubernetesNodePoolLanRoutes(
+                    ionos_cloud_api_v6_client.models.kubernetes_node_pool_lan_routes.KubernetesNodePoolLanRoutes(
                         network = '1.2.3.4/24', 
                         gateway_ip = '10.1.5.16', )
                     ]

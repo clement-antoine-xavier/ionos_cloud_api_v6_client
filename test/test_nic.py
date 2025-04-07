@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.nic import Nic
+from ionos_cloud_api_v6_client.models.nic import Nic
 
 class TestNic(unittest.TestCase):
     """Nic unit test stubs"""
@@ -38,7 +38,7 @@ class TestNic(unittest.TestCase):
                 id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c',
                 type = 'datacenter',
                 href = '<RESOURCE-URI>',
-                metadata = openapi_client.models.datacenter_element_metadata.DatacenterElementMetadata(
+                metadata = ionos_cloud_api_v6_client.models.datacenter_element_metadata.DatacenterElementMetadata(
                     etag = '45480eb3fbfc31f1d916c1eaa4abdcc3', 
                     created_date = '2015-12-04T14:34:09.809Z', 
                     created_by = 'user@example.com', 
@@ -47,7 +47,7 @@ class TestNic(unittest.TestCase):
                     last_modified_by = 'user@example.com', 
                     last_modified_by_user_id = '63cef532-26fe-4a64-a4e0-de7c8a506c90', 
                     state = 'AVAILABLE', ),
-                properties = openapi_client.models.nic_properties.NicProperties(
+                properties = ionos_cloud_api_v6_client.models.nic_properties.NicProperties(
                     name = 'My resource', 
                     mac = '00:0a:95:9d:68:16', 
                     ips = ["10.160.12.12"], 
@@ -61,17 +61,17 @@ class TestNic(unittest.TestCase):
                     device_number = 3, 
                     pci_slot = 7, 
                     vnet = '', ),
-                entities = openapi_client.models.nic_entities.NicEntities(
-                    flowlogs = openapi_client.models.flow_logs.FlowLogs(
+                entities = ionos_cloud_api_v6_client.models.nic_entities.NicEntities(
+                    flowlogs = ionos_cloud_api_v6_client.models.flow_logs.FlowLogs(
                         id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                         type = 'collection', 
                         href = '<RESOURCE-URI>', 
                         items = [
-                            openapi_client.models.flow_log.FlowLog(
+                            ionos_cloud_api_v6_client.models.flow_log.FlowLog(
                                 id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                                 type = 'flow-log', 
                                 href = '<RESOURCE-URI>', 
-                                metadata = openapi_client.models.datacenter_element_metadata.DatacenterElementMetadata(
+                                metadata = ionos_cloud_api_v6_client.models.datacenter_element_metadata.DatacenterElementMetadata(
                                     etag = '45480eb3fbfc31f1d916c1eaa4abdcc3', 
                                     created_date = '2015-12-04T14:34:09.809Z', 
                                     created_by = 'user@example.com', 
@@ -80,7 +80,7 @@ class TestNic(unittest.TestCase):
                                     last_modified_by = 'user@example.com', 
                                     last_modified_by_user_id = '63cef532-26fe-4a64-a4e0-de7c8a506c90', 
                                     state = 'AVAILABLE', ), 
-                                properties = openapi_client.models.flow_log_properties.FlowLogProperties(
+                                properties = ionos_cloud_api_v6_client.models.flow_log_properties.FlowLogProperties(
                                     name = 'My resource', 
                                     action = 'ACCEPTED', 
                                     direction = 'INGRESS', 
@@ -88,17 +88,17 @@ class TestNic(unittest.TestCase):
                             ], 
                         offset = 0, 
                         limit = 1000, 
-                        _links = openapi_client.models.pagination_links.PaginationLinks(
+                        _links = ionos_cloud_api_v6_client.models.pagination_links.PaginationLinks(
                             prev = '<PREVIOUS-PAGE-URI>', 
                             self = '<THIS-PAGE-URI>', 
                             next = '<NEXT-PAGE-URI>', ), ), 
-                    firewallrules = openapi_client.models.firewall_rules.FirewallRules(
+                    firewallrules = ionos_cloud_api_v6_client.models.firewall_rules.FirewallRules(
                         id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                         type = 'collection', 
                         href = '<RESOURCE-URI>', 
                         offset = 0, 
                         limit = 1000, ), 
-                    securitygroups = openapi_client.models.security_groups.SecurityGroups(
+                    securitygroups = ionos_cloud_api_v6_client.models.security_groups.SecurityGroups(
                         id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                         type = 'collection', 
                         href = '<RESOURCE-URI>', 
@@ -107,7 +107,7 @@ class TestNic(unittest.TestCase):
             )
         else:
             return Nic(
-                properties = openapi_client.models.nic_properties.NicProperties(
+                properties = ionos_cloud_api_v6_client.models.nic_properties.NicProperties(
                     name = 'My resource', 
                     mac = '00:0a:95:9d:68:16', 
                     ips = ["10.160.12.12"], 

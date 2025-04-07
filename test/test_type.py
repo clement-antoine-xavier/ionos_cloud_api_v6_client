@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.type import Type
+from ionos_cloud_api_v6_client.models.type import Type
 
 class TestType(unittest.TestCase):
     """Type unit test stubs"""

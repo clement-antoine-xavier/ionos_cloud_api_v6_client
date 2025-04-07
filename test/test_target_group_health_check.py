@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.target_group_health_check import TargetGroupHealthCheck
+from ionos_cloud_api_v6_client.models.target_group_health_check import TargetGroupHealthCheck
 
 class TestTargetGroupHealthCheck(unittest.TestCase):
     """TargetGroupHealthCheck unit test stubs"""

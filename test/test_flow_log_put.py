@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.flow_log_put import FlowLogPut
+from ionos_cloud_api_v6_client.models.flow_log_put import FlowLogPut
 
 class TestFlowLogPut(unittest.TestCase):
     """FlowLogPut unit test stubs"""
@@ -38,7 +38,7 @@ class TestFlowLogPut(unittest.TestCase):
                 id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c',
                 type = 'datacenter',
                 href = '<RESOURCE-URI>',
-                properties = openapi_client.models.flow_log_properties.FlowLogProperties(
+                properties = ionos_cloud_api_v6_client.models.flow_log_properties.FlowLogProperties(
                     name = 'My resource', 
                     action = 'ACCEPTED', 
                     direction = 'INGRESS', 
@@ -46,7 +46,7 @@ class TestFlowLogPut(unittest.TestCase):
             )
         else:
             return FlowLogPut(
-                properties = openapi_client.models.flow_log_properties.FlowLogProperties(
+                properties = ionos_cloud_api_v6_client.models.flow_log_properties.FlowLogProperties(
                     name = 'My resource', 
                     action = 'ACCEPTED', 
                     direction = 'INGRESS', 

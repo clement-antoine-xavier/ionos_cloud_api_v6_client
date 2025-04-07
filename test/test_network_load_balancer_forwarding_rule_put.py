@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.network_load_balancer_forwarding_rule_put import NetworkLoadBalancerForwardingRulePut
+from ionos_cloud_api_v6_client.models.network_load_balancer_forwarding_rule_put import NetworkLoadBalancerForwardingRulePut
 
 class TestNetworkLoadBalancerForwardingRulePut(unittest.TestCase):
     """NetworkLoadBalancerForwardingRulePut unit test stubs"""
@@ -38,19 +38,19 @@ class TestNetworkLoadBalancerForwardingRulePut(unittest.TestCase):
                 id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c',
                 type = 'datacenter',
                 href = '<RESOURCE-URI>',
-                properties = openapi_client.models.network_load_balancer_forwarding_rule_properties.NetworkLoadBalancerForwardingRuleProperties(
+                properties = ionos_cloud_api_v6_client.models.network_load_balancer_forwarding_rule_properties.NetworkLoadBalancerForwardingRuleProperties(
                     name = 'My Network Load Balancer forwarding rule', 
                     algorithm = 'ROUND_ROBIN', 
                     protocol = 'HTTP', 
                     listener_ip = '81.173.1.2', 
                     listener_port = 8080, 
-                    health_check = openapi_client.models.network_load_balancer_forwarding_rule_health_check.NetworkLoadBalancerForwardingRuleHealthCheck(
+                    health_check = ionos_cloud_api_v6_client.models.network_load_balancer_forwarding_rule_health_check.NetworkLoadBalancerForwardingRuleHealthCheck(
                         client_timeout = 50, 
                         connect_timeout = 5000, 
                         target_timeout = 50000, 
                         retries = 3, ), 
                     targets = [
-                        openapi_client.models.network_load_balancer_forwarding_rule_target.NetworkLoadBalancerForwardingRuleTarget(
+                        ionos_cloud_api_v6_client.models.network_load_balancer_forwarding_rule_target.NetworkLoadBalancerForwardingRuleTarget(
                             ip = '22.231.2.2', 
                             port = 8080, 
                             weight = 123, 
@@ -59,19 +59,19 @@ class TestNetworkLoadBalancerForwardingRulePut(unittest.TestCase):
             )
         else:
             return NetworkLoadBalancerForwardingRulePut(
-                properties = openapi_client.models.network_load_balancer_forwarding_rule_properties.NetworkLoadBalancerForwardingRuleProperties(
+                properties = ionos_cloud_api_v6_client.models.network_load_balancer_forwarding_rule_properties.NetworkLoadBalancerForwardingRuleProperties(
                     name = 'My Network Load Balancer forwarding rule', 
                     algorithm = 'ROUND_ROBIN', 
                     protocol = 'HTTP', 
                     listener_ip = '81.173.1.2', 
                     listener_port = 8080, 
-                    health_check = openapi_client.models.network_load_balancer_forwarding_rule_health_check.NetworkLoadBalancerForwardingRuleHealthCheck(
+                    health_check = ionos_cloud_api_v6_client.models.network_load_balancer_forwarding_rule_health_check.NetworkLoadBalancerForwardingRuleHealthCheck(
                         client_timeout = 50, 
                         connect_timeout = 5000, 
                         target_timeout = 50000, 
                         retries = 3, ), 
                     targets = [
-                        openapi_client.models.network_load_balancer_forwarding_rule_target.NetworkLoadBalancerForwardingRuleTarget(
+                        ionos_cloud_api_v6_client.models.network_load_balancer_forwarding_rule_target.NetworkLoadBalancerForwardingRuleTarget(
                             ip = '22.231.2.2', 
                             port = 8080, 
                             weight = 123, 

@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.datacenter_element_metadata import DatacenterElementMetadata
+from ionos_cloud_api_v6_client.models.datacenter_element_metadata import DatacenterElementMetadata
 
 # TODO update the JSON string below
 json = "{}"

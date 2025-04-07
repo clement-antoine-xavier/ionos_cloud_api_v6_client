@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.security_group_properties import SecurityGroupProperties
+from ionos_cloud_api_v6_client.models.security_group_properties import SecurityGroupProperties
 
 class TestSecurityGroupProperties(unittest.TestCase):
     """SecurityGroupProperties unit test stubs"""

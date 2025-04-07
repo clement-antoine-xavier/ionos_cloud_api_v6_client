@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.no_state_meta_data import NoStateMetaData
+from ionos_cloud_api_v6_client.models.no_state_meta_data import NoStateMetaData
 
 # TODO update the JSON string below
 json = "{}"

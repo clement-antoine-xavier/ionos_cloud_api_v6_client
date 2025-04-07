@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.nic_put import NicPut
+from ionos_cloud_api_v6_client.models.nic_put import NicPut
 
 class TestNicPut(unittest.TestCase):
     """NicPut unit test stubs"""
@@ -38,7 +38,7 @@ class TestNicPut(unittest.TestCase):
                 id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c',
                 type = 'datacenter',
                 href = '<RESOURCE-URI>',
-                properties = openapi_client.models.nic_properties.NicProperties(
+                properties = ionos_cloud_api_v6_client.models.nic_properties.NicProperties(
                     name = 'My resource', 
                     mac = '00:0a:95:9d:68:16', 
                     ips = ["10.160.12.12"], 
@@ -55,7 +55,7 @@ class TestNicPut(unittest.TestCase):
             )
         else:
             return NicPut(
-                properties = openapi_client.models.nic_properties.NicProperties(
+                properties = ionos_cloud_api_v6_client.models.nic_properties.NicProperties(
                     name = 'My resource', 
                     mac = '00:0a:95:9d:68:16', 
                     ips = ["10.160.12.12"], 

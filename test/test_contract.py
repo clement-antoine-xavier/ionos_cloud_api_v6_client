@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.contract import Contract
+from ionos_cloud_api_v6_client.models.contract import Contract
 
 class TestContract(unittest.TestCase):
     """Contract unit test stubs"""
@@ -36,12 +36,12 @@ class TestContract(unittest.TestCase):
         if include_optional:
             return Contract(
                 type = 'datacenter',
-                properties = openapi_client.models.contract_properties.ContractProperties(
+                properties = ionos_cloud_api_v6_client.models.contract_properties.ContractProperties(
                     contract_number = 12345, 
                     owner = 'user@example.com', 
                     status = 'BILLABLE', 
                     reg_domain = 'ionos.de', 
-                    resource_limits = openapi_client.models.resource_limits.ResourceLimits(
+                    resource_limits = ionos_cloud_api_v6_client.models.resource_limits.ResourceLimits(
                         cores_per_server = 4, 
                         cores_per_contract = 8, 
                         cores_provisioned = 7, 
@@ -70,12 +70,12 @@ class TestContract(unittest.TestCase):
             )
         else:
             return Contract(
-                properties = openapi_client.models.contract_properties.ContractProperties(
+                properties = ionos_cloud_api_v6_client.models.contract_properties.ContractProperties(
                     contract_number = 12345, 
                     owner = 'user@example.com', 
                     status = 'BILLABLE', 
                     reg_domain = 'ionos.de', 
-                    resource_limits = openapi_client.models.resource_limits.ResourceLimits(
+                    resource_limits = ionos_cloud_api_v6_client.models.resource_limits.ResourceLimits(
                         cores_per_server = 4, 
                         cores_per_contract = 8, 
                         cores_provisioned = 7, 

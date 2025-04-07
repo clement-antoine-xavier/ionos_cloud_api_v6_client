@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.volume import Volume
+from ionos_cloud_api_v6_client.models.volume import Volume
 
 class TestVolume(unittest.TestCase):
     """Volume unit test stubs"""
@@ -38,7 +38,7 @@ class TestVolume(unittest.TestCase):
                 id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c',
                 type = 'datacenter',
                 href = '<RESOURCE-URI>',
-                metadata = openapi_client.models.datacenter_element_metadata.DatacenterElementMetadata(
+                metadata = ionos_cloud_api_v6_client.models.datacenter_element_metadata.DatacenterElementMetadata(
                     etag = '45480eb3fbfc31f1d916c1eaa4abdcc3', 
                     created_date = '2015-12-04T14:34:09.809Z', 
                     created_by = 'user@example.com', 
@@ -47,7 +47,7 @@ class TestVolume(unittest.TestCase):
                     last_modified_by = 'user@example.com', 
                     last_modified_by_user_id = '63cef532-26fe-4a64-a4e0-de7c8a506c90', 
                     state = 'AVAILABLE', ),
-                properties = openapi_client.models.volume_properties.VolumeProperties(
+                properties = ionos_cloud_api_v6_client.models.volume_properties.VolumeProperties(
                     name = 'My resource', 
                     type = 'HDD', 
                     size = 100, 
@@ -76,7 +76,7 @@ class TestVolume(unittest.TestCase):
             )
         else:
             return Volume(
-                properties = openapi_client.models.volume_properties.VolumeProperties(
+                properties = ionos_cloud_api_v6_client.models.volume_properties.VolumeProperties(
                     name = 'My resource', 
                     type = 'HDD', 
                     size = 100, 

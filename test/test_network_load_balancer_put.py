@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.network_load_balancer_put import NetworkLoadBalancerPut
+from ionos_cloud_api_v6_client.models.network_load_balancer_put import NetworkLoadBalancerPut
 
 class TestNetworkLoadBalancerPut(unittest.TestCase):
     """NetworkLoadBalancerPut unit test stubs"""
@@ -38,7 +38,7 @@ class TestNetworkLoadBalancerPut(unittest.TestCase):
                 id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c',
                 type = 'datacenter',
                 href = '<RESOURCE-URI>',
-                properties = openapi_client.models.network_load_balancer_properties.NetworkLoadBalancerProperties(
+                properties = ionos_cloud_api_v6_client.models.network_load_balancer_properties.NetworkLoadBalancerProperties(
                     name = 'My Network Load Balancer', 
                     listener_lan = 1, 
                     ips = ["81.173.1.2","22.231.2.2","22.231.2.3"], 
@@ -49,7 +49,7 @@ class TestNetworkLoadBalancerPut(unittest.TestCase):
             )
         else:
             return NetworkLoadBalancerPut(
-                properties = openapi_client.models.network_load_balancer_properties.NetworkLoadBalancerProperties(
+                properties = ionos_cloud_api_v6_client.models.network_load_balancer_properties.NetworkLoadBalancerProperties(
                     name = 'My Network Load Balancer', 
                     listener_lan = 1, 
                     ips = ["81.173.1.2","22.231.2.2","22.231.2.3"], 

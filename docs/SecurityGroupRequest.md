@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.security_group_request import SecurityGroupRequest
+from ionos_cloud_api_v6_client.models.security_group_request import SecurityGroupRequest
 
 # TODO update the JSON string below
 json = "{}"

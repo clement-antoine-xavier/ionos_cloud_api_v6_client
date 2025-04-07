@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.datacenter_properties import DatacenterProperties
+from ionos_cloud_api_v6_client.models.datacenter_properties import DatacenterProperties
 
 class TestDatacenterProperties(unittest.TestCase):
     """DatacenterProperties unit test stubs"""
@@ -42,7 +42,7 @@ class TestDatacenterProperties(unittest.TestCase):
                 features = ["SSD"],
                 sec_auth_protection = True,
                 cpu_architecture = [
-                    openapi_client.models.cpu_architecture_properties.CpuArchitectureProperties(
+                    ionos_cloud_api_v6_client.models.cpu_architecture_properties.CpuArchitectureProperties(
                         cpu_family = 'INTEL_ICELAKE', 
                         max_cores = 62, 
                         max_ram = 245760, 

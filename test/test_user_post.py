@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.user_post import UserPost
+from ionos_cloud_api_v6_client.models.user_post import UserPost
 
 class TestUserPost(unittest.TestCase):
     """UserPost unit test stubs"""
@@ -35,7 +35,7 @@ class TestUserPost(unittest.TestCase):
         model = UserPost()
         if include_optional:
             return UserPost(
-                properties = openapi_client.models.user_properties_post.UserPropertiesPost(
+                properties = ionos_cloud_api_v6_client.models.user_properties_post.UserPropertiesPost(
                     firstname = '', 
                     lastname = '', 
                     email = '', 
@@ -47,7 +47,7 @@ class TestUserPost(unittest.TestCase):
             )
         else:
             return UserPost(
-                properties = openapi_client.models.user_properties_post.UserPropertiesPost(
+                properties = ionos_cloud_api_v6_client.models.user_properties_post.UserPropertiesPost(
                     firstname = '', 
                     lastname = '', 
                     email = '', 

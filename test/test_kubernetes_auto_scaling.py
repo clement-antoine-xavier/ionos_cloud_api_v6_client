@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.kubernetes_auto_scaling import KubernetesAutoScaling
+from ionos_cloud_api_v6_client.models.kubernetes_auto_scaling import KubernetesAutoScaling
 
 class TestKubernetesAutoScaling(unittest.TestCase):
     """KubernetesAutoScaling unit test stubs"""

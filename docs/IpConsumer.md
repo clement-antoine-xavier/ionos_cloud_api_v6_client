@@ -18,7 +18,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.ip_consumer import IpConsumer
+from ionos_cloud_api_v6_client.models.ip_consumer import IpConsumer
 
 # TODO update the JSON string below
 json = "{}"

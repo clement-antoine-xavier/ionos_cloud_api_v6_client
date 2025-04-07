@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.user_put import UserPut
+from ionos_cloud_api_v6_client.models.user_put import UserPut
 
 class TestUserPut(unittest.TestCase):
     """UserPut unit test stubs"""
@@ -36,7 +36,7 @@ class TestUserPut(unittest.TestCase):
         if include_optional:
             return UserPut(
                 id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c',
-                properties = openapi_client.models.user_properties_put.UserPropertiesPut(
+                properties = ionos_cloud_api_v6_client.models.user_properties_put.UserPropertiesPut(
                     firstname = '', 
                     lastname = '', 
                     email = '', 
@@ -48,7 +48,7 @@ class TestUserPut(unittest.TestCase):
             )
         else:
             return UserPut(
-                properties = openapi_client.models.user_properties_put.UserPropertiesPut(
+                properties = ionos_cloud_api_v6_client.models.user_properties_put.UserPropertiesPut(
                     firstname = '', 
                     lastname = '', 
                     email = '', 

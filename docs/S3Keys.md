@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.s3_keys import S3Keys
+from ionos_cloud_api_v6_client.models.s3_keys import S3Keys
 
 # TODO update the JSON string below
 json = "{}"

@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.kubernetes_node_pool_for_put import KubernetesNodePoolForPut
+from ionos_cloud_api_v6_client.models.kubernetes_node_pool_for_put import KubernetesNodePoolForPut
 
 # TODO update the JSON string below
 json = "{}"

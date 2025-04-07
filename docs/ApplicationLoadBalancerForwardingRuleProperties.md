@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.application_load_balancer_forwarding_rule_properties import ApplicationLoadBalancerForwardingRuleProperties
+from ionos_cloud_api_v6_client.models.application_load_balancer_forwarding_rule_properties import ApplicationLoadBalancerForwardingRuleProperties
 
 # TODO update the JSON string below
 json = "{}"

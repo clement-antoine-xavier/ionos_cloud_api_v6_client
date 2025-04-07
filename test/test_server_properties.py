@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.server_properties import ServerProperties
+from ionos_cloud_api_v6_client.models.server_properties import ServerProperties
 
 class TestServerProperties(unittest.TestCase):
     """ServerProperties unit test stubs"""
@@ -42,11 +42,11 @@ class TestServerProperties(unittest.TestCase):
                 ram = 4096,
                 availability_zone = 'AUTO',
                 vm_state = 'RUNNING',
-                boot_cdrom = openapi_client.models.resource_reference.ResourceReference(
+                boot_cdrom = ionos_cloud_api_v6_client.models.resource_reference.ResourceReference(
                     id = '', 
                     type = 'resource', 
                     href = '<RESOURCE-URI>', ),
-                boot_volume = openapi_client.models.resource_reference.ResourceReference(
+                boot_volume = ionos_cloud_api_v6_client.models.resource_reference.ResourceReference(
                     id = '', 
                     type = 'resource', 
                     href = '<RESOURCE-URI>', ),

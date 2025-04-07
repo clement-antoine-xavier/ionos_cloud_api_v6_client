@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.peer import Peer
+from ionos_cloud_api_v6_client.models.peer import Peer
 
 # TODO update the JSON string below
 json = "{}"

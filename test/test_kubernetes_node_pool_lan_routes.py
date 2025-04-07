@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.kubernetes_node_pool_lan_routes import KubernetesNodePoolLanRoutes
+from ionos_cloud_api_v6_client.models.kubernetes_node_pool_lan_routes import KubernetesNodePoolLanRoutes
 
 class TestKubernetesNodePoolLanRoutes(unittest.TestCase):
     """KubernetesNodePoolLanRoutes unit test stubs"""

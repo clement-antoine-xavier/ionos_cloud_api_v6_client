@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.resource_reference import ResourceReference
+from ionos_cloud_api_v6_client.models.resource_reference import ResourceReference
 
 class TestResourceReference(unittest.TestCase):
     """ResourceReference unit test stubs"""

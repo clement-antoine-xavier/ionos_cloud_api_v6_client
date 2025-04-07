@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.cpu_architecture_properties import CpuArchitectureProperties
+from ionos_cloud_api_v6_client.models.cpu_architecture_properties import CpuArchitectureProperties
 
 class TestCpuArchitectureProperties(unittest.TestCase):
     """CpuArchitectureProperties unit test stubs"""

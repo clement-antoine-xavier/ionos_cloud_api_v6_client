@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.loadbalancer import Loadbalancer
+from ionos_cloud_api_v6_client.models.loadbalancer import Loadbalancer
 
 class TestLoadbalancer(unittest.TestCase):
     """Loadbalancer unit test stubs"""
@@ -38,7 +38,7 @@ class TestLoadbalancer(unittest.TestCase):
                 id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c',
                 type = 'datacenter',
                 href = '<RESOURCE-URI>',
-                metadata = openapi_client.models.datacenter_element_metadata.DatacenterElementMetadata(
+                metadata = ionos_cloud_api_v6_client.models.datacenter_element_metadata.DatacenterElementMetadata(
                     etag = '45480eb3fbfc31f1d916c1eaa4abdcc3', 
                     created_date = '2015-12-04T14:34:09.809Z', 
                     created_by = 'user@example.com', 
@@ -47,21 +47,21 @@ class TestLoadbalancer(unittest.TestCase):
                     last_modified_by = 'user@example.com', 
                     last_modified_by_user_id = '63cef532-26fe-4a64-a4e0-de7c8a506c90', 
                     state = 'AVAILABLE', ),
-                properties = openapi_client.models.loadbalancer_properties.LoadbalancerProperties(
+                properties = ionos_cloud_api_v6_client.models.loadbalancer_properties.LoadbalancerProperties(
                     name = 'My resource', 
                     ip = '22.231.113.64', 
                     dhcp = True, ),
-                entities = openapi_client.models.loadbalancer_entities.LoadbalancerEntities(
-                    balancednics = openapi_client.models.balanced_nics.BalancedNics(
+                entities = ionos_cloud_api_v6_client.models.loadbalancer_entities.LoadbalancerEntities(
+                    balancednics = ionos_cloud_api_v6_client.models.balanced_nics.BalancedNics(
                         id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                         type = 'collection', 
                         href = '<RESOURCE-URI>', 
                         items = [
-                            openapi_client.models.nic.Nic(
+                            ionos_cloud_api_v6_client.models.nic.Nic(
                                 id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                                 type = 'nic', 
                                 href = '<RESOURCE-URI>', 
-                                metadata = openapi_client.models.datacenter_element_metadata.DatacenterElementMetadata(
+                                metadata = ionos_cloud_api_v6_client.models.datacenter_element_metadata.DatacenterElementMetadata(
                                     etag = '45480eb3fbfc31f1d916c1eaa4abdcc3', 
                                     created_date = '2015-12-04T14:34:09.809Z', 
                                     created_by = 'user@example.com', 
@@ -70,7 +70,7 @@ class TestLoadbalancer(unittest.TestCase):
                                     last_modified_by = 'user@example.com', 
                                     last_modified_by_user_id = '63cef532-26fe-4a64-a4e0-de7c8a506c90', 
                                     state = 'AVAILABLE', ), 
-                                properties = openapi_client.models.nic_properties.NicProperties(
+                                properties = ionos_cloud_api_v6_client.models.nic_properties.NicProperties(
                                     name = 'My resource', 
                                     mac = '00:0a:95:9d:68:16', 
                                     ips = ["10.160.12.12"], 
@@ -87,14 +87,14 @@ class TestLoadbalancer(unittest.TestCase):
                             ], 
                         offset = 0, 
                         limit = 1000, 
-                        _links = openapi_client.models.pagination_links.PaginationLinks(
+                        _links = ionos_cloud_api_v6_client.models.pagination_links.PaginationLinks(
                             prev = '<PREVIOUS-PAGE-URI>', 
                             self = '<THIS-PAGE-URI>', 
                             next = '<NEXT-PAGE-URI>', ), ), )
             )
         else:
             return Loadbalancer(
-                properties = openapi_client.models.loadbalancer_properties.LoadbalancerProperties(
+                properties = ionos_cloud_api_v6_client.models.loadbalancer_properties.LoadbalancerProperties(
                     name = 'My resource', 
                     ip = '22.231.113.64', 
                     dhcp = True, ),

@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.loadbalancer_properties import LoadbalancerProperties
+from ionos_cloud_api_v6_client.models.loadbalancer_properties import LoadbalancerProperties
 
 # TODO update the JSON string below
 json = "{}"

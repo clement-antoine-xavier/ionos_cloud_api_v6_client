@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.datacenter_post import DatacenterPost
+from ionos_cloud_api_v6_client.models.datacenter_post import DatacenterPost
 
 class TestDatacenterPost(unittest.TestCase):
     """DatacenterPost unit test stubs"""
@@ -35,7 +35,7 @@ class TestDatacenterPost(unittest.TestCase):
         model = DatacenterPost()
         if include_optional:
             return DatacenterPost(
-                properties = openapi_client.models.datacenter_properties_post.DatacenterPropertiesPost(
+                properties = ionos_cloud_api_v6_client.models.datacenter_properties_post.DatacenterPropertiesPost(
                     name = 'Production Datacenter', 
                     description = 'My Production Datacenter', 
                     location = 'us/las', 
@@ -43,7 +43,7 @@ class TestDatacenterPost(unittest.TestCase):
                     features = ["SSD"], 
                     sec_auth_protection = True, 
                     cpu_architecture = [
-                        openapi_client.models.cpu_architecture_properties.CpuArchitectureProperties(
+                        ionos_cloud_api_v6_client.models.cpu_architecture_properties.CpuArchitectureProperties(
                             cpu_family = 'INTEL_ICELAKE', 
                             max_cores = 62, 
                             max_ram = 245760, 
@@ -51,17 +51,17 @@ class TestDatacenterPost(unittest.TestCase):
                         ], 
                     ipv6_cidr_block = '2001:db8:b06d:8f00::/56', 
                     create_default_security_group = True, ),
-                entities = openapi_client.models.datacenter_entities.DatacenterEntities(
-                    servers = openapi_client.models.servers.Servers(
+                entities = ionos_cloud_api_v6_client.models.datacenter_entities.DatacenterEntities(
+                    servers = ionos_cloud_api_v6_client.models.servers.Servers(
                         id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                         type = 'collection', 
                         href = '<RESOURCE-URI>', 
                         items = [
-                            openapi_client.models.server.Server(
+                            ionos_cloud_api_v6_client.models.server.Server(
                                 id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                                 type = 'server', 
                                 href = '<RESOURCE-URI>', 
-                                metadata = openapi_client.models.datacenter_element_metadata.DatacenterElementMetadata(
+                                metadata = ionos_cloud_api_v6_client.models.datacenter_element_metadata.DatacenterElementMetadata(
                                     etag = '45480eb3fbfc31f1d916c1eaa4abdcc3', 
                                     created_date = '2015-12-04T14:34:09.809Z', 
                                     created_by = 'user@example.com', 
@@ -70,7 +70,7 @@ class TestDatacenterPost(unittest.TestCase):
                                     last_modified_by = 'user@example.com', 
                                     last_modified_by_user_id = '63cef532-26fe-4a64-a4e0-de7c8a506c90', 
                                     state = 'AVAILABLE', ), 
-                                properties = openapi_client.models.server_properties.ServerProperties(
+                                properties = ionos_cloud_api_v6_client.models.server_properties.ServerProperties(
                                     template_uuid = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                                     name = 'My resource', 
                                     hostname = 'myHostname', 
@@ -78,11 +78,11 @@ class TestDatacenterPost(unittest.TestCase):
                                     ram = 4096, 
                                     availability_zone = 'AUTO', 
                                     vm_state = 'RUNNING', 
-                                    boot_cdrom = openapi_client.models.resource_reference.ResourceReference(
+                                    boot_cdrom = ionos_cloud_api_v6_client.models.resource_reference.ResourceReference(
                                         id = '', 
                                         type = 'resource', 
                                         href = '<RESOURCE-URI>', ), 
-                                    boot_volume = openapi_client.models.resource_reference.ResourceReference(
+                                    boot_volume = ionos_cloud_api_v6_client.models.resource_reference.ResourceReference(
                                         id = '', 
                                         type = 'resource', 
                                         href = '<RESOURCE-URI>', ), 
@@ -90,68 +90,68 @@ class TestDatacenterPost(unittest.TestCase):
                                     type = 'CUBE', 
                                     placement_group_id = '', 
                                     nic_multi_queue = True, ), 
-                                entities = openapi_client.models.server_entities.ServerEntities(
-                                    cdroms = openapi_client.models.cdroms.Cdroms(
+                                entities = ionos_cloud_api_v6_client.models.server_entities.ServerEntities(
+                                    cdroms = ionos_cloud_api_v6_client.models.cdroms.Cdroms(
                                         id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                                         type = 'collection', 
                                         href = '<RESOURCE-URI>', 
                                         offset = 0, 
                                         limit = 1000, 
-                                        _links = openapi_client.models.pagination_links.PaginationLinks(
+                                        _links = ionos_cloud_api_v6_client.models.pagination_links.PaginationLinks(
                                             prev = '<PREVIOUS-PAGE-URI>', 
                                             self = '<THIS-PAGE-URI>', 
                                             next = '<NEXT-PAGE-URI>', ), ), 
-                                    volumes = openapi_client.models.attached_volumes.AttachedVolumes(
+                                    volumes = ionos_cloud_api_v6_client.models.attached_volumes.AttachedVolumes(
                                         id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                                         type = 'collection', 
                                         href = '<RESOURCE-URI>', 
                                         offset = 0, 
                                         limit = 1000, ), 
-                                    nics = openapi_client.models.nics.Nics(
+                                    nics = ionos_cloud_api_v6_client.models.nics.Nics(
                                         id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                                         type = 'collection', 
                                         href = '<RESOURCE-URI>', 
                                         offset = 0, 
                                         limit = 1000, ), 
-                                    securitygroups = openapi_client.models.security_groups.SecurityGroups(
+                                    securitygroups = ionos_cloud_api_v6_client.models.security_groups.SecurityGroups(
                                         id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                                         type = 'collection', 
                                         href = '<RESOURCE-URI>', ), ), )
                             ], 
                         offset = 0, 
                         limit = 1000, 
-                        _links = openapi_client.models.pagination_links.PaginationLinks(
+                        _links = ionos_cloud_api_v6_client.models.pagination_links.PaginationLinks(
                             prev = '<PREVIOUS-PAGE-URI>', 
                             self = '<THIS-PAGE-URI>', 
                             next = '<NEXT-PAGE-URI>', ), ), 
-                    volumes = openapi_client.models.volumes.Volumes(
+                    volumes = ionos_cloud_api_v6_client.models.volumes.Volumes(
                         id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                         type = 'collection', 
                         href = '<RESOURCE-URI>', ), 
-                    loadbalancers = openapi_client.models.loadbalancers.Loadbalancers(
+                    loadbalancers = ionos_cloud_api_v6_client.models.loadbalancers.Loadbalancers(
                         id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                         type = 'collection', 
                         href = '<RESOURCE-URI>', ), 
-                    lans = openapi_client.models.lans.Lans(
+                    lans = ionos_cloud_api_v6_client.models.lans.Lans(
                         id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                         type = 'collection', 
                         href = '<RESOURCE-URI>', ), 
-                    networkloadbalancers = openapi_client.models.network_load_balancers.NetworkLoadBalancers(
+                    networkloadbalancers = ionos_cloud_api_v6_client.models.network_load_balancers.NetworkLoadBalancers(
                         id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                         type = 'collection', 
                         href = '<RESOURCE-URI>', ), 
-                    natgateways = openapi_client.models.nat_gateways.NatGateways(
+                    natgateways = ionos_cloud_api_v6_client.models.nat_gateways.NatGateways(
                         id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                         type = 'collection', 
                         href = '<RESOURCE-URI>', ), 
-                    securitygroups = openapi_client.models.security_groups.SecurityGroups(
+                    securitygroups = ionos_cloud_api_v6_client.models.security_groups.SecurityGroups(
                         id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                         type = 'collection', 
                         href = '<RESOURCE-URI>', ), )
             )
         else:
             return DatacenterPost(
-                properties = openapi_client.models.datacenter_properties_post.DatacenterPropertiesPost(
+                properties = ionos_cloud_api_v6_client.models.datacenter_properties_post.DatacenterPropertiesPost(
                     name = 'Production Datacenter', 
                     description = 'My Production Datacenter', 
                     location = 'us/las', 
@@ -159,7 +159,7 @@ class TestDatacenterPost(unittest.TestCase):
                     features = ["SSD"], 
                     sec_auth_protection = True, 
                     cpu_architecture = [
-                        openapi_client.models.cpu_architecture_properties.CpuArchitectureProperties(
+                        ionos_cloud_api_v6_client.models.cpu_architecture_properties.CpuArchitectureProperties(
                             cpu_family = 'INTEL_ICELAKE', 
                             max_cores = 62, 
                             max_ram = 245760, 

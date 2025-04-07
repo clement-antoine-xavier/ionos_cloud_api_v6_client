@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.users_entities import UsersEntities
+from ionos_cloud_api_v6_client.models.users_entities import UsersEntities
 
 class TestUsersEntities(unittest.TestCase):
     """UsersEntities unit test stubs"""
@@ -35,16 +35,16 @@ class TestUsersEntities(unittest.TestCase):
         model = UsersEntities()
         if include_optional:
             return UsersEntities(
-                owns = openapi_client.models.resources_users.ResourcesUsers(
+                owns = ionos_cloud_api_v6_client.models.resources_users.ResourcesUsers(
                     id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                     type = 'collection', 
                     href = 'https://<API_HOST>/cloudapi/v6/um/users/9b1b4c62-1466-11e7-87d3-d7bb7dac0087/owns', 
                     items = [
-                        openapi_client.models.resource.Resource(
+                        ionos_cloud_api_v6_client.models.resource.Resource(
                             id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                             type = 'group', 
                             href = 'https://<API_HOST>/cloudapi/v6/um/resources/datacenter/15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
-                            metadata = openapi_client.models.datacenter_element_metadata.DatacenterElementMetadata(
+                            metadata = ionos_cloud_api_v6_client.models.datacenter_element_metadata.DatacenterElementMetadata(
                                 etag = '45480eb3fbfc31f1d916c1eaa4abdcc3', 
                                 created_date = '2015-12-04T14:34:09.809Z', 
                                 created_by = 'user@example.com', 
@@ -53,25 +53,25 @@ class TestUsersEntities(unittest.TestCase):
                                 last_modified_by = 'user@example.com', 
                                 last_modified_by_user_id = '63cef532-26fe-4a64-a4e0-de7c8a506c90', 
                                 state = 'AVAILABLE', ), 
-                            properties = openapi_client.models.resource_properties.ResourceProperties(
+                            properties = ionos_cloud_api_v6_client.models.resource_properties.ResourceProperties(
                                 name = '', 
                                 sec_auth_protection = True, ), 
-                            entities = openapi_client.models.resource_entities.ResourceEntities(
-                                groups = openapi_client.models.resource_groups.ResourceGroups(
+                            entities = ionos_cloud_api_v6_client.models.resource_entities.ResourceEntities(
+                                groups = ionos_cloud_api_v6_client.models.resource_groups.ResourceGroups(
                                     id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                                     type = 'collection', 
                                     href = 'https://<API_HOST>/cloudapi/v6/um/groups/30740c22-1def-11e7-aac9-d7a3646ca7fd/resources', ), ), )
                         ], ),
-                groups = openapi_client.models.group_users.GroupUsers(
+                groups = ionos_cloud_api_v6_client.models.group_users.GroupUsers(
                     id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                     type = 'group', 
                     href = 'https://<API_HOST>/cloudapi/v6/um/users/9b1b4c62-1466-11e7-87d3-d7bb7dac0087/groups', 
                     items = [
-                        openapi_client.models.group.Group(
+                        ionos_cloud_api_v6_client.models.group.Group(
                             id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                             type = 'group', 
                             href = 'https://<API_HOST>/cloudapi/v6/um/groups/15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
-                            properties = openapi_client.models.group_properties.GroupProperties(
+                            properties = ionos_cloud_api_v6_client.models.group_properties.GroupProperties(
                                 name = 'My resource', 
                                 create_datacenter = True, 
                                 create_snapshot = True, 
@@ -98,12 +98,12 @@ class TestUsersEntities(unittest.TestCase):
                                 access_and_manage_ai_model_hub = True, 
                                 access_and_manage_iam_resources = True, 
                                 create_network_security_groups = True, ), 
-                            entities = openapi_client.models.group_entities.GroupEntities(
-                                users = openapi_client.models.group_members.GroupMembers(
+                            entities = ionos_cloud_api_v6_client.models.group_entities.GroupEntities(
+                                users = ionos_cloud_api_v6_client.models.group_members.GroupMembers(
                                     id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                                     type = 'collection', 
                                     href = 'https://<API_HOST>/cloudapi/v6/um/groups/30740c22-1def-11e7-aac9-d7a3646ca7fd/users', ), 
-                                resources = openapi_client.models.resource_groups.ResourceGroups(
+                                resources = ionos_cloud_api_v6_client.models.resource_groups.ResourceGroups(
                                     id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                                     type = 'collection', 
                                     href = 'https://<API_HOST>/cloudapi/v6/um/groups/30740c22-1def-11e7-aac9-d7a3646ca7fd/resources', ), ), )

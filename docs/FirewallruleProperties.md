@@ -20,7 +20,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.firewallrule_properties import FirewallruleProperties
+from ionos_cloud_api_v6_client.models.firewallrule_properties import FirewallruleProperties
 
 # TODO update the JSON string below
 json = "{}"

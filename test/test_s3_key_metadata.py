@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.s3_key_metadata import S3KeyMetadata
+from ionos_cloud_api_v6_client.models.s3_key_metadata import S3KeyMetadata
 
 class TestS3KeyMetadata(unittest.TestCase):
     """S3KeyMetadata unit test stubs"""

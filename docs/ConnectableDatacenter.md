@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.connectable_datacenter import ConnectableDatacenter
+from ionos_cloud_api_v6_client.models.connectable_datacenter import ConnectableDatacenter
 
 # TODO update the JSON string below
 json = "{}"

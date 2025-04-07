@@ -1,4 +1,4 @@
-# openapi_client.NetworkLoadBalancersApi
+# ionos_cloud_api_v6_client.NetworkLoadBalancersApi
 
 All URIs are relative to *https://api.ionos.com/cloudapi/v6*
 
@@ -37,13 +37,13 @@ Remove the specified Network Load Balancer from the data center.
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -53,7 +53,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -65,9 +65,9 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.NetworkLoadBalancersApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.NetworkLoadBalancersApi(api_client)
     datacenter_id = 'datacenter_id_example' # str | The unique ID of the data center.
     network_load_balancer_id = 'network_load_balancer_id_example' # str | The unique ID of the Network Load Balancer.
     pretty = True # bool | Controls whether the response is pretty-printed (with indentations and new lines). (optional) (default to True)
@@ -129,14 +129,14 @@ Retrieve the properties of the specified Network Load Balancer within the data c
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.models.network_load_balancer import NetworkLoadBalancer
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.models.network_load_balancer import NetworkLoadBalancer
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -146,7 +146,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -158,9 +158,9 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.NetworkLoadBalancersApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.NetworkLoadBalancersApi(api_client)
     datacenter_id = 'datacenter_id_example' # str | The unique ID of the data center.
     network_load_balancer_id = 'network_load_balancer_id_example' # str | The unique ID of the Network Load Balancer.
     pretty = True # bool | Controls whether the response is pretty-printed (with indentations and new lines). (optional) (default to True)
@@ -224,13 +224,13 @@ Delete the specified Network Load Balancer Flow Log.
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -240,7 +240,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -252,9 +252,9 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.NetworkLoadBalancersApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.NetworkLoadBalancersApi(api_client)
     datacenter_id = 'datacenter_id_example' # str | The unique ID of the data center.
     network_load_balancer_id = 'network_load_balancer_id_example' # str | The unique ID of the Network Load Balancer.
     flow_log_id = 'flow_log_id_example' # str | The unique ID of the Flow Log.
@@ -318,14 +318,14 @@ Retrieve the specified Network Load Balancer Flow Log.
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.models.flow_log import FlowLog
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.models.flow_log import FlowLog
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -335,7 +335,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -347,9 +347,9 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.NetworkLoadBalancersApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.NetworkLoadBalancersApi(api_client)
     datacenter_id = 'datacenter_id_example' # str | The unique ID of the data center.
     network_load_balancer_id = 'network_load_balancer_id_example' # str | The unique ID of the Network Load Balancer.
     flow_log_id = 'flow_log_id_example' # str | The unique ID of the Flow Log.
@@ -415,14 +415,14 @@ List all the Flow Logs for the specified Network Load Balancer.
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.models.flow_logs import FlowLogs
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.models.flow_logs import FlowLogs
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -432,7 +432,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -444,9 +444,9 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.NetworkLoadBalancersApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.NetworkLoadBalancersApi(api_client)
     datacenter_id = 'datacenter_id_example' # str | The unique ID of the data center.
     network_load_balancer_id = 'network_load_balancer_id_example' # str | The unique ID of the Network Load Balancer.
     pretty = True # bool | Controls whether the response is pretty-printed (with indentations and new lines). (optional) (default to True)
@@ -510,15 +510,15 @@ Update the properties of the specified Network Load Balancer Flow Log.
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.models.flow_log import FlowLog
-from openapi_client.models.flow_log_properties import FlowLogProperties
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.models.flow_log import FlowLog
+from ionos_cloud_api_v6_client.models.flow_log_properties import FlowLogProperties
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -528,7 +528,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -540,13 +540,13 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.NetworkLoadBalancersApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.NetworkLoadBalancersApi(api_client)
     datacenter_id = 'datacenter_id_example' # str | The unique ID of the data center.
     network_load_balancer_id = 'network_load_balancer_id_example' # str | The unique ID of the Network Load Balancer.
     flow_log_id = 'flow_log_id_example' # str | The unique ID of the Flow Log.
-    network_load_balancer_flow_log_properties = openapi_client.FlowLogProperties() # FlowLogProperties | The properties of the Flow Log to be updated.
+    network_load_balancer_flow_log_properties = ionos_cloud_api_v6_client.FlowLogProperties() # FlowLogProperties | The properties of the Flow Log to be updated.
     pretty = True # bool | Controls whether the response is pretty-printed (with indentations and new lines). (optional) (default to True)
     depth = 0 # int | Controls the detail depth of the response objects.  GET /datacenters/[ID]  - depth=0: Only direct properties are included; children (servers and other elements) are not included.  - depth=1: Direct properties and children references are included.  - depth=2: Direct properties and children properties are included.  - depth=3: Direct properties and children properties and children's children are included.  - depth=... and so on (optional) (default to 0)
     x_contract_number = 56 # int | Users with multiple contracts must provide the contract number, for which all API requests are to be executed. (optional)
@@ -610,14 +610,14 @@ Adds a new Flow Log for the Network Load Balancer.
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.models.flow_log import FlowLog
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.models.flow_log import FlowLog
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -627,7 +627,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -639,12 +639,12 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.NetworkLoadBalancersApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.NetworkLoadBalancersApi(api_client)
     datacenter_id = 'datacenter_id_example' # str | The unique ID of the data center.
     network_load_balancer_id = 'network_load_balancer_id_example' # str | The unique ID of the Network Load Balancer.
-    network_load_balancer_flow_log = openapi_client.FlowLog() # FlowLog | The Flow Log to create.
+    network_load_balancer_flow_log = ionos_cloud_api_v6_client.FlowLog() # FlowLog | The Flow Log to create.
     pretty = True # bool | Controls whether the response is pretty-printed (with indentations and new lines). (optional) (default to True)
     depth = 0 # int | Controls the detail depth of the response objects.  GET /datacenters/[ID]  - depth=0: Only direct properties are included; children (servers and other elements) are not included.  - depth=1: Direct properties and children references are included.  - depth=2: Direct properties and children properties are included.  - depth=3: Direct properties and children properties and children's children are included.  - depth=... and so on (optional) (default to 0)
     x_contract_number = 56 # int | Users with multiple contracts must provide the contract number, for which all API requests are to be executed. (optional)
@@ -707,15 +707,15 @@ Modify the specified Network Load Balancer Flow Log.
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.models.flow_log import FlowLog
-from openapi_client.models.flow_log_put import FlowLogPut
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.models.flow_log import FlowLog
+from ionos_cloud_api_v6_client.models.flow_log_put import FlowLogPut
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -725,7 +725,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -737,13 +737,13 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.NetworkLoadBalancersApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.NetworkLoadBalancersApi(api_client)
     datacenter_id = 'datacenter_id_example' # str | The unique ID of the data center.
     network_load_balancer_id = 'network_load_balancer_id_example' # str | The unique ID of the Network Load Balancer.
     flow_log_id = 'flow_log_id_example' # str | The unique ID of the Flow Log.
-    network_load_balancer_flow_log = openapi_client.FlowLogPut() # FlowLogPut | The modified NLB Flow Log.
+    network_load_balancer_flow_log = ionos_cloud_api_v6_client.FlowLogPut() # FlowLogPut | The modified NLB Flow Log.
     pretty = True # bool | Controls whether the response is pretty-printed (with indentations and new lines). (optional) (default to True)
     depth = 0 # int | Controls the detail depth of the response objects.  GET /datacenters/[ID]  - depth=0: Only direct properties are included; children (servers and other elements) are not included.  - depth=1: Direct properties and children references are included.  - depth=2: Direct properties and children properties are included.  - depth=3: Direct properties and children properties and children's children are included.  - depth=... and so on (optional) (default to 0)
     x_contract_number = 56 # int | Users with multiple contracts must provide the contract number, for which all API requests are to be executed. (optional)
@@ -807,13 +807,13 @@ Delete the specified Network Load Balancer forwarding rule.
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -823,7 +823,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -835,9 +835,9 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.NetworkLoadBalancersApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.NetworkLoadBalancersApi(api_client)
     datacenter_id = 'datacenter_id_example' # str | The unique ID of the data center.
     network_load_balancer_id = 'network_load_balancer_id_example' # str | The unique ID of the Network Load Balancer.
     forwarding_rule_id = 'forwarding_rule_id_example' # str | The unique ID of the forwarding rule.
@@ -901,14 +901,14 @@ Retrieve the specified Network Load Balance forwarding rule.
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.models.network_load_balancer_forwarding_rule import NetworkLoadBalancerForwardingRule
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.models.network_load_balancer_forwarding_rule import NetworkLoadBalancerForwardingRule
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -918,7 +918,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -930,9 +930,9 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.NetworkLoadBalancersApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.NetworkLoadBalancersApi(api_client)
     datacenter_id = 'datacenter_id_example' # str | The unique ID of the data center.
     network_load_balancer_id = 'network_load_balancer_id_example' # str | The unique ID of the Network Load Balancer.
     forwarding_rule_id = 'forwarding_rule_id_example' # str | The unique ID of the forwarding rule.
@@ -998,14 +998,14 @@ List the forwarding rules for the specified Network Load Balancer.
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.models.network_load_balancer_forwarding_rules import NetworkLoadBalancerForwardingRules
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.models.network_load_balancer_forwarding_rules import NetworkLoadBalancerForwardingRules
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -1015,7 +1015,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -1027,9 +1027,9 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.NetworkLoadBalancersApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.NetworkLoadBalancersApi(api_client)
     datacenter_id = 'datacenter_id_example' # str | The unique ID of the data center.
     network_load_balancer_id = 'network_load_balancer_id_example' # str | The unique ID of the Network Load Balancer.
     pretty = True # bool | Controls whether the response is pretty-printed (with indentations and new lines). (optional) (default to True)
@@ -1093,15 +1093,15 @@ Update the properties of the specified Network Load Balancer forwarding rule.
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.models.network_load_balancer_forwarding_rule import NetworkLoadBalancerForwardingRule
-from openapi_client.models.network_load_balancer_forwarding_rule_properties import NetworkLoadBalancerForwardingRuleProperties
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.models.network_load_balancer_forwarding_rule import NetworkLoadBalancerForwardingRule
+from ionos_cloud_api_v6_client.models.network_load_balancer_forwarding_rule_properties import NetworkLoadBalancerForwardingRuleProperties
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -1111,7 +1111,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -1123,13 +1123,13 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.NetworkLoadBalancersApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.NetworkLoadBalancersApi(api_client)
     datacenter_id = 'datacenter_id_example' # str | The unique ID of the data center.
     network_load_balancer_id = 'network_load_balancer_id_example' # str | The unique ID of the Network Load Balancer.
     forwarding_rule_id = 'forwarding_rule_id_example' # str | The unique ID of the forwarding rule.
-    network_load_balancer_forwarding_rule_properties = openapi_client.NetworkLoadBalancerForwardingRuleProperties() # NetworkLoadBalancerForwardingRuleProperties | The properties of the forwarding rule to be updated.
+    network_load_balancer_forwarding_rule_properties = ionos_cloud_api_v6_client.NetworkLoadBalancerForwardingRuleProperties() # NetworkLoadBalancerForwardingRuleProperties | The properties of the forwarding rule to be updated.
     pretty = True # bool | Controls whether the response is pretty-printed (with indentations and new lines). (optional) (default to True)
     depth = 0 # int | Controls the detail depth of the response objects.  GET /datacenters/[ID]  - depth=0: Only direct properties are included; children (servers and other elements) are not included.  - depth=1: Direct properties and children references are included.  - depth=2: Direct properties and children properties are included.  - depth=3: Direct properties and children properties and children's children are included.  - depth=... and so on (optional) (default to 0)
     x_contract_number = 56 # int | Users with multiple contracts must provide the contract number, for which all API requests are to be executed. (optional)
@@ -1193,14 +1193,14 @@ Creates a forwarding rule for the specified Network Load Balancer.
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.models.network_load_balancer_forwarding_rule import NetworkLoadBalancerForwardingRule
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.models.network_load_balancer_forwarding_rule import NetworkLoadBalancerForwardingRule
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -1210,7 +1210,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -1222,12 +1222,12 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.NetworkLoadBalancersApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.NetworkLoadBalancersApi(api_client)
     datacenter_id = 'datacenter_id_example' # str | The unique ID of the data center.
     network_load_balancer_id = 'network_load_balancer_id_example' # str | The unique ID of the Network Load Balancer.
-    network_load_balancer_forwarding_rule = openapi_client.NetworkLoadBalancerForwardingRule() # NetworkLoadBalancerForwardingRule | The forwarding rule to create.
+    network_load_balancer_forwarding_rule = ionos_cloud_api_v6_client.NetworkLoadBalancerForwardingRule() # NetworkLoadBalancerForwardingRule | The forwarding rule to create.
     pretty = True # bool | Controls whether the response is pretty-printed (with indentations and new lines). (optional) (default to True)
     depth = 0 # int | Controls the detail depth of the response objects.  GET /datacenters/[ID]  - depth=0: Only direct properties are included; children (servers and other elements) are not included.  - depth=1: Direct properties and children references are included.  - depth=2: Direct properties and children properties are included.  - depth=3: Direct properties and children properties and children's children are included.  - depth=... and so on (optional) (default to 0)
     x_contract_number = 56 # int | Users with multiple contracts must provide the contract number, for which all API requests are to be executed. (optional)
@@ -1290,15 +1290,15 @@ Modify the specified Network Load Balancer forwarding rule.
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.models.network_load_balancer_forwarding_rule import NetworkLoadBalancerForwardingRule
-from openapi_client.models.network_load_balancer_forwarding_rule_put import NetworkLoadBalancerForwardingRulePut
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.models.network_load_balancer_forwarding_rule import NetworkLoadBalancerForwardingRule
+from ionos_cloud_api_v6_client.models.network_load_balancer_forwarding_rule_put import NetworkLoadBalancerForwardingRulePut
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -1308,7 +1308,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -1320,13 +1320,13 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.NetworkLoadBalancersApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.NetworkLoadBalancersApi(api_client)
     datacenter_id = 'datacenter_id_example' # str | The unique ID of the data center.
     network_load_balancer_id = 'network_load_balancer_id_example' # str | The unique ID of the Network Load Balancer.
     forwarding_rule_id = 'forwarding_rule_id_example' # str | The unique ID of the forwarding rule.
-    network_load_balancer_forwarding_rule = openapi_client.NetworkLoadBalancerForwardingRulePut() # NetworkLoadBalancerForwardingRulePut | The modified NLB forwarding rule.
+    network_load_balancer_forwarding_rule = ionos_cloud_api_v6_client.NetworkLoadBalancerForwardingRulePut() # NetworkLoadBalancerForwardingRulePut | The modified NLB forwarding rule.
     pretty = True # bool | Controls whether the response is pretty-printed (with indentations and new lines). (optional) (default to True)
     depth = 0 # int | Controls the detail depth of the response objects.  GET /datacenters/[ID]  - depth=0: Only direct properties are included; children (servers and other elements) are not included.  - depth=1: Direct properties and children references are included.  - depth=2: Direct properties and children properties are included.  - depth=3: Direct properties and children properties and children's children are included.  - depth=... and so on (optional) (default to 0)
     x_contract_number = 56 # int | Users with multiple contracts must provide the contract number, for which all API requests are to be executed. (optional)
@@ -1390,14 +1390,14 @@ List all the Network Load Balancers within the data center.
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.models.network_load_balancers import NetworkLoadBalancers
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.models.network_load_balancers import NetworkLoadBalancers
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -1407,7 +1407,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -1419,9 +1419,9 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.NetworkLoadBalancersApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.NetworkLoadBalancersApi(api_client)
     datacenter_id = 'datacenter_id_example' # str | The unique ID of the data center.
     pretty = True # bool | Controls whether the response is pretty-printed (with indentations and new lines). (optional) (default to True)
     depth = 0 # int | Controls the detail depth of the response objects.  GET /datacenters/[ID]  - depth=0: Only direct properties are included; children (servers and other elements) are not included.  - depth=1: Direct properties and children references are included.  - depth=2: Direct properties and children properties are included.  - depth=3: Direct properties and children properties and children's children are included.  - depth=... and so on (optional) (default to 0)
@@ -1487,15 +1487,15 @@ Update the properties of the specified Network Load Balancer within the data cen
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.models.network_load_balancer import NetworkLoadBalancer
-from openapi_client.models.network_load_balancer_properties import NetworkLoadBalancerProperties
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.models.network_load_balancer import NetworkLoadBalancer
+from ionos_cloud_api_v6_client.models.network_load_balancer_properties import NetworkLoadBalancerProperties
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -1505,7 +1505,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -1517,12 +1517,12 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.NetworkLoadBalancersApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.NetworkLoadBalancersApi(api_client)
     datacenter_id = 'datacenter_id_example' # str | The unique ID of the data center.
     network_load_balancer_id = 'network_load_balancer_id_example' # str | The unique ID of the Network Load Balancer.
-    network_load_balancer_properties = openapi_client.NetworkLoadBalancerProperties() # NetworkLoadBalancerProperties | The properties of the Network Load Balancer to be updated.
+    network_load_balancer_properties = ionos_cloud_api_v6_client.NetworkLoadBalancerProperties() # NetworkLoadBalancerProperties | The properties of the Network Load Balancer to be updated.
     pretty = True # bool | Controls whether the response is pretty-printed (with indentations and new lines). (optional) (default to True)
     depth = 0 # int | Controls the detail depth of the response objects.  GET /datacenters/[ID]  - depth=0: Only direct properties are included; children (servers and other elements) are not included.  - depth=1: Direct properties and children references are included.  - depth=2: Direct properties and children properties are included.  - depth=3: Direct properties and children properties and children's children are included.  - depth=... and so on (optional) (default to 0)
     x_contract_number = 56 # int | Users with multiple contracts must provide the contract number, for which all API requests are to be executed. (optional)
@@ -1585,14 +1585,14 @@ Creates a Network Load Balancer within the data center.
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.models.network_load_balancer import NetworkLoadBalancer
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.models.network_load_balancer import NetworkLoadBalancer
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -1602,7 +1602,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -1614,11 +1614,11 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.NetworkLoadBalancersApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.NetworkLoadBalancersApi(api_client)
     datacenter_id = 'datacenter_id_example' # str | The unique ID of the data center.
-    network_load_balancer = openapi_client.NetworkLoadBalancer() # NetworkLoadBalancer | The Network Load Balancer to create.
+    network_load_balancer = ionos_cloud_api_v6_client.NetworkLoadBalancer() # NetworkLoadBalancer | The Network Load Balancer to create.
     pretty = True # bool | Controls whether the response is pretty-printed (with indentations and new lines). (optional) (default to True)
     depth = 0 # int | Controls the detail depth of the response objects.  GET /datacenters/[ID]  - depth=0: Only direct properties are included; children (servers and other elements) are not included.  - depth=1: Direct properties and children references are included.  - depth=2: Direct properties and children properties are included.  - depth=3: Direct properties and children properties and children's children are included.  - depth=... and so on (optional) (default to 0)
     x_contract_number = 56 # int | Users with multiple contracts must provide the contract number, for which all API requests are to be executed. (optional)
@@ -1680,15 +1680,15 @@ Modify the properties of the specified Network Load Balancer within the data cen
 * Api Key Authentication (TokenAuthentication):
 
 ```python
-import openapi_client
-from openapi_client.models.network_load_balancer import NetworkLoadBalancer
-from openapi_client.models.network_load_balancer_put import NetworkLoadBalancerPut
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.models.network_load_balancer import NetworkLoadBalancer
+from ionos_cloud_api_v6_client.models.network_load_balancer_put import NetworkLoadBalancerPut
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -1698,7 +1698,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -1710,12 +1710,12 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['TokenAuthentication'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.NetworkLoadBalancersApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.NetworkLoadBalancersApi(api_client)
     datacenter_id = 'datacenter_id_example' # str | The unique ID of the data center.
     network_load_balancer_id = 'network_load_balancer_id_example' # str | The unique ID of the Network Load Balancer.
-    network_load_balancer = openapi_client.NetworkLoadBalancerPut() # NetworkLoadBalancerPut | The modified Network Load Balancer.
+    network_load_balancer = ionos_cloud_api_v6_client.NetworkLoadBalancerPut() # NetworkLoadBalancerPut | The modified Network Load Balancer.
     pretty = True # bool | Controls whether the response is pretty-printed (with indentations and new lines). (optional) (default to True)
     depth = 0 # int | Controls the detail depth of the response objects.  GET /datacenters/[ID]  - depth=0: Only direct properties are included; children (servers and other elements) are not included.  - depth=1: Direct properties and children references are included.  - depth=2: Direct properties and children properties are included.  - depth=3: Direct properties and children properties and children's children are included.  - depth=... and so on (optional) (default to 0)
     x_contract_number = 56 # int | Users with multiple contracts must provide the contract number, for which all API requests are to be executed. (optional)

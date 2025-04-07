@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.cdroms import Cdroms
+from ionos_cloud_api_v6_client.models.cdroms import Cdroms
 
 class TestCdroms(unittest.TestCase):
     """Cdroms unit test stubs"""
@@ -39,11 +39,11 @@ class TestCdroms(unittest.TestCase):
                 type = 'datacenter',
                 href = '<RESOURCE-URI>',
                 items = [
-                    openapi_client.models.image.Image(
+                    ionos_cloud_api_v6_client.models.image.Image(
                         id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                         type = 'image', 
                         href = '<RESOURCE-URI>', 
-                        metadata = openapi_client.models.datacenter_element_metadata.DatacenterElementMetadata(
+                        metadata = ionos_cloud_api_v6_client.models.datacenter_element_metadata.DatacenterElementMetadata(
                             etag = '45480eb3fbfc31f1d916c1eaa4abdcc3', 
                             created_date = '2015-12-04T14:34:09.809Z', 
                             created_by = 'user@example.com', 
@@ -52,7 +52,7 @@ class TestCdroms(unittest.TestCase):
                             last_modified_by = 'user@example.com', 
                             last_modified_by_user_id = '63cef532-26fe-4a64-a4e0-de7c8a506c90', 
                             state = 'AVAILABLE', ), 
-                        properties = openapi_client.models.image_properties.ImageProperties(
+                        properties = ionos_cloud_api_v6_client.models.image_properties.ImageProperties(
                             name = 'My resource', 
                             description = 'The image/snapshot of Ubuntu ', 
                             location = 'us/las', 
@@ -80,7 +80,7 @@ class TestCdroms(unittest.TestCase):
                     ],
                 offset = 0,
                 limit = 1000,
-                links = openapi_client.models.pagination_links.PaginationLinks(
+                links = ionos_cloud_api_v6_client.models.pagination_links.PaginationLinks(
                     prev = '<PREVIOUS-PAGE-URI>', 
                     self = '<THIS-PAGE-URI>', 
                     next = '<NEXT-PAGE-URI>', )

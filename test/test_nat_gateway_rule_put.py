@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.nat_gateway_rule_put import NatGatewayRulePut
+from ionos_cloud_api_v6_client.models.nat_gateway_rule_put import NatGatewayRulePut
 
 class TestNatGatewayRulePut(unittest.TestCase):
     """NatGatewayRulePut unit test stubs"""
@@ -38,27 +38,27 @@ class TestNatGatewayRulePut(unittest.TestCase):
                 id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c',
                 type = 'datacenter',
                 href = '<RESOURCE-URI>',
-                properties = openapi_client.models.nat_gateway_rule_properties.NatGatewayRuleProperties(
+                properties = ionos_cloud_api_v6_client.models.nat_gateway_rule_properties.NatGatewayRuleProperties(
                     name = 'My NAT Gateway rule', 
                     type = 'SNAT', 
                     protocol = 'TCP', 
                     source_subnet = '10.0.1.0/24', 
                     public_ip = '192.18.7.17', 
                     target_subnet = '10.0.1.0/24', 
-                    target_port_range = openapi_client.models.target_port_range.TargetPortRange(
+                    target_port_range = ionos_cloud_api_v6_client.models.target_port_range.TargetPortRange(
                         start = 10000, 
                         end = 20000, ), )
             )
         else:
             return NatGatewayRulePut(
-                properties = openapi_client.models.nat_gateway_rule_properties.NatGatewayRuleProperties(
+                properties = ionos_cloud_api_v6_client.models.nat_gateway_rule_properties.NatGatewayRuleProperties(
                     name = 'My NAT Gateway rule', 
                     type = 'SNAT', 
                     protocol = 'TCP', 
                     source_subnet = '10.0.1.0/24', 
                     public_ip = '192.18.7.17', 
                     target_subnet = '10.0.1.0/24', 
-                    target_port_range = openapi_client.models.target_port_range.TargetPortRange(
+                    target_port_range = ionos_cloud_api_v6_client.models.target_port_range.TargetPortRange(
                         start = 10000, 
                         end = 20000, ), ),
         )

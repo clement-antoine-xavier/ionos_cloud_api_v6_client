@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.kubernetes_cluster_properties_for_post import KubernetesClusterPropertiesForPost
+from ionos_cloud_api_v6_client.models.kubernetes_cluster_properties_for_post import KubernetesClusterPropertiesForPost
 
 class TestKubernetesClusterPropertiesForPost(unittest.TestCase):
     """KubernetesClusterPropertiesForPost unit test stubs"""
@@ -37,7 +37,7 @@ class TestKubernetesClusterPropertiesForPost(unittest.TestCase):
             return KubernetesClusterPropertiesForPost(
                 name = 'k8s',
                 k8s_version = '1.15.4',
-                maintenance_window = openapi_client.models.kubernetes_maintenance_window.KubernetesMaintenanceWindow(
+                maintenance_window = ionos_cloud_api_v6_client.models.kubernetes_maintenance_window.KubernetesMaintenanceWindow(
                     day_of_the_week = 'Monday', 
                     time = '13:00:00', ),
                 public = True,
@@ -46,7 +46,7 @@ class TestKubernetesClusterPropertiesForPost(unittest.TestCase):
                 node_subnet = '192.168.0.0/16',
                 api_subnet_allow_list = ["1.2.3.4/32","2002::1234:abcd:ffff:c0a8:101/64","1.2.3.4","2002::1234:abcd:ffff:c0a8:101"],
                 s3_buckets = [
-                    openapi_client.models.s3_bucket.S3Bucket(
+                    ionos_cloud_api_v6_client.models.s3_bucket.S3Bucket(
                         name = 'My Bucket', )
                     ]
             )

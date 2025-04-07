@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.s3_bucket import S3Bucket
+from ionos_cloud_api_v6_client.models.s3_bucket import S3Bucket
 
 class TestS3Bucket(unittest.TestCase):
     """S3Bucket unit test stubs"""

@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.flow_log import FlowLog
+from ionos_cloud_api_v6_client.models.flow_log import FlowLog
 
 # TODO update the JSON string below
 json = "{}"

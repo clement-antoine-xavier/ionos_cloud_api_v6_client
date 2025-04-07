@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.kubernetes_node_pool_properties_for_put import KubernetesNodePoolPropertiesForPut
+from ionos_cloud_api_v6_client.models.kubernetes_node_pool_properties_for_put import KubernetesNodePoolPropertiesForPut
 
 class TestKubernetesNodePoolPropertiesForPut(unittest.TestCase):
     """KubernetesNodePoolPropertiesForPut unit test stubs"""
@@ -39,19 +39,19 @@ class TestKubernetesNodePoolPropertiesForPut(unittest.TestCase):
                 node_count = 2,
                 server_type = 'DedicatedCore',
                 k8s_version = '1.15.4',
-                maintenance_window = openapi_client.models.kubernetes_maintenance_window.KubernetesMaintenanceWindow(
+                maintenance_window = ionos_cloud_api_v6_client.models.kubernetes_maintenance_window.KubernetesMaintenanceWindow(
                     day_of_the_week = 'Monday', 
                     time = '13:00:00', ),
-                auto_scaling = openapi_client.models.kubernetes_auto_scaling.KubernetesAutoScaling(
+                auto_scaling = ionos_cloud_api_v6_client.models.kubernetes_auto_scaling.KubernetesAutoScaling(
                     min_node_count = 1, 
                     max_node_count = 3, ),
                 lans = [
-                    openapi_client.models.kubernetes_node_pool_lan.KubernetesNodePoolLan(
+                    ionos_cloud_api_v6_client.models.kubernetes_node_pool_lan.KubernetesNodePoolLan(
                         datacenter_id = '00000000-0000-0000-0000-000000000000', 
                         id = 3, 
                         dhcp = True, 
                         routes = [
-                            openapi_client.models.kubernetes_node_pool_lan_routes.KubernetesNodePoolLanRoutes(
+                            ionos_cloud_api_v6_client.models.kubernetes_node_pool_lan_routes.KubernetesNodePoolLanRoutes(
                                 network = '1.2.3.4/24', 
                                 gateway_ip = '10.1.5.16', )
                             ], )

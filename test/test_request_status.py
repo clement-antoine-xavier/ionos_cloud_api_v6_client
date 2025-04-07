@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.request_status import RequestStatus
+from ionos_cloud_api_v6_client.models.request_status import RequestStatus
 
 class TestRequestStatus(unittest.TestCase):
     """RequestStatus unit test stubs"""
@@ -38,13 +38,13 @@ class TestRequestStatus(unittest.TestCase):
                 id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c',
                 type = 'datacenter',
                 href = '<RESOURCE-URI>',
-                metadata = openapi_client.models.request_status_metadata.RequestStatusMetadata(
+                metadata = ionos_cloud_api_v6_client.models.request_status_metadata.RequestStatusMetadata(
                     status = 'QUEUED', 
                     message = '', 
                     etag = '45480eb3fbfc31f1d916c1eaa4abdcc3', 
                     targets = [
-                        openapi_client.models.request_target.RequestTarget(
-                            target = openapi_client.models.resource_reference.ResourceReference(
+                        ionos_cloud_api_v6_client.models.request_target.RequestTarget(
+                            target = ionos_cloud_api_v6_client.models.resource_reference.ResourceReference(
                                 id = '', 
                                 type = 'resource', 
                                 href = '<RESOURCE-URI>', ), 

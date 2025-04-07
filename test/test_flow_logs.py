@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.flow_logs import FlowLogs
+from ionos_cloud_api_v6_client.models.flow_logs import FlowLogs
 
 class TestFlowLogs(unittest.TestCase):
     """FlowLogs unit test stubs"""
@@ -39,11 +39,11 @@ class TestFlowLogs(unittest.TestCase):
                 type = 'datacenter',
                 href = '<RESOURCE-URI>',
                 items = [
-                    openapi_client.models.flow_log.FlowLog(
+                    ionos_cloud_api_v6_client.models.flow_log.FlowLog(
                         id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                         type = 'flow-log', 
                         href = '<RESOURCE-URI>', 
-                        metadata = openapi_client.models.datacenter_element_metadata.DatacenterElementMetadata(
+                        metadata = ionos_cloud_api_v6_client.models.datacenter_element_metadata.DatacenterElementMetadata(
                             etag = '45480eb3fbfc31f1d916c1eaa4abdcc3', 
                             created_date = '2015-12-04T14:34:09.809Z', 
                             created_by = 'user@example.com', 
@@ -52,7 +52,7 @@ class TestFlowLogs(unittest.TestCase):
                             last_modified_by = 'user@example.com', 
                             last_modified_by_user_id = '63cef532-26fe-4a64-a4e0-de7c8a506c90', 
                             state = 'AVAILABLE', ), 
-                        properties = openapi_client.models.flow_log_properties.FlowLogProperties(
+                        properties = ionos_cloud_api_v6_client.models.flow_log_properties.FlowLogProperties(
                             name = 'My resource', 
                             action = 'ACCEPTED', 
                             direction = 'INGRESS', 
@@ -60,7 +60,7 @@ class TestFlowLogs(unittest.TestCase):
                     ],
                 offset = 0,
                 limit = 1000,
-                links = openapi_client.models.pagination_links.PaginationLinks(
+                links = ionos_cloud_api_v6_client.models.pagination_links.PaginationLinks(
                     prev = '<PREVIOUS-PAGE-URI>', 
                     self = '<THIS-PAGE-URI>', 
                     next = '<NEXT-PAGE-URI>', )

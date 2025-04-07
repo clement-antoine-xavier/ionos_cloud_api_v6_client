@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.application_load_balancer_forwarding_rule_put import ApplicationLoadBalancerForwardingRulePut
+from ionos_cloud_api_v6_client.models.application_load_balancer_forwarding_rule_put import ApplicationLoadBalancerForwardingRulePut
 
 # TODO update the JSON string below
 json = "{}"

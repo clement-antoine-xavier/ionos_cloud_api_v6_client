@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.label_resource import LabelResource
+from ionos_cloud_api_v6_client.models.label_resource import LabelResource
 
 # TODO update the JSON string below
 json = "{}"

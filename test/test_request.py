@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.request import Request
+from ionos_cloud_api_v6_client.models.request import Request
 
 class TestRequest(unittest.TestCase):
     """Request unit test stubs"""
@@ -38,27 +38,27 @@ class TestRequest(unittest.TestCase):
                 id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c',
                 type = 'datacenter',
                 href = '<RESOURCE-URI>',
-                metadata = openapi_client.models.request_metadata.RequestMetadata(
+                metadata = ionos_cloud_api_v6_client.models.request_metadata.RequestMetadata(
                     created_date = '2015-12-04T14:34:09.809Z', 
                     created_by = 'user@example.com', 
                     etag = '45480eb3fbfc31f1d916c1eaa4abdcc3', 
-                    request_status = openapi_client.models.request_status.RequestStatus(
+                    request_status = ionos_cloud_api_v6_client.models.request_status.RequestStatus(
                         id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                         type = 'request-status', 
                         href = '<RESOURCE-URI>', 
-                        metadata = openapi_client.models.request_status_metadata.RequestStatusMetadata(
+                        metadata = ionos_cloud_api_v6_client.models.request_status_metadata.RequestStatusMetadata(
                             status = 'QUEUED', 
                             message = '', 
                             etag = '45480eb3fbfc31f1d916c1eaa4abdcc3', 
                             targets = [
-                                openapi_client.models.request_target.RequestTarget(
-                                    target = openapi_client.models.resource_reference.ResourceReference(
+                                ionos_cloud_api_v6_client.models.request_target.RequestTarget(
+                                    target = ionos_cloud_api_v6_client.models.resource_reference.ResourceReference(
                                         id = '', 
                                         type = 'resource', 
                                         href = '<RESOURCE-URI>', ), 
                                     status = 'QUEUED', )
                                 ], ), ), ),
-                properties = openapi_client.models.request_properties.RequestProperties(
+                properties = ionos_cloud_api_v6_client.models.request_properties.RequestProperties(
                     method = '', 
                     headers = {
                         'key' : ''
@@ -68,7 +68,7 @@ class TestRequest(unittest.TestCase):
             )
         else:
             return Request(
-                properties = openapi_client.models.request_properties.RequestProperties(
+                properties = ionos_cloud_api_v6_client.models.request_properties.RequestProperties(
                     method = '', 
                     headers = {
                         'key' : ''

@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.connectable_datacenter import ConnectableDatacenter
+from ionos_cloud_api_v6_client.models.connectable_datacenter import ConnectableDatacenter
 
 class TestConnectableDatacenter(unittest.TestCase):
     """ConnectableDatacenter unit test stubs"""

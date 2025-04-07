@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.requests import Requests
+from ionos_cloud_api_v6_client.models.requests import Requests
 
 class TestRequests(unittest.TestCase):
     """Requests unit test stubs"""
@@ -39,19 +39,19 @@ class TestRequests(unittest.TestCase):
                 type = 'datacenter',
                 href = '<RESOURCE-URI>',
                 items = [
-                    openapi_client.models.request.Request(
+                    ionos_cloud_api_v6_client.models.request.Request(
                         id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                         type = 'request', 
                         href = '<RESOURCE-URI>', 
-                        metadata = openapi_client.models.request_metadata.RequestMetadata(
+                        metadata = ionos_cloud_api_v6_client.models.request_metadata.RequestMetadata(
                             created_date = '2015-12-04T14:34:09.809Z', 
                             created_by = 'user@example.com', 
                             etag = '45480eb3fbfc31f1d916c1eaa4abdcc3', 
-                            request_status = openapi_client.models.request_status.RequestStatus(
+                            request_status = ionos_cloud_api_v6_client.models.request_status.RequestStatus(
                                 id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                                 type = 'request-status', 
                                 href = '<RESOURCE-URI>', ), ), 
-                        properties = openapi_client.models.request_properties.RequestProperties(
+                        properties = ionos_cloud_api_v6_client.models.request_properties.RequestProperties(
                             method = '', 
                             headers = {
                                 'key' : ''
@@ -61,7 +61,7 @@ class TestRequests(unittest.TestCase):
                     ],
                 offset = 0,
                 limit = 1000,
-                links = openapi_client.models.pagination_links.PaginationLinks(
+                links = ionos_cloud_api_v6_client.models.pagination_links.PaginationLinks(
                     prev = '<PREVIOUS-PAGE-URI>', 
                     self = '<THIS-PAGE-URI>', 
                     next = '<NEXT-PAGE-URI>', )
@@ -70,7 +70,7 @@ class TestRequests(unittest.TestCase):
             return Requests(
                 offset = 0,
                 limit = 1000,
-                links = openapi_client.models.pagination_links.PaginationLinks(
+                links = ionos_cloud_api_v6_client.models.pagination_links.PaginationLinks(
                     prev = '<PREVIOUS-PAGE-URI>', 
                     self = '<THIS-PAGE-URI>', 
                     next = '<NEXT-PAGE-URI>', ),

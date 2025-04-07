@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.s3_key_properties import S3KeyProperties
+from ionos_cloud_api_v6_client.models.s3_key_properties import S3KeyProperties
 
 class TestS3KeyProperties(unittest.TestCase):
     """S3KeyProperties unit test stubs"""

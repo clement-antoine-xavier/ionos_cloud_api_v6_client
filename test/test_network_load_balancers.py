@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.network_load_balancers import NetworkLoadBalancers
+from ionos_cloud_api_v6_client.models.network_load_balancers import NetworkLoadBalancers
 
 class TestNetworkLoadBalancers(unittest.TestCase):
     """NetworkLoadBalancers unit test stubs"""
@@ -39,11 +39,11 @@ class TestNetworkLoadBalancers(unittest.TestCase):
                 type = 'datacenter',
                 href = '<RESOURCE-URI>',
                 items = [
-                    openapi_client.models.network_load_balancer.NetworkLoadBalancer(
+                    ionos_cloud_api_v6_client.models.network_load_balancer.NetworkLoadBalancer(
                         id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                         type = 'networkloadbalancer', 
                         href = '<RESOURCE-URI>', 
-                        metadata = openapi_client.models.datacenter_element_metadata.DatacenterElementMetadata(
+                        metadata = ionos_cloud_api_v6_client.models.datacenter_element_metadata.DatacenterElementMetadata(
                             etag = '45480eb3fbfc31f1d916c1eaa4abdcc3', 
                             created_date = '2015-12-04T14:34:09.809Z', 
                             created_by = 'user@example.com', 
@@ -52,7 +52,7 @@ class TestNetworkLoadBalancers(unittest.TestCase):
                             last_modified_by = 'user@example.com', 
                             last_modified_by_user_id = '63cef532-26fe-4a64-a4e0-de7c8a506c90', 
                             state = 'AVAILABLE', ), 
-                        properties = openapi_client.models.network_load_balancer_properties.NetworkLoadBalancerProperties(
+                        properties = ionos_cloud_api_v6_client.models.network_load_balancer_properties.NetworkLoadBalancerProperties(
                             name = 'My Network Load Balancer', 
                             listener_lan = 1, 
                             ips = ["81.173.1.2","22.231.2.2","22.231.2.3"], 
@@ -60,18 +60,18 @@ class TestNetworkLoadBalancers(unittest.TestCase):
                             lb_private_ips = ["81.173.1.5/24","22.231.2.5/24"], 
                             central_logging = True, 
                             logging_format = '%{+Q}o %{-Q}ci - - [%trg] %r %ST %B "" "" %cp %ms %ft %b %s %TR %Tw %Tc %Tr %Ta %tsc %ac %fc %bc %sc %rc %sq %bq %CC %CS %hrl %hsl', ), 
-                        entities = openapi_client.models.network_load_balancer_entities.NetworkLoadBalancerEntities(
-                            flowlogs = openapi_client.models.flow_logs.FlowLogs(
+                        entities = ionos_cloud_api_v6_client.models.network_load_balancer_entities.NetworkLoadBalancerEntities(
+                            flowlogs = ionos_cloud_api_v6_client.models.flow_logs.FlowLogs(
                                 id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                                 type = 'collection', 
                                 href = '<RESOURCE-URI>', 
                                 offset = 0, 
                                 limit = 1000, 
-                                _links = openapi_client.models.pagination_links.PaginationLinks(
+                                _links = ionos_cloud_api_v6_client.models.pagination_links.PaginationLinks(
                                     prev = '<PREVIOUS-PAGE-URI>', 
                                     self = '<THIS-PAGE-URI>', 
                                     next = '<NEXT-PAGE-URI>', ), ), 
-                            forwardingrules = openapi_client.models.network_load_balancer_forwarding_rules.NetworkLoadBalancerForwardingRules(
+                            forwardingrules = ionos_cloud_api_v6_client.models.network_load_balancer_forwarding_rules.NetworkLoadBalancerForwardingRules(
                                 id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                                 type = 'collection', 
                                 href = '<RESOURCE-URI>', 
@@ -80,7 +80,7 @@ class TestNetworkLoadBalancers(unittest.TestCase):
                     ],
                 offset = 0,
                 limit = 1000,
-                links = openapi_client.models.pagination_links.PaginationLinks(
+                links = ionos_cloud_api_v6_client.models.pagination_links.PaginationLinks(
                     prev = '<PREVIOUS-PAGE-URI>', 
                     self = '<THIS-PAGE-URI>', 
                     next = '<NEXT-PAGE-URI>', )

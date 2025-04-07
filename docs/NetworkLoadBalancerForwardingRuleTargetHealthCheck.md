@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.network_load_balancer_forwarding_rule_target_health_check import NetworkLoadBalancerForwardingRuleTargetHealthCheck
+from ionos_cloud_api_v6_client.models.network_load_balancer_forwarding_rule_target_health_check import NetworkLoadBalancerForwardingRuleTargetHealthCheck
 
 # TODO update the JSON string below
 json = "{}"

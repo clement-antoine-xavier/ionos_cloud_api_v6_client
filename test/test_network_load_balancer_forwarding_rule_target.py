@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.network_load_balancer_forwarding_rule_target import NetworkLoadBalancerForwardingRuleTarget
+from ionos_cloud_api_v6_client.models.network_load_balancer_forwarding_rule_target import NetworkLoadBalancerForwardingRuleTarget
 
 class TestNetworkLoadBalancerForwardingRuleTarget(unittest.TestCase):
     """NetworkLoadBalancerForwardingRuleTarget unit test stubs"""
@@ -39,7 +39,7 @@ class TestNetworkLoadBalancerForwardingRuleTarget(unittest.TestCase):
                 port = 8080,
                 weight = 123,
                 proxy_protocol = 'none',
-                health_check = openapi_client.models.network_load_balancer_forwarding_rule_target_health_check.NetworkLoadBalancerForwardingRuleTargetHealthCheck(
+                health_check = ionos_cloud_api_v6_client.models.network_load_balancer_forwarding_rule_target_health_check.NetworkLoadBalancerForwardingRuleTargetHealthCheck(
                     check = True, 
                     check_interval = 2000, 
                     maintenance = True, )

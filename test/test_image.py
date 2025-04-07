@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.image import Image
+from ionos_cloud_api_v6_client.models.image import Image
 
 class TestImage(unittest.TestCase):
     """Image unit test stubs"""
@@ -38,7 +38,7 @@ class TestImage(unittest.TestCase):
                 id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c',
                 type = 'datacenter',
                 href = '<RESOURCE-URI>',
-                metadata = openapi_client.models.datacenter_element_metadata.DatacenterElementMetadata(
+                metadata = ionos_cloud_api_v6_client.models.datacenter_element_metadata.DatacenterElementMetadata(
                     etag = '45480eb3fbfc31f1d916c1eaa4abdcc3', 
                     created_date = '2015-12-04T14:34:09.809Z', 
                     created_by = 'user@example.com', 
@@ -47,7 +47,7 @@ class TestImage(unittest.TestCase):
                     last_modified_by = 'user@example.com', 
                     last_modified_by_user_id = '63cef532-26fe-4a64-a4e0-de7c8a506c90', 
                     state = 'AVAILABLE', ),
-                properties = openapi_client.models.image_properties.ImageProperties(
+                properties = ionos_cloud_api_v6_client.models.image_properties.ImageProperties(
                     name = 'My resource', 
                     description = 'The image/snapshot of Ubuntu ', 
                     location = 'us/las', 
@@ -75,7 +75,7 @@ class TestImage(unittest.TestCase):
             )
         else:
             return Image(
-                properties = openapi_client.models.image_properties.ImageProperties(
+                properties = ionos_cloud_api_v6_client.models.image_properties.ImageProperties(
                     name = 'My resource', 
                     description = 'The image/snapshot of Ubuntu ', 
                     location = 'us/las', 

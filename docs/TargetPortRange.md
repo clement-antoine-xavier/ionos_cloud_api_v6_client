@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.target_port_range import TargetPortRange
+from ionos_cloud_api_v6_client.models.target_port_range import TargetPortRange
 
 # TODO update the JSON string below
 json = "{}"

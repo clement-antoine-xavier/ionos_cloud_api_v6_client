@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.flow_log_properties import FlowLogProperties
+from ionos_cloud_api_v6_client.models.flow_log_properties import FlowLogProperties
 
 class TestFlowLogProperties(unittest.TestCase):
     """FlowLogProperties unit test stubs"""

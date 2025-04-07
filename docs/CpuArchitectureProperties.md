@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.cpu_architecture_properties import CpuArchitectureProperties
+from ionos_cloud_api_v6_client.models.cpu_architecture_properties import CpuArchitectureProperties
 
 # TODO update the JSON string below
 json = "{}"

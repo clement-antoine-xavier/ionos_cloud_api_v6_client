@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.group import Group
+from ionos_cloud_api_v6_client.models.group import Group
 
 class TestGroup(unittest.TestCase):
     """Group unit test stubs"""
@@ -38,7 +38,7 @@ class TestGroup(unittest.TestCase):
                 id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c',
                 type = 'datacenter',
                 href = 'https://<API_HOST>/cloudapi/v6/um/groups/15f67991-0f51-4efc-a8ad-ef1fb31a480c',
-                properties = openapi_client.models.group_properties.GroupProperties(
+                properties = ionos_cloud_api_v6_client.models.group_properties.GroupProperties(
                     name = 'My resource', 
                     create_datacenter = True, 
                     create_snapshot = True, 
@@ -65,17 +65,17 @@ class TestGroup(unittest.TestCase):
                     access_and_manage_ai_model_hub = True, 
                     access_and_manage_iam_resources = True, 
                     create_network_security_groups = True, ),
-                entities = openapi_client.models.group_entities.GroupEntities(
-                    users = openapi_client.models.group_members.GroupMembers(
+                entities = ionos_cloud_api_v6_client.models.group_entities.GroupEntities(
+                    users = ionos_cloud_api_v6_client.models.group_members.GroupMembers(
                         id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                         type = 'collection', 
                         href = 'https://<API_HOST>/cloudapi/v6/um/groups/30740c22-1def-11e7-aac9-d7a3646ca7fd/users', 
                         items = [
-                            openapi_client.models.user.User(
+                            ionos_cloud_api_v6_client.models.user.User(
                                 id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                                 type = 'user', 
                                 href = '<RESOURCE-URI>', 
-                                metadata = openapi_client.models.user_metadata.UserMetadata(
+                                metadata = ionos_cloud_api_v6_client.models.user_metadata.UserMetadata(
                                     etag = '45480eb3fbfc31f1d916c1eaa4abdcc3', 
                                     created_date = '2015-12-04T14:34:09.809Z', 
                                     created_by = 'user@example.com', 
@@ -84,7 +84,7 @@ class TestGroup(unittest.TestCase):
                                     last_modified_by = 'user@example.com', 
                                     last_modified_by_user_id = '63cef532-26fe-4a64-a4e0-de7c8a506c90', 
                                     last_login = '2015-12-04T14:34:09.809Z', ), 
-                                properties = openapi_client.models.user_properties.UserProperties(
+                                properties = ionos_cloud_api_v6_client.models.user_properties.UserProperties(
                                     firstname = '', 
                                     lastname = '', 
                                     email = '', 
@@ -94,14 +94,14 @@ class TestGroup(unittest.TestCase):
                                     s3_canonical_user_id = '', 
                                     active = True, ), )
                             ], ), 
-                    resources = openapi_client.models.resource_groups.ResourceGroups(
+                    resources = ionos_cloud_api_v6_client.models.resource_groups.ResourceGroups(
                         id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                         type = 'collection', 
                         href = 'https://<API_HOST>/cloudapi/v6/um/groups/30740c22-1def-11e7-aac9-d7a3646ca7fd/resources', ), )
             )
         else:
             return Group(
-                properties = openapi_client.models.group_properties.GroupProperties(
+                properties = ionos_cloud_api_v6_client.models.group_properties.GroupProperties(
                     name = 'My resource', 
                     create_datacenter = True, 
                     create_snapshot = True, 

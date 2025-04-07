@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.s3_bucket import S3Bucket
+from ionos_cloud_api_v6_client.models.s3_bucket import S3Bucket
 
 # TODO update the JSON string below
 json = "{}"

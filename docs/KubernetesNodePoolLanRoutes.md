@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.kubernetes_node_pool_lan_routes import KubernetesNodePoolLanRoutes
+from ionos_cloud_api_v6_client.models.kubernetes_node_pool_lan_routes import KubernetesNodePoolLanRoutes
 
 # TODO update the JSON string below
 json = "{}"

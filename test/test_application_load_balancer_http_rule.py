@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.application_load_balancer_http_rule import ApplicationLoadBalancerHttpRule
+from ionos_cloud_api_v6_client.models.application_load_balancer_http_rule import ApplicationLoadBalancerHttpRule
 
 class TestApplicationLoadBalancerHttpRule(unittest.TestCase):
     """ApplicationLoadBalancerHttpRule unit test stubs"""
@@ -44,7 +44,7 @@ class TestApplicationLoadBalancerHttpRule(unittest.TestCase):
                 response_message = 'Application Down',
                 content_type = 'text/html',
                 conditions = [
-                    openapi_client.models.application_load_balancer_http_rule_condition.ApplicationLoadBalancerHttpRuleCondition(
+                    ionos_cloud_api_v6_client.models.application_load_balancer_http_rule_condition.ApplicationLoadBalancerHttpRuleCondition(
                         type = 'HEADER', 
                         condition = 'STARTS_WITH', 
                         negate = False, 

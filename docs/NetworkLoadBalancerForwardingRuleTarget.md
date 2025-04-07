@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.network_load_balancer_forwarding_rule_target import NetworkLoadBalancerForwardingRuleTarget
+from ionos_cloud_api_v6_client.models.network_load_balancer_forwarding_rule_target import NetworkLoadBalancerForwardingRuleTarget
 
 # TODO update the JSON string below
 json = "{}"

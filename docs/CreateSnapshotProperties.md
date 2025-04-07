@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.create_snapshot_properties import CreateSnapshotProperties
+from ionos_cloud_api_v6_client.models.create_snapshot_properties import CreateSnapshotProperties
 
 # TODO update the JSON string below
 json = "{}"

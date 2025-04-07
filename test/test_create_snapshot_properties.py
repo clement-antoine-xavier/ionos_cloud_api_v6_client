@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.create_snapshot_properties import CreateSnapshotProperties
+from ionos_cloud_api_v6_client.models.create_snapshot_properties import CreateSnapshotProperties
 
 class TestCreateSnapshotProperties(unittest.TestCase):
     """CreateSnapshotProperties unit test stubs"""

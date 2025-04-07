@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.application_load_balancer_forwarding_rule_properties import ApplicationLoadBalancerForwardingRuleProperties
+from ionos_cloud_api_v6_client.models.application_load_balancer_forwarding_rule_properties import ApplicationLoadBalancerForwardingRuleProperties
 
 class TestApplicationLoadBalancerForwardingRuleProperties(unittest.TestCase):
     """ApplicationLoadBalancerForwardingRuleProperties unit test stubs"""
@@ -42,7 +42,7 @@ class TestApplicationLoadBalancerForwardingRuleProperties(unittest.TestCase):
                 client_timeout = 50,
                 server_certificates = ["3839d24f-57bd-408e-96ee-8da3d2db5a03","a6b4f7d5-b23a-4f53-b83e-8a6528ab4612"],
                 http_rules = [
-                    openapi_client.models.application_load_balancer_http_rule.ApplicationLoadBalancerHttpRule(
+                    ionos_cloud_api_v6_client.models.application_load_balancer_http_rule.ApplicationLoadBalancerHttpRule(
                         name = 'My Application Load Balancer HTTP rule', 
                         type = 'FORWARD', 
                         target_group = '96e514d0-73e4-4abd-8fbc-c0f53b79bfae', 
@@ -52,7 +52,7 @@ class TestApplicationLoadBalancerForwardingRuleProperties(unittest.TestCase):
                         response_message = 'Application Down', 
                         content_type = 'text/html', 
                         conditions = [
-                            openapi_client.models.application_load_balancer_http_rule_condition.ApplicationLoadBalancerHttpRuleCondition(
+                            ionos_cloud_api_v6_client.models.application_load_balancer_http_rule_condition.ApplicationLoadBalancerHttpRuleCondition(
                                 type = 'HEADER', 
                                 condition = 'STARTS_WITH', 
                                 negate = False, 

@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.image_properties import ImageProperties
+from ionos_cloud_api_v6_client.models.image_properties import ImageProperties
 
 class TestImageProperties(unittest.TestCase):
     """ImageProperties unit test stubs"""

@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.backup_unit_properties_put import BackupUnitPropertiesPut
+from ionos_cloud_api_v6_client.models.backup_unit_properties_put import BackupUnitPropertiesPut
 
 class TestBackupUnitPropertiesPut(unittest.TestCase):
     """BackupUnitPropertiesPut unit test stubs"""

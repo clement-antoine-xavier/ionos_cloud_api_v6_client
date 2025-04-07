@@ -27,7 +27,7 @@ pip install git+https://github.com/GIT_USER_ID/GIT_REPO_ID.git
 
 Then import the package:
 ```python
-import openapi_client
+import ionos_cloud_api_v6_client
 ```
 
 ### Setuptools
@@ -41,7 +41,7 @@ python setup.py install --user
 
 Then import the package:
 ```python
-import openapi_client
+import ionos_cloud_api_v6_client
 ```
 
 ### Tests
@@ -54,13 +54,13 @@ Please follow the [installation procedure](#installation--usage) and then run th
 
 ```python
 
-import openapi_client
-from openapi_client.rest import ApiException
+import ionos_cloud_api_v6_client
+from ionos_cloud_api_v6_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.ionos.com/cloudapi/v6
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     host = "https://api.ionos.com/cloudapi/v6"
 )
 
@@ -70,7 +70,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure HTTP basic authorization: BasicAuthentication
-configuration = openapi_client.Configuration(
+configuration = ionos_cloud_api_v6_client.Configuration(
     username = os.environ["USERNAME"],
     password = os.environ["PASSWORD"]
 )
@@ -83,9 +83,9 @@ configuration.api_key['TokenAuthentication'] = os.environ["API_KEY"]
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ionos_cloud_api_v6_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ApplicationLoadBalancersApi(api_client)
+    api_instance = ionos_cloud_api_v6_client.ApplicationLoadBalancersApi(api_client)
     datacenter_id = 'datacenter_id_example' # str | The unique ID of the data center.
     application_load_balancer_id = 'application_load_balancer_id_example' # str | The unique ID of the Application Load Balancer.
     pretty = True # bool | Controls whether the response is pretty-printed (with indentations and new lines). (optional) (default to True)

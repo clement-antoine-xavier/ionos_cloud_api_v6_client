@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.templates import Templates
+from ionos_cloud_api_v6_client.models.templates import Templates
 
 class TestTemplates(unittest.TestCase):
     """Templates unit test stubs"""
@@ -39,11 +39,11 @@ class TestTemplates(unittest.TestCase):
                 type = 'datacenter',
                 href = '<RESOURCE-URI>',
                 items = [
-                    openapi_client.models.template.Template(
+                    ionos_cloud_api_v6_client.models.template.Template(
                         id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                         type = 'template', 
                         href = '<RESOURCE-URI>', 
-                        metadata = openapi_client.models.datacenter_element_metadata.DatacenterElementMetadata(
+                        metadata = ionos_cloud_api_v6_client.models.datacenter_element_metadata.DatacenterElementMetadata(
                             etag = '45480eb3fbfc31f1d916c1eaa4abdcc3', 
                             created_date = '2015-12-04T14:34:09.809Z', 
                             created_by = 'user@example.com', 
@@ -52,7 +52,7 @@ class TestTemplates(unittest.TestCase):
                             last_modified_by = 'user@example.com', 
                             last_modified_by_user_id = '63cef532-26fe-4a64-a4e0-de7c8a506c90', 
                             state = 'AVAILABLE', ), 
-                        properties = openapi_client.models.template_properties.TemplateProperties(
+                        properties = ionos_cloud_api_v6_client.models.template_properties.TemplateProperties(
                             name = 'My resource', 
                             cores = 2, 
                             ram = 2048, 

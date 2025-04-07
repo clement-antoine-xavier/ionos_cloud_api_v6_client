@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.resource_reference import ResourceReference
+from ionos_cloud_api_v6_client.models.resource_reference import ResourceReference
 
 # TODO update the JSON string below
 json = "{}"

@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.ip_block_properties import IpBlockProperties
+from ionos_cloud_api_v6_client.models.ip_block_properties import IpBlockProperties
 
 class TestIpBlockProperties(unittest.TestCase):
     """IpBlockProperties unit test stubs"""

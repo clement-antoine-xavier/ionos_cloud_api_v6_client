@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.nat_gateway_rules import NatGatewayRules
+from ionos_cloud_api_v6_client.models.nat_gateway_rules import NatGatewayRules
 
 class TestNatGatewayRules(unittest.TestCase):
     """NatGatewayRules unit test stubs"""
@@ -39,11 +39,11 @@ class TestNatGatewayRules(unittest.TestCase):
                 type = 'datacenter',
                 href = '<RESOURCE-URI>',
                 items = [
-                    openapi_client.models.nat_gateway_rule.NatGatewayRule(
+                    ionos_cloud_api_v6_client.models.nat_gateway_rule.NatGatewayRule(
                         id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                         type = 'natgateway-rule', 
                         href = '<RESOURCE-URI>', 
-                        metadata = openapi_client.models.datacenter_element_metadata.DatacenterElementMetadata(
+                        metadata = ionos_cloud_api_v6_client.models.datacenter_element_metadata.DatacenterElementMetadata(
                             etag = '45480eb3fbfc31f1d916c1eaa4abdcc3', 
                             created_date = '2015-12-04T14:34:09.809Z', 
                             created_by = 'user@example.com', 
@@ -52,14 +52,14 @@ class TestNatGatewayRules(unittest.TestCase):
                             last_modified_by = 'user@example.com', 
                             last_modified_by_user_id = '63cef532-26fe-4a64-a4e0-de7c8a506c90', 
                             state = 'AVAILABLE', ), 
-                        properties = openapi_client.models.nat_gateway_rule_properties.NatGatewayRuleProperties(
+                        properties = ionos_cloud_api_v6_client.models.nat_gateway_rule_properties.NatGatewayRuleProperties(
                             name = 'My NAT Gateway rule', 
                             type = 'SNAT', 
                             protocol = 'TCP', 
                             source_subnet = '10.0.1.0/24', 
                             public_ip = '192.18.7.17', 
                             target_subnet = '10.0.1.0/24', 
-                            target_port_range = openapi_client.models.target_port_range.TargetPortRange(
+                            target_port_range = ionos_cloud_api_v6_client.models.target_port_range.TargetPortRange(
                                 start = 10000, 
                                 end = 20000, ), ), )
                     ]

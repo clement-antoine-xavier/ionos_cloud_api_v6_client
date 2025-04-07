@@ -18,7 +18,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.application_load_balancer_http_rule import ApplicationLoadBalancerHttpRule
+from ionos_cloud_api_v6_client.models.application_load_balancer_http_rule import ApplicationLoadBalancerHttpRule
 
 # TODO update the JSON string below
 json = "{}"

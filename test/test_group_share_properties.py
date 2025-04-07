@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.group_share_properties import GroupShareProperties
+from ionos_cloud_api_v6_client.models.group_share_properties import GroupShareProperties
 
 class TestGroupShareProperties(unittest.TestCase):
     """GroupShareProperties unit test stubs"""

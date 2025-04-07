@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.nat_gateway_lan_properties import NatGatewayLanProperties
+from ionos_cloud_api_v6_client.models.nat_gateway_lan_properties import NatGatewayLanProperties
 
 class TestNatGatewayLanProperties(unittest.TestCase):
     """NatGatewayLanProperties unit test stubs"""

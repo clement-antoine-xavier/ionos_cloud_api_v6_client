@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.request_metadata import RequestMetadata
+from ionos_cloud_api_v6_client.models.request_metadata import RequestMetadata
 
 # TODO update the JSON string below
 json = "{}"

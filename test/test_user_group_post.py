@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.user_group_post import UserGroupPost
+from ionos_cloud_api_v6_client.models.user_group_post import UserGroupPost
 
 class TestUserGroupPost(unittest.TestCase):
     """UserGroupPost unit test stubs"""

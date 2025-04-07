@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.nic_properties import NicProperties
+from ionos_cloud_api_v6_client.models.nic_properties import NicProperties
 
 class TestNicProperties(unittest.TestCase):
     """NicProperties unit test stubs"""

@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.user_metadata import UserMetadata
+from ionos_cloud_api_v6_client.models.user_metadata import UserMetadata
 
 class TestUserMetadata(unittest.TestCase):
     """UserMetadata unit test stubs"""

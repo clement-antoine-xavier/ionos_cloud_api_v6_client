@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.error_message import ErrorMessage
+from ionos_cloud_api_v6_client.models.error_message import ErrorMessage
 
 class TestErrorMessage(unittest.TestCase):
     """ErrorMessage unit test stubs"""

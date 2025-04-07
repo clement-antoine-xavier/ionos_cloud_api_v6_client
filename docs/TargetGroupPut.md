@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.target_group_put import TargetGroupPut
+from ionos_cloud_api_v6_client.models.target_group_put import TargetGroupPut
 
 # TODO update the JSON string below
 json = "{}"

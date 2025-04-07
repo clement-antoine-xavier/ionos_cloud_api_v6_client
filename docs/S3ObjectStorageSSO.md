@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.s3_object_storage_sso import S3ObjectStorageSSO
+from ionos_cloud_api_v6_client.models.s3_object_storage_sso import S3ObjectStorageSSO
 
 # TODO update the JSON string below
 json = "{}"

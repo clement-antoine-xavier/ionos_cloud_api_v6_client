@@ -34,7 +34,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.resource_limits import ResourceLimits
+from ionos_cloud_api_v6_client.models.resource_limits import ResourceLimits
 
 # TODO update the JSON string below
 json = "{}"

@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.kubernetes_maintenance_window import KubernetesMaintenanceWindow
+from ionos_cloud_api_v6_client.models.kubernetes_maintenance_window import KubernetesMaintenanceWindow
 
 class TestKubernetesMaintenanceWindow(unittest.TestCase):
     """KubernetesMaintenanceWindow unit test stubs"""

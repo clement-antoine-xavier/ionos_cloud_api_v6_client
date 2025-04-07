@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.flow_log_properties import FlowLogProperties
+from ionos_cloud_api_v6_client.models.flow_log_properties import FlowLogProperties
 
 # TODO update the JSON string below
 json = "{}"

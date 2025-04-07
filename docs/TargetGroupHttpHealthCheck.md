@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.target_group_http_health_check import TargetGroupHttpHealthCheck
+from ionos_cloud_api_v6_client.models.target_group_http_health_check import TargetGroupHttpHealthCheck
 
 # TODO update the JSON string below
 json = "{}"

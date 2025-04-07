@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.application_load_balancer_properties import ApplicationLoadBalancerProperties
+from ionos_cloud_api_v6_client.models.application_load_balancer_properties import ApplicationLoadBalancerProperties
 
 class TestApplicationLoadBalancerProperties(unittest.TestCase):
     """ApplicationLoadBalancerProperties unit test stubs"""

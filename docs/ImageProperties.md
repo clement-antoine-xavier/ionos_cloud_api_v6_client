@@ -31,7 +31,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.image_properties import ImageProperties
+from ionos_cloud_api_v6_client.models.image_properties import ImageProperties
 
 # TODO update the JSON string below
 json = "{}"

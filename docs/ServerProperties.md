@@ -22,7 +22,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.server_properties import ServerProperties
+from ionos_cloud_api_v6_client.models.server_properties import ServerProperties
 
 # TODO update the JSON string below
 json = "{}"

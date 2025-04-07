@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.nat_gateway_rule_type import NatGatewayRuleType
+from ionos_cloud_api_v6_client.models.nat_gateway_rule_type import NatGatewayRuleType
 
 class TestNatGatewayRuleType(unittest.TestCase):
     """NatGatewayRuleType unit test stubs"""

@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.request_target import RequestTarget
+from ionos_cloud_api_v6_client.models.request_target import RequestTarget
 
 class TestRequestTarget(unittest.TestCase):
     """RequestTarget unit test stubs"""
@@ -35,7 +35,7 @@ class TestRequestTarget(unittest.TestCase):
         model = RequestTarget()
         if include_optional:
             return RequestTarget(
-                target = openapi_client.models.resource_reference.ResourceReference(
+                target = ionos_cloud_api_v6_client.models.resource_reference.ResourceReference(
                     id = '', 
                     type = 'resource', 
                     href = '<RESOURCE-URI>', ),

@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.kubernetes_node_metadata import KubernetesNodeMetadata
+from ionos_cloud_api_v6_client.models.kubernetes_node_metadata import KubernetesNodeMetadata
 
 class TestKubernetesNodeMetadata(unittest.TestCase):
     """KubernetesNodeMetadata unit test stubs"""

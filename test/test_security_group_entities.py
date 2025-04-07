@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.security_group_entities import SecurityGroupEntities
+from ionos_cloud_api_v6_client.models.security_group_entities import SecurityGroupEntities
 
 class TestSecurityGroupEntities(unittest.TestCase):
     """SecurityGroupEntities unit test stubs"""
@@ -35,16 +35,16 @@ class TestSecurityGroupEntities(unittest.TestCase):
         model = SecurityGroupEntities()
         if include_optional:
             return SecurityGroupEntities(
-                rules = openapi_client.models.firewall_rules.FirewallRules(
+                rules = ionos_cloud_api_v6_client.models.firewall_rules.FirewallRules(
                     id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                     type = 'collection', 
                     href = '<RESOURCE-URI>', 
                     items = [
-                        openapi_client.models.firewall_rule.FirewallRule(
+                        ionos_cloud_api_v6_client.models.firewall_rule.FirewallRule(
                             id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                             type = 'firewall-rule', 
                             href = '<RESOURCE-URI>', 
-                            metadata = openapi_client.models.datacenter_element_metadata.DatacenterElementMetadata(
+                            metadata = ionos_cloud_api_v6_client.models.datacenter_element_metadata.DatacenterElementMetadata(
                                 etag = '45480eb3fbfc31f1d916c1eaa4abdcc3', 
                                 created_date = '2015-12-04T14:34:09.809Z', 
                                 created_by = 'user@example.com', 
@@ -53,7 +53,7 @@ class TestSecurityGroupEntities(unittest.TestCase):
                                 last_modified_by = 'user@example.com', 
                                 last_modified_by_user_id = '63cef532-26fe-4a64-a4e0-de7c8a506c90', 
                                 state = 'AVAILABLE', ), 
-                            properties = openapi_client.models.firewallrule_properties.FirewallruleProperties(
+                            properties = ionos_cloud_api_v6_client.models.firewallrule_properties.FirewallruleProperties(
                                 name = 'My resource', 
                                 protocol = 'TCP', 
                                 source_mac = '00:0a:95:9d:68:16', 
@@ -68,20 +68,20 @@ class TestSecurityGroupEntities(unittest.TestCase):
                         ], 
                     offset = 0, 
                     limit = 1000, 
-                    _links = openapi_client.models.pagination_links.PaginationLinks(
+                    _links = ionos_cloud_api_v6_client.models.pagination_links.PaginationLinks(
                         prev = '<PREVIOUS-PAGE-URI>', 
                         self = '<THIS-PAGE-URI>', 
                         next = '<NEXT-PAGE-URI>', ), ),
-                nics = openapi_client.models.nics.Nics(
+                nics = ionos_cloud_api_v6_client.models.nics.Nics(
                     id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                     type = 'collection', 
                     href = '<RESOURCE-URI>', 
                     items = [
-                        openapi_client.models.nic.Nic(
+                        ionos_cloud_api_v6_client.models.nic.Nic(
                             id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                             type = 'nic', 
                             href = '<RESOURCE-URI>', 
-                            metadata = openapi_client.models.datacenter_element_metadata.DatacenterElementMetadata(
+                            metadata = ionos_cloud_api_v6_client.models.datacenter_element_metadata.DatacenterElementMetadata(
                                 etag = '45480eb3fbfc31f1d916c1eaa4abdcc3', 
                                 created_date = '2015-12-04T14:34:09.809Z', 
                                 created_by = 'user@example.com', 
@@ -90,7 +90,7 @@ class TestSecurityGroupEntities(unittest.TestCase):
                                 last_modified_by = 'user@example.com', 
                                 last_modified_by_user_id = '63cef532-26fe-4a64-a4e0-de7c8a506c90', 
                                 state = 'AVAILABLE', ), 
-                            properties = openapi_client.models.nic_properties.NicProperties(
+                            properties = ionos_cloud_api_v6_client.models.nic_properties.NicProperties(
                                 name = 'My resource', 
                                 mac = '00:0a:95:9d:68:16', 
                                 ips = ["10.160.12.12"], 
@@ -104,24 +104,24 @@ class TestSecurityGroupEntities(unittest.TestCase):
                                 device_number = 3, 
                                 pci_slot = 7, 
                                 vnet = '', ), 
-                            entities = openapi_client.models.nic_entities.NicEntities(
-                                flowlogs = openapi_client.models.flow_logs.FlowLogs(
+                            entities = ionos_cloud_api_v6_client.models.nic_entities.NicEntities(
+                                flowlogs = ionos_cloud_api_v6_client.models.flow_logs.FlowLogs(
                                     id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                                     type = 'collection', 
                                     href = '<RESOURCE-URI>', 
                                     offset = 0, 
                                     limit = 1000, 
-                                    _links = openapi_client.models.pagination_links.PaginationLinks(
+                                    _links = ionos_cloud_api_v6_client.models.pagination_links.PaginationLinks(
                                         prev = '<PREVIOUS-PAGE-URI>', 
                                         self = '<THIS-PAGE-URI>', 
                                         next = '<NEXT-PAGE-URI>', ), ), 
-                                firewallrules = openapi_client.models.firewall_rules.FirewallRules(
+                                firewallrules = ionos_cloud_api_v6_client.models.firewall_rules.FirewallRules(
                                     id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                                     type = 'collection', 
                                     href = '<RESOURCE-URI>', 
                                     offset = 0, 
                                     limit = 1000, ), 
-                                securitygroups = openapi_client.models.security_groups.SecurityGroups(
+                                securitygroups = ionos_cloud_api_v6_client.models.security_groups.SecurityGroups(
                                     id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                                     type = 'collection', 
                                     href = '<RESOURCE-URI>', 
@@ -130,20 +130,20 @@ class TestSecurityGroupEntities(unittest.TestCase):
                         ], 
                     offset = 0, 
                     limit = 1000, 
-                    _links = openapi_client.models.pagination_links.PaginationLinks(
+                    _links = ionos_cloud_api_v6_client.models.pagination_links.PaginationLinks(
                         prev = '<PREVIOUS-PAGE-URI>', 
                         self = '<THIS-PAGE-URI>', 
                         next = '<NEXT-PAGE-URI>', ), ),
-                servers = openapi_client.models.servers.Servers(
+                servers = ionos_cloud_api_v6_client.models.servers.Servers(
                     id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                     type = 'collection', 
                     href = '<RESOURCE-URI>', 
                     items = [
-                        openapi_client.models.server.Server(
+                        ionos_cloud_api_v6_client.models.server.Server(
                             id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                             type = 'server', 
                             href = '<RESOURCE-URI>', 
-                            metadata = openapi_client.models.datacenter_element_metadata.DatacenterElementMetadata(
+                            metadata = ionos_cloud_api_v6_client.models.datacenter_element_metadata.DatacenterElementMetadata(
                                 etag = '45480eb3fbfc31f1d916c1eaa4abdcc3', 
                                 created_date = '2015-12-04T14:34:09.809Z', 
                                 created_by = 'user@example.com', 
@@ -152,7 +152,7 @@ class TestSecurityGroupEntities(unittest.TestCase):
                                 last_modified_by = 'user@example.com', 
                                 last_modified_by_user_id = '63cef532-26fe-4a64-a4e0-de7c8a506c90', 
                                 state = 'AVAILABLE', ), 
-                            properties = openapi_client.models.server_properties.ServerProperties(
+                            properties = ionos_cloud_api_v6_client.models.server_properties.ServerProperties(
                                 template_uuid = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                                 name = 'My resource', 
                                 hostname = 'myHostname', 
@@ -160,11 +160,11 @@ class TestSecurityGroupEntities(unittest.TestCase):
                                 ram = 4096, 
                                 availability_zone = 'AUTO', 
                                 vm_state = 'RUNNING', 
-                                boot_cdrom = openapi_client.models.resource_reference.ResourceReference(
+                                boot_cdrom = ionos_cloud_api_v6_client.models.resource_reference.ResourceReference(
                                     id = '', 
                                     type = 'resource', 
                                     href = '<RESOURCE-URI>', ), 
-                                boot_volume = openapi_client.models.resource_reference.ResourceReference(
+                                boot_volume = ionos_cloud_api_v6_client.models.resource_reference.ResourceReference(
                                     id = '', 
                                     type = 'resource', 
                                     href = '<RESOURCE-URI>', ), 
@@ -172,30 +172,30 @@ class TestSecurityGroupEntities(unittest.TestCase):
                                 type = 'CUBE', 
                                 placement_group_id = '', 
                                 nic_multi_queue = True, ), 
-                            entities = openapi_client.models.server_entities.ServerEntities(
-                                cdroms = openapi_client.models.cdroms.Cdroms(
+                            entities = ionos_cloud_api_v6_client.models.server_entities.ServerEntities(
+                                cdroms = ionos_cloud_api_v6_client.models.cdroms.Cdroms(
                                     id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                                     type = 'collection', 
                                     href = '<RESOURCE-URI>', 
                                     offset = 0, 
                                     limit = 1000, 
-                                    _links = openapi_client.models.pagination_links.PaginationLinks(
+                                    _links = ionos_cloud_api_v6_client.models.pagination_links.PaginationLinks(
                                         prev = '<PREVIOUS-PAGE-URI>', 
                                         self = '<THIS-PAGE-URI>', 
                                         next = '<NEXT-PAGE-URI>', ), ), 
-                                volumes = openapi_client.models.attached_volumes.AttachedVolumes(
+                                volumes = ionos_cloud_api_v6_client.models.attached_volumes.AttachedVolumes(
                                     id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                                     type = 'collection', 
                                     href = '<RESOURCE-URI>', 
                                     offset = 0, 
                                     limit = 1000, ), 
-                                nics = openapi_client.models.nics.Nics(
+                                nics = ionos_cloud_api_v6_client.models.nics.Nics(
                                     id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                                     type = 'collection', 
                                     href = '<RESOURCE-URI>', 
                                     offset = 0, 
                                     limit = 1000, ), 
-                                securitygroups = openapi_client.models.security_groups.SecurityGroups(
+                                securitygroups = ionos_cloud_api_v6_client.models.security_groups.SecurityGroups(
                                     id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                                     type = 'collection', 
                                     href = '<RESOURCE-URI>', 
@@ -204,7 +204,7 @@ class TestSecurityGroupEntities(unittest.TestCase):
                         ], 
                     offset = 0, 
                     limit = 1000, 
-                    _links = openapi_client.models.pagination_links.PaginationLinks(
+                    _links = ionos_cloud_api_v6_client.models.pagination_links.PaginationLinks(
                         prev = '<PREVIOUS-PAGE-URI>', 
                         self = '<THIS-PAGE-URI>', 
                         next = '<NEXT-PAGE-URI>', ), )

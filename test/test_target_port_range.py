@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.target_port_range import TargetPortRange
+from ionos_cloud_api_v6_client.models.target_port_range import TargetPortRange
 
 class TestTargetPortRange(unittest.TestCase):
     """TargetPortRange unit test stubs"""

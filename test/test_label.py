@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.label import Label
+from ionos_cloud_api_v6_client.models.label import Label
 
 class TestLabel(unittest.TestCase):
     """Label unit test stubs"""
@@ -38,7 +38,7 @@ class TestLabel(unittest.TestCase):
                 id = 'urn:label:datacenter:700e1cab-99b2-4c30-ba8c-1d273ddba022:environment',
                 type = 'label',
                 href = '<RESOURCE-URI>',
-                metadata = openapi_client.models.no_state_meta_data.NoStateMetaData(
+                metadata = ionos_cloud_api_v6_client.models.no_state_meta_data.NoStateMetaData(
                     etag = '45480eb3fbfc31f1d916c1eaa4abdcc3', 
                     created_date = '2015-12-04T14:34:09.809Z', 
                     created_by = 'user@example.com', 
@@ -46,7 +46,7 @@ class TestLabel(unittest.TestCase):
                     last_modified_date = '2015-12-04T14:34:09.809Z', 
                     last_modified_by = 'user@example.com', 
                     last_modified_by_user_id = '63cef532-26fe-4a64-a4e0-de7c8a506c90', ),
-                properties = openapi_client.models.label_properties.LabelProperties(
+                properties = ionos_cloud_api_v6_client.models.label_properties.LabelProperties(
                     key = 'environment', 
                     value = 'production', 
                     resource_id = '700e1cab-99b2-4c30-ba8c-1d273ddba022', 
@@ -55,7 +55,7 @@ class TestLabel(unittest.TestCase):
             )
         else:
             return Label(
-                properties = openapi_client.models.label_properties.LabelProperties(
+                properties = ionos_cloud_api_v6_client.models.label_properties.LabelProperties(
                     key = 'environment', 
                     value = 'production', 
                     resource_id = '700e1cab-99b2-4c30-ba8c-1d273ddba022', 

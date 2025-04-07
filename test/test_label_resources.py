@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.label_resources import LabelResources
+from ionos_cloud_api_v6_client.models.label_resources import LabelResources
 
 class TestLabelResources(unittest.TestCase):
     """LabelResources unit test stubs"""
@@ -39,11 +39,11 @@ class TestLabelResources(unittest.TestCase):
                 type = 'collection',
                 href = '<RESOURCE-URI>',
                 items = [
-                    openapi_client.models.label_resource.LabelResource(
+                    ionos_cloud_api_v6_client.models.label_resource.LabelResource(
                         id = 'environment', 
                         type = 'label', 
                         href = '<RESOURCE-URI>', 
-                        metadata = openapi_client.models.no_state_meta_data.NoStateMetaData(
+                        metadata = ionos_cloud_api_v6_client.models.no_state_meta_data.NoStateMetaData(
                             etag = '45480eb3fbfc31f1d916c1eaa4abdcc3', 
                             created_date = '2015-12-04T14:34:09.809Z', 
                             created_by = 'user@example.com', 
@@ -51,13 +51,13 @@ class TestLabelResources(unittest.TestCase):
                             last_modified_date = '2015-12-04T14:34:09.809Z', 
                             last_modified_by = 'user@example.com', 
                             last_modified_by_user_id = '63cef532-26fe-4a64-a4e0-de7c8a506c90', ), 
-                        properties = openapi_client.models.label_resource_properties.LabelResourceProperties(
+                        properties = ionos_cloud_api_v6_client.models.label_resource_properties.LabelResourceProperties(
                             key = 'environment', 
                             value = 'production', ), )
                     ],
                 offset = 0,
                 limit = 1000,
-                links = openapi_client.models.pagination_links.PaginationLinks(
+                links = ionos_cloud_api_v6_client.models.pagination_links.PaginationLinks(
                     prev = '<PREVIOUS-PAGE-URI>', 
                     self = '<THIS-PAGE-URI>', 
                     next = '<NEXT-PAGE-URI>', )

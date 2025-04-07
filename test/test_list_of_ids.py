@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.list_of_ids import ListOfIds
+from ionos_cloud_api_v6_client.models.list_of_ids import ListOfIds
 
 class TestListOfIds(unittest.TestCase):
     """ListOfIds unit test stubs"""

@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.label_resource_properties import LabelResourceProperties
+from ionos_cloud_api_v6_client.models.label_resource_properties import LabelResourceProperties
 
 class TestLabelResourceProperties(unittest.TestCase):
     """LabelResourceProperties unit test stubs"""

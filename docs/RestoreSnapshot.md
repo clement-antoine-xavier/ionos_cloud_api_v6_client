@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.restore_snapshot import RestoreSnapshot
+from ionos_cloud_api_v6_client.models.restore_snapshot import RestoreSnapshot
 
 # TODO update the JSON string below
 json = "{}"

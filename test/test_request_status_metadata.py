@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.request_status_metadata import RequestStatusMetadata
+from ionos_cloud_api_v6_client.models.request_status_metadata import RequestStatusMetadata
 
 class TestRequestStatusMetadata(unittest.TestCase):
     """RequestStatusMetadata unit test stubs"""
@@ -39,8 +39,8 @@ class TestRequestStatusMetadata(unittest.TestCase):
                 message = '',
                 etag = '45480eb3fbfc31f1d916c1eaa4abdcc3',
                 targets = [
-                    openapi_client.models.request_target.RequestTarget(
-                        target = openapi_client.models.resource_reference.ResourceReference(
+                    ionos_cloud_api_v6_client.models.request_target.RequestTarget(
+                        target = ionos_cloud_api_v6_client.models.resource_reference.ResourceReference(
                             id = '', 
                             type = 'resource', 
                             href = '<RESOURCE-URI>', ), 

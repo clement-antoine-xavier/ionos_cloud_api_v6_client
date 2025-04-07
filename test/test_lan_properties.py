@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.lan_properties import LanProperties
+from ionos_cloud_api_v6_client.models.lan_properties import LanProperties
 
 class TestLanProperties(unittest.TestCase):
     """LanProperties unit test stubs"""
@@ -37,7 +37,7 @@ class TestLanProperties(unittest.TestCase):
             return LanProperties(
                 name = 'My resource',
                 ip_failover = [
-                    openapi_client.models.ip_failover.IPFailover(
+                    ionos_cloud_api_v6_client.models.ip_failover.IPFailover(
                         ip = '192.18.2.231', 
                         nic_uuid = '3c11273c-b3e1-4ca3-8134-84fd2dd4ebec', )
                     ],

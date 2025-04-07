@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.target_group_properties import TargetGroupProperties
+from ionos_cloud_api_v6_client.models.target_group_properties import TargetGroupProperties
 
 class TestTargetGroupProperties(unittest.TestCase):
     """TargetGroupProperties unit test stubs"""
@@ -40,7 +40,7 @@ class TestTargetGroupProperties(unittest.TestCase):
                 protocol = 'HTTP',
                 protocol_version = 'HTTP1',
                 targets = [
-                    openapi_client.models.target_group_target.TargetGroupTarget(
+                    ionos_cloud_api_v6_client.models.target_group_target.TargetGroupTarget(
                         ip = '22.231.2.2', 
                         port = 8080, 
                         weight = 123, 
@@ -48,11 +48,11 @@ class TestTargetGroupProperties(unittest.TestCase):
                         health_check_enabled = True, 
                         maintenance_enabled = True, )
                     ],
-                health_check = openapi_client.models.target_group_health_check.TargetGroupHealthCheck(
+                health_check = ionos_cloud_api_v6_client.models.target_group_health_check.TargetGroupHealthCheck(
                     check_timeout = 2000, 
                     check_interval = 2000, 
                     retries = 3, ),
-                http_health_check = openapi_client.models.target_group_http_health_check.TargetGroupHttpHealthCheck(
+                http_health_check = ionos_cloud_api_v6_client.models.target_group_http_health_check.TargetGroupHttpHealthCheck(
                     path = '/monitoring', 
                     method = 'GET', 
                     match_type = 'STATUS_CODE', 

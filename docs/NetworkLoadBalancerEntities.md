@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.network_load_balancer_entities import NetworkLoadBalancerEntities
+from ionos_cloud_api_v6_client.models.network_load_balancer_entities import NetworkLoadBalancerEntities
 
 # TODO update the JSON string below
 json = "{}"

@@ -35,7 +35,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.group_properties import GroupProperties
+from ionos_cloud_api_v6_client.models.group_properties import GroupProperties
 
 # TODO update the JSON string below
 json = "{}"

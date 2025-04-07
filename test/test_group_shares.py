@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.group_shares import GroupShares
+from ionos_cloud_api_v6_client.models.group_shares import GroupShares
 
 class TestGroupShares(unittest.TestCase):
     """GroupShares unit test stubs"""
@@ -39,11 +39,11 @@ class TestGroupShares(unittest.TestCase):
                 type = 'datacenter',
                 href = 'https://<API_HOST>/cloudapi/v6/um/groups/15f67991-0f51-4efc-a8ad-ef1fb31a480c/shares',
                 items = [
-                    openapi_client.models.group_share.GroupShare(
+                    ionos_cloud_api_v6_client.models.group_share.GroupShare(
                         id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                         type = 'resource', 
                         href = 'https://<API_HOST>/cloudapi/v6/um/groups/15f67991-0f51-4efc-a8ad-ef1fb31a480c/shares/17faab13-13abc-4efc-a8ad-ef1fb31a481b', 
-                        properties = openapi_client.models.group_share_properties.GroupShareProperties(
+                        properties = ionos_cloud_api_v6_client.models.group_share_properties.GroupShareProperties(
                             edit_privilege = True, 
                             share_privilege = True, ), )
                     ]

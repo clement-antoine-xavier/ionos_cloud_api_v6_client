@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.kubernetes_node_pool_for_post import KubernetesNodePoolForPost
+from ionos_cloud_api_v6_client.models.kubernetes_node_pool_for_post import KubernetesNodePoolForPost
 
 class TestKubernetesNodePoolForPost(unittest.TestCase):
     """KubernetesNodePoolForPost unit test stubs"""
@@ -38,7 +38,7 @@ class TestKubernetesNodePoolForPost(unittest.TestCase):
                 id = '1e072e52-2ed3-492f-b6b6-c6b116907527',
                 type = 'nodepool',
                 href = 'https://api.ionos.com/cloudapi/v6/k8s/30f8a4f6-6515-4c34-b49d-dea807453b90/nodepools/4735f530-4279-42f3-9562-386143098038',
-                metadata = openapi_client.models.datacenter_element_metadata.DatacenterElementMetadata(
+                metadata = ionos_cloud_api_v6_client.models.datacenter_element_metadata.DatacenterElementMetadata(
                     etag = '45480eb3fbfc31f1d916c1eaa4abdcc3', 
                     created_date = '2015-12-04T14:34:09.809Z', 
                     created_by = 'user@example.com', 
@@ -47,7 +47,7 @@ class TestKubernetesNodePoolForPost(unittest.TestCase):
                     last_modified_by = 'user@example.com', 
                     last_modified_by_user_id = '63cef532-26fe-4a64-a4e0-de7c8a506c90', 
                     state = 'AVAILABLE', ),
-                properties = openapi_client.models.kubernetes_node_pool_properties_for_post.KubernetesNodePoolPropertiesForPost(
+                properties = ionos_cloud_api_v6_client.models.kubernetes_node_pool_properties_for_post.KubernetesNodePoolPropertiesForPost(
                     name = 'K8s-node-pool', 
                     datacenter_id = '1e072e52-2ed3-492f-b6b6-c6b116907521', 
                     node_count = 2, 
@@ -59,19 +59,19 @@ class TestKubernetesNodePoolForPost(unittest.TestCase):
                     storage_type = 'HDD', 
                     storage_size = 100, 
                     k8s_version = '1.15.4', 
-                    maintenance_window = openapi_client.models.kubernetes_maintenance_window.KubernetesMaintenanceWindow(
+                    maintenance_window = ionos_cloud_api_v6_client.models.kubernetes_maintenance_window.KubernetesMaintenanceWindow(
                         day_of_the_week = 'Monday', 
                         time = '13:00:00', ), 
-                    auto_scaling = openapi_client.models.kubernetes_auto_scaling.KubernetesAutoScaling(
+                    auto_scaling = ionos_cloud_api_v6_client.models.kubernetes_auto_scaling.KubernetesAutoScaling(
                         min_node_count = 1, 
                         max_node_count = 3, ), 
                     lans = [
-                        openapi_client.models.kubernetes_node_pool_lan.KubernetesNodePoolLan(
+                        ionos_cloud_api_v6_client.models.kubernetes_node_pool_lan.KubernetesNodePoolLan(
                             datacenter_id = '00000000-0000-0000-0000-000000000000', 
                             id = 3, 
                             dhcp = True, 
                             routes = [
-                                openapi_client.models.kubernetes_node_pool_lan_routes.KubernetesNodePoolLanRoutes(
+                                ionos_cloud_api_v6_client.models.kubernetes_node_pool_lan_routes.KubernetesNodePoolLanRoutes(
                                     network = '1.2.3.4/24', 
                                     gateway_ip = '10.1.5.16', )
                                 ], )
@@ -86,7 +86,7 @@ class TestKubernetesNodePoolForPost(unittest.TestCase):
             )
         else:
             return KubernetesNodePoolForPost(
-                properties = openapi_client.models.kubernetes_node_pool_properties_for_post.KubernetesNodePoolPropertiesForPost(
+                properties = ionos_cloud_api_v6_client.models.kubernetes_node_pool_properties_for_post.KubernetesNodePoolPropertiesForPost(
                     name = 'K8s-node-pool', 
                     datacenter_id = '1e072e52-2ed3-492f-b6b6-c6b116907521', 
                     node_count = 2, 
@@ -98,19 +98,19 @@ class TestKubernetesNodePoolForPost(unittest.TestCase):
                     storage_type = 'HDD', 
                     storage_size = 100, 
                     k8s_version = '1.15.4', 
-                    maintenance_window = openapi_client.models.kubernetes_maintenance_window.KubernetesMaintenanceWindow(
+                    maintenance_window = ionos_cloud_api_v6_client.models.kubernetes_maintenance_window.KubernetesMaintenanceWindow(
                         day_of_the_week = 'Monday', 
                         time = '13:00:00', ), 
-                    auto_scaling = openapi_client.models.kubernetes_auto_scaling.KubernetesAutoScaling(
+                    auto_scaling = ionos_cloud_api_v6_client.models.kubernetes_auto_scaling.KubernetesAutoScaling(
                         min_node_count = 1, 
                         max_node_count = 3, ), 
                     lans = [
-                        openapi_client.models.kubernetes_node_pool_lan.KubernetesNodePoolLan(
+                        ionos_cloud_api_v6_client.models.kubernetes_node_pool_lan.KubernetesNodePoolLan(
                             datacenter_id = '00000000-0000-0000-0000-000000000000', 
                             id = 3, 
                             dhcp = True, 
                             routes = [
-                                openapi_client.models.kubernetes_node_pool_lan_routes.KubernetesNodePoolLanRoutes(
+                                ionos_cloud_api_v6_client.models.kubernetes_node_pool_lan_routes.KubernetesNodePoolLanRoutes(
                                     network = '1.2.3.4/24', 
                                     gateway_ip = '10.1.5.16', )
                                 ], )

@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.security_groups import SecurityGroups
+from ionos_cloud_api_v6_client.models.security_groups import SecurityGroups
 
 class TestSecurityGroups(unittest.TestCase):
     """SecurityGroups unit test stubs"""
@@ -39,11 +39,11 @@ class TestSecurityGroups(unittest.TestCase):
                 type = 'datacenter',
                 href = '<RESOURCE-URI>',
                 items = [
-                    openapi_client.models.security_group.SecurityGroup(
+                    ionos_cloud_api_v6_client.models.security_group.SecurityGroup(
                         id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                         type = 'security-group', 
                         href = '<RESOURCE-URI>', 
-                        metadata = openapi_client.models.datacenter_element_metadata.DatacenterElementMetadata(
+                        metadata = ionos_cloud_api_v6_client.models.datacenter_element_metadata.DatacenterElementMetadata(
                             etag = '45480eb3fbfc31f1d916c1eaa4abdcc3', 
                             created_date = '2015-12-04T14:34:09.809Z', 
                             created_by = 'user@example.com', 
@@ -52,27 +52,27 @@ class TestSecurityGroups(unittest.TestCase):
                             last_modified_by = 'user@example.com', 
                             last_modified_by_user_id = '63cef532-26fe-4a64-a4e0-de7c8a506c90', 
                             state = 'AVAILABLE', ), 
-                        properties = openapi_client.models.security_group_properties.SecurityGroupProperties(
+                        properties = ionos_cloud_api_v6_client.models.security_group_properties.SecurityGroupProperties(
                             name = 'My security group', 
                             description = 'My security group description', ), 
-                        entities = openapi_client.models.security_group_entities.SecurityGroupEntities(
-                            rules = openapi_client.models.firewall_rules.FirewallRules(
+                        entities = ionos_cloud_api_v6_client.models.security_group_entities.SecurityGroupEntities(
+                            rules = ionos_cloud_api_v6_client.models.firewall_rules.FirewallRules(
                                 id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                                 type = 'collection', 
                                 href = '<RESOURCE-URI>', 
                                 offset = 0, 
                                 limit = 1000, 
-                                _links = openapi_client.models.pagination_links.PaginationLinks(
+                                _links = ionos_cloud_api_v6_client.models.pagination_links.PaginationLinks(
                                     prev = '<PREVIOUS-PAGE-URI>', 
                                     self = '<THIS-PAGE-URI>', 
                                     next = '<NEXT-PAGE-URI>', ), ), 
-                            nics = openapi_client.models.nics.Nics(
+                            nics = ionos_cloud_api_v6_client.models.nics.Nics(
                                 id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                                 type = 'collection', 
                                 href = '<RESOURCE-URI>', 
                                 offset = 0, 
                                 limit = 1000, ), 
-                            servers = openapi_client.models.servers.Servers(
+                            servers = ionos_cloud_api_v6_client.models.servers.Servers(
                                 id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                                 type = 'collection', 
                                 href = '<RESOURCE-URI>', 
@@ -81,7 +81,7 @@ class TestSecurityGroups(unittest.TestCase):
                     ],
                 offset = 0,
                 limit = 1000,
-                links = openapi_client.models.pagination_links.PaginationLinks(
+                links = ionos_cloud_api_v6_client.models.pagination_links.PaginationLinks(
                     prev = '<PREVIOUS-PAGE-URI>', 
                     self = '<THIS-PAGE-URI>', 
                     next = '<NEXT-PAGE-URI>', )

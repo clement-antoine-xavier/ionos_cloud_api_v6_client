@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.s3_keys import S3Keys
+from ionos_cloud_api_v6_client.models.s3_keys import S3Keys
 
 class TestS3Keys(unittest.TestCase):
     """S3Keys unit test stubs"""
@@ -39,11 +39,11 @@ class TestS3Keys(unittest.TestCase):
                 type = 'datacenter',
                 href = 'https://<API_HOST>/cloudapi/v6/um/users/9b1b4c62-1466-11e7-87d3-d7bb7dac0087/s3keys',
                 items = [
-                    openapi_client.models.s3_key.S3Key(
+                    ionos_cloud_api_v6_client.models.s3_key.S3Key(
                         id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c', 
                         type = 'group', 
                         href = 'https://<API_HOST>/cloudapi/v6/um/users/15f67991-0f51-4efc-a8ad-ef1fb31a480c/s3keys/78fa888e106456c1482d', 
-                        metadata = openapi_client.models.s3_key_metadata.S3KeyMetadata(
+                        metadata = ionos_cloud_api_v6_client.models.s3_key_metadata.S3KeyMetadata(
                             etag = '45480eb3fbfc31f1d916c1eaa4abdcc3', 
                             created_date = '2015-12-04T14:34:09.809Z', 
                             created_by = 'ionos:identity:::users/63cef532-26fe-4a64-a4e0-de7c8a506c90', 
@@ -51,7 +51,7 @@ class TestS3Keys(unittest.TestCase):
                             last_modified_date = '2015-12-04T14:34:09.809Z', 
                             last_modified_by = 'ionos:identity:::users/63cef532-26fe-4a64-a4e0-de7c8a506c90', 
                             last_modified_by_user_id = '63cef532-26fe-4a64-a4e0-de7c8a506c90', ), 
-                        properties = openapi_client.models.s3_key_properties.S3KeyProperties(
+                        properties = ionos_cloud_api_v6_client.models.s3_key_properties.S3KeyProperties(
                             secret_key = 'tFVkUARsoeCdntQs2jVSyGG6TMPfPZ+ghnsWj/gG', 
                             active = True, ), )
                     ]

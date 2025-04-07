@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.peer import Peer
+from ionos_cloud_api_v6_client.models.peer import Peer
 
 class TestPeer(unittest.TestCase):
     """Peer unit test stubs"""

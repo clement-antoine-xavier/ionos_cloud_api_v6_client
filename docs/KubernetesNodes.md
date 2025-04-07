@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.kubernetes_nodes import KubernetesNodes
+from ionos_cloud_api_v6_client.models.kubernetes_nodes import KubernetesNodes
 
 # TODO update the JSON string below
 json = "{}"

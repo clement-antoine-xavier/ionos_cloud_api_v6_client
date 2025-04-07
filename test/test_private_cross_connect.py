@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.private_cross_connect import PrivateCrossConnect
+from ionos_cloud_api_v6_client.models.private_cross_connect import PrivateCrossConnect
 
 class TestPrivateCrossConnect(unittest.TestCase):
     """PrivateCrossConnect unit test stubs"""
@@ -38,7 +38,7 @@ class TestPrivateCrossConnect(unittest.TestCase):
                 id = '15f67991-0f51-4efc-a8ad-ef1fb31a480c',
                 type = 'datacenter',
                 href = '<RESOURCE-URI>',
-                metadata = openapi_client.models.datacenter_element_metadata.DatacenterElementMetadata(
+                metadata = ionos_cloud_api_v6_client.models.datacenter_element_metadata.DatacenterElementMetadata(
                     etag = '45480eb3fbfc31f1d916c1eaa4abdcc3', 
                     created_date = '2015-12-04T14:34:09.809Z', 
                     created_by = 'user@example.com', 
@@ -47,7 +47,7 @@ class TestPrivateCrossConnect(unittest.TestCase):
                     last_modified_by = 'user@example.com', 
                     last_modified_by_user_id = '63cef532-26fe-4a64-a4e0-de7c8a506c90', 
                     state = 'AVAILABLE', ),
-                properties = openapi_client.models.private_cross_connect_properties.PrivateCrossConnectProperties(
+                properties = ionos_cloud_api_v6_client.models.private_cross_connect_properties.PrivateCrossConnectProperties(
                     name = 'My resource', 
                     description = 'Cross Connect between datacenter 'A' and datacenter 'B' ', 
                     peers = [{"id":"<lan-id>","name":"<lan-name>","datacenterId":"<dc-uuid>","datacenterName":"<dc-name>","location":"<de/fra>"}], 
@@ -55,7 +55,7 @@ class TestPrivateCrossConnect(unittest.TestCase):
             )
         else:
             return PrivateCrossConnect(
-                properties = openapi_client.models.private_cross_connect_properties.PrivateCrossConnectProperties(
+                properties = ionos_cloud_api_v6_client.models.private_cross_connect_properties.PrivateCrossConnectProperties(
                     name = 'My resource', 
                     description = 'Cross Connect between datacenter 'A' and datacenter 'B' ', 
                     peers = [{"id":"<lan-id>","name":"<lan-name>","datacenterId":"<dc-uuid>","datacenterName":"<dc-name>","location":"<de/fra>"}], 

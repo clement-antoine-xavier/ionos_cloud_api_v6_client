@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.cdroms import Cdroms
+from ionos_cloud_api_v6_client.models.cdroms import Cdroms
 
 # TODO update the JSON string below
 json = "{}"

@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.user_properties import UserProperties
+from ionos_cloud_api_v6_client.models.user_properties import UserProperties
 
 class TestUserProperties(unittest.TestCase):
     """UserProperties unit test stubs"""
