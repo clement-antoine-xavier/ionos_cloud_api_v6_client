@@ -1,4 +1,4 @@
-# openapi-client
+# IONOS Cloud API v6 – Python SDK
 
 IONOS Enterprise-grade Infrastructure as a Service (IaaS) solutions can be managed through the Cloud API, in addition or as an alternative to the \"Data Center Designer\" (DCD) browser-based tool. 
 
